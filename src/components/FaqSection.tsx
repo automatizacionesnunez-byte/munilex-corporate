@@ -8,7 +8,7 @@ export const FaqSection: React.FC = () => {
   const faqs = [
     {
       q: '¿Cuánto tiempo se tarda en tener operativa la plataforma para mi academia?',
-      a: 'Para el Plan Iniciación el despliegue se completa en 1 a 2 semanas. Para el Plan Marca (con personalización completa de identidad y dominio propio), el plazo habitual es de 3 a 4 semanas tras recibir tus recursos de marca.',
+      a: 'Para el Plan Iniciación la puesta en marcha se completa en 1 a 2 semanas. Para el Plan Profesional (con personalización completa de identidad y dominio propio), el plazo habitual es de 3 a 4 semanas tras recibir tus recursos de marca.',
     },
     {
       q: '¿Podemos incorporar nuestros propios temarios, supuestos y preguntas exclusivas?',
@@ -28,7 +28,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: '¿Es posible integrar la plataforma con nuestro Moodle o sistema de cobro?',
-      a: 'Sí. A través del Plan Ecosistema o addons del Plan Marca, ofrecemos integración vía API / Webhooks para dar de alta alumnos automáticamente tras el pago en vuestra web o sincronizar calificaciones.',
+      a: 'Sí. A través del Plan A Medida o complementos del Plan Profesional, ofrecemos integración vía API / Webhooks para dar de alta alumnos automáticamente tras el pago en vuestra web o sincronizar calificaciones.',
     },
   ];
 
@@ -38,7 +38,7 @@ export const FaqSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c7a15a]/10 border border-[#c7a15a]/20 text-xs font-bold text-[#c7a15a] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#6f7f64]/10 border border-[#6f7f64]/20 text-xs font-bold text-[#6f7f64] uppercase tracking-widest mb-4">
             <HelpCircle className="w-3.5 h-3.5" />
             <span>Resolución de Dudas</span>
           </div>
@@ -64,8 +64,8 @@ export const FaqSection: React.FC = () => {
                 <span className="font-manrope font-bold text-white text-base sm:text-lg">
                   {faq.q}
                 </span>
-                <div className={`w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-[#c7a15a] shrink-0 transition-transform duration-300 ${
-                  openIndex === index ? 'rotate-180 bg-[#c7a15a]/20' : ''
+                <div className={`w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-[#6f7f64] shrink-0 transition-transform duration-300 ${
+                  openIndex === index ? 'rotate-180 bg-[#6f7f64]/20' : ''
                 }`}>
                   <ChevronDown className="w-4 h-4" />
                 </div>
@@ -93,3 +93,4 @@ export const FaqSection: React.FC = () => {
     </section>
   );
 };
+

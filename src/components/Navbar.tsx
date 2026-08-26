@@ -74,19 +74,19 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div
               className={`w-10 h-10 rounded-xl p-[1.5px] shadow-lg group-hover:scale-105 transition-transform duration-300 ${
                 activeMainTab === 'fp'
-                  ? 'bg-gradient-to-tr from-cyan-400 via-cyan-200 to-blue-500 shadow-cyan-500/20'
-                  : 'bg-gradient-to-tr from-[#c7a15a] via-[#f4e5c9] to-[#8d6a34] shadow-[#c7a15a]/20'
+                  ? 'bg-gradient-to-tr from-emerald-400 via-emerald-200 to-emerald-600 shadow-emerald-500/20'
+                  : 'bg-gradient-to-tr from-[#6f7f64] via-[#eef2e7] to-[#4b5847] shadow-[#6f7f64]/20'
               }`}
             >
               <div className="w-full h-full bg-[#080d15] rounded-[10px] flex items-center justify-center font-manrope font-black text-lg">
-                <span className={activeMainTab === 'fp' ? 'text-cyan-400' : 'text-[#c7a15a]'}>
+                <span className={activeMainTab === 'fp' ? 'text-emerald-400' : 'text-[#6f7f64]'}>
                   M
                 </span>
               </div>
             </div>
             <div
               className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 border-[#080d15] animate-pulse ${
-                activeMainTab === 'fp' ? 'bg-cyan-400' : 'bg-emerald-400'
+                activeMainTab === 'fp' ? 'bg-emerald-500' : 'bg-emerald-400'
               }`}
             />
           </div>
@@ -96,8 +96,8 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span
                 className={`text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full border ${
                   activeMainTab === 'fp'
-                    ? 'bg-cyan-500/15 text-cyan-400 border-cyan-500/30'
-                    : 'bg-[#c7a15a]/15 text-[#c7a15a] border-[#c7a15a]/30'
+                    ? 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30'
+                    : 'bg-[#6f7f64]/15 text-[#6f7f64] border-[#6f7f64]/30'
                 }`}
               >
                 {activeLabel[activeMainTab]}
@@ -114,7 +114,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectTab('academias')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-manrope font-extrabold uppercase tracking-wider transition-all cursor-pointer ${
               activeMainTab === 'academias'
-                ? 'bg-gradient-to-r from-[#c7a15a] to-[#d9bc77] text-black shadow-lg shadow-[#c7a15a]/20 scale-[1.02]'
+                ? 'bg-gradient-to-r from-[#6f7f64] to-[#bcc8b7] text-black shadow-lg shadow-[#6f7f64]/20 scale-[1.02]'
                 : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
@@ -126,7 +126,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectTab('fp')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-manrope font-extrabold uppercase tracking-wider transition-all cursor-pointer ${
               activeMainTab === 'fp'
-                ? 'bg-gradient-to-r from-cyan-400 to-blue-400 text-black shadow-lg shadow-cyan-500/20 scale-[1.02]'
+                ? 'bg-gradient-to-r from-emerald-400 to-emerald-500 text-black shadow-lg shadow-emerald-500/20 scale-[1.02]'
                 : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
@@ -138,7 +138,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectTab('ingles')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-manrope font-extrabold uppercase tracking-wider transition-all cursor-pointer ${
               activeMainTab === 'ingles'
-                ? 'bg-gradient-to-r from-[#c7a15a] to-[#d9bc77] text-black shadow-lg shadow-[#c7a15a]/20 scale-[1.02]'
+                ? 'bg-gradient-to-r from-[#6f7f64] to-[#bcc8b7] text-black shadow-lg shadow-[#6f7f64]/20 scale-[1.02]'
                 : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
@@ -150,7 +150,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectTab('otros')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-manrope font-extrabold uppercase tracking-wider transition-all cursor-pointer ${
               activeMainTab === 'otros'
-                ? 'bg-gradient-to-r from-[#c7a15a] to-[#d9bc77] text-black shadow-lg shadow-[#c7a15a]/20 scale-[1.02]'
+                ? 'bg-gradient-to-r from-[#6f7f64] to-[#bcc8b7] text-black shadow-lg shadow-[#6f7f64]/20 scale-[1.02]'
                 : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
@@ -165,7 +165,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xs font-semibold text-white/70 hover:text-[#c7a15a] transition-colors duration-200"
+                className="text-xs font-semibold text-white/70 hover:text-[#6f7f64] transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -176,7 +176,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={onOpenDossier}
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-white/90 hover:text-white transition-all cursor-pointer"
           >
-            <FileText className="w-3.5 h-3.5 text-[#c7a15a]" />
+            <FileText className="w-3.5 h-3.5 text-[#6f7f64]" />
             <span>Dossier PDF</span>
           </button>
 
@@ -184,8 +184,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={onOpenContact}
             className={`group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-manrope font-extrabold text-xs uppercase tracking-wider shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer ${
               isAcademyFamily
-                ? 'bg-gradient-to-r from-[#c7a15a] to-[#d9bc77] text-[#080d15] shadow-[#c7a15a]/20 hover:shadow-[#c7a15a]/35'
-                : 'bg-gradient-to-r from-cyan-400 to-blue-400 text-[#080d15] shadow-cyan-500/20 hover:shadow-cyan-500/35'
+                ? 'bg-gradient-to-r from-[#6f7f64] to-[#bcc8b7] text-[#080d15] shadow-[#6f7f64]/20 hover:shadow-[#6f7f64]/35'
+                : 'bg-gradient-to-r from-emerald-400 to-emerald-500 text-[#080d15] shadow-emerald-500/20 hover:shadow-emerald-500/35'
             }`}
           >
             <Sparkles className="w-3.5 h-3.5" />
@@ -212,7 +212,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
               }}
               className={`p-2.5 rounded-xl text-center text-xs font-bold uppercase transition-all ${
-                activeMainTab === 'academias' ? 'bg-[#c7a15a] text-black shadow-md' : 'text-white/60'
+                activeMainTab === 'academias' ? 'bg-[#6f7f64] text-black shadow-md' : 'text-white/60'
               }`}
             >
               Oposiciones
@@ -223,7 +223,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
               }}
               className={`p-2.5 rounded-xl text-center text-xs font-bold uppercase transition-all ${
-                activeMainTab === 'fp' ? 'bg-cyan-400 text-black shadow-md' : 'text-white/60'
+                activeMainTab === 'fp' ? 'bg-emerald-500 text-black shadow-md' : 'text-white/60'
               }`}
             >
               FP
@@ -234,7 +234,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
               }}
               className={`p-2.5 rounded-xl text-center text-xs font-bold uppercase transition-all ${
-                activeMainTab === 'ingles' ? 'bg-[#c7a15a] text-black shadow-md' : 'text-white/60'
+                activeMainTab === 'ingles' ? 'bg-[#6f7f64] text-black shadow-md' : 'text-white/60'
               }`}
             >
               <div className="flex items-center justify-center gap-1">
@@ -248,7 +248,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
               }}
               className={`p-2.5 rounded-xl text-center text-xs font-bold uppercase transition-all ${
-                activeMainTab === 'otros' ? 'bg-[#c7a15a] text-black shadow-md' : 'text-white/60'
+                activeMainTab === 'otros' ? 'bg-[#6f7f64] text-black shadow-md' : 'text-white/60'
               }`}
             >
               <div className="flex items-center justify-center gap-1">
@@ -263,7 +263,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               key={link.name}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-base font-semibold text-white/80 hover:text-[#c7a15a] py-2 border-b border-white/5"
+              className="block text-base font-semibold text-white/80 hover:text-[#6f7f64] py-2 border-b border-white/5"
             >
               {link.name}
             </a>
@@ -277,7 +277,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
               className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 text-white font-bold text-xs uppercase tracking-wider"
             >
-              <FileText className="w-4 h-4 text-[#c7a15a]" />
+              <FileText className="w-4 h-4 text-[#6f7f64]" />
               <span>Descargar Dossier PDF</span>
             </button>
 
@@ -288,8 +288,8 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
               className={`w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-manrope font-black text-xs uppercase tracking-widest shadow-lg ${
                 activeMainTab === 'fp'
-                  ? 'bg-cyan-400 text-black shadow-cyan-500/20'
-                  : 'bg-[#c7a15a] text-black shadow-[#c7a15a]/20'
+                  ? 'bg-emerald-500 text-black shadow-emerald-500/20'
+                  : 'bg-[#6f7f64] text-black shadow-[#6f7f64]/20'
               }`}
             >
               <Sparkles className="w-4 h-4" />
@@ -301,3 +301,5 @@ export const Navbar: React.FC<NavbarProps> = ({
     </header>
   );
 };
+
+

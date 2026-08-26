@@ -13,8 +13,8 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
       name: 'Plan Ciclo Piloto',
       tagline: '"Para departamentos formativos"',
       badge: 'Acceso Ágil',
-      icon: <BookOpen className="w-6 h-6 text-cyan-400" />,
-      desc: 'Ideal para validar la tecnología en una familia profesional específica (ej. Informática, Sanidad, Administración o Comercio) antes del despliegue en todo el centro.',
+      icon: <BookOpen className="w-6 h-6 text-emerald-400" />,
+      desc: 'Ideal para validar la tecnología en una familia profesional específica (ej. Informática, Sanidad, Administración o Comercio) antes de llevarla al resto del centro.',
       scope: {
         cycles: '1 Familia Profesional / 2 Ciclos',
         delivery: '1 semana de integración',
@@ -28,7 +28,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
         'Roleplay IA adaptado a los módulos del ciclo',
         'Tutor de dudas curriculares 24/7',
         'Generador de exámenes con rúbricas',
-        'Panel docente con seguimiento de notas',
+        'Panel docente con evolución de notas',
         'Exportación de resultados a Moodle',
       ],
       cta: 'Solicitar Piloto de Ciclo',
@@ -81,7 +81,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
       features: [
         'Todo lo del Plan Centro Integral',
         'Panel centralizado de analítica para dirección de red/grupo',
-        'Personalización de marca por cada campus o centro filial',
+        'Personalización de identidad por cada campus o centro filial',
         'Digitalización e ingesta de materiales didácticos propios',
         'SLA de servicio y soporte prioritario 24/7',
         'Desarrollo de módulos o simuladores ad-hoc',
@@ -97,7 +97,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-bold text-cyan-400 uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-bold text-emerald-400 uppercase tracking-widest mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Planes para Institutos y Centros de FP</span>
           </div>
@@ -121,12 +121,12 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`rounded-[3rem] p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden transition-all duration-300 ${
                 plan.highlighted
-                  ? 'bg-[#162132] border-2 border-cyan-400 shadow-2xl shadow-cyan-500/15 lg:-translate-y-4'
+                  ? 'bg-[#162132] border-2 border-emerald-400 shadow-2xl shadow-emerald-500/15 lg:-translate-y-4'
                   : 'bg-[#111827] border border-white/10 hover:border-white/20'
               }`}
             >
               {plan.highlighted && (
-                <div className="absolute top-0 right-0 left-0 bg-gradient-to-r from-cyan-400 via-cyan-300 to-blue-400 py-1.5 text-center text-black font-manrope font-black text-[10px] uppercase tracking-widest">
+                <div className="absolute top-0 right-0 left-0 bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 py-1.5 text-center text-black font-manrope font-black text-[10px] uppercase tracking-widest">
                   {plan.badge}
                 </div>
               )}
@@ -136,7 +136,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
                 <div className={`flex items-center justify-between mb-6 ${plan.highlighted ? 'mt-4' : ''}`}>
                   <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border ${
                     plan.highlighted
-                      ? 'bg-cyan-400 text-black border-cyan-400'
+                      ? 'bg-emerald-500 text-black border-emerald-400'
                       : 'bg-[#1a2435] border-white/5'
                   }`}>
                     {plan.icon}
@@ -151,7 +151,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
                 <h3 className="text-2xl sm:text-3xl font-manrope font-black text-white uppercase tracking-tight mb-1">
                   {plan.name}
                 </h3>
-                <div className="text-xs font-bold text-cyan-400 italic uppercase tracking-wider mb-4">
+                <div className="text-xs font-bold text-emerald-400 italic uppercase tracking-wider mb-4">
                   {plan.tagline}
                 </div>
 
@@ -178,10 +178,10 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
                 {/* Pricing Table Box */}
                 <div className={`p-4 rounded-2xl mb-8 border ${
                   plan.highlighted
-                    ? 'bg-cyan-500/10 border-cyan-500/30'
+                    ? 'bg-emerald-500/10 border-emerald-500/30'
                     : 'bg-white/[0.02] border-white/5'
                 }`}>
-                  <div className="text-[10px] font-black uppercase text-cyan-400 tracking-wider mb-2.5">
+                  <div className="text-[10px] font-black uppercase text-emerald-400 tracking-wider mb-2.5">
                     Modalidad Económica
                   </div>
                   <div className="space-y-1.5 text-xs font-bold">
@@ -202,7 +202,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
                   {plan.features.map((feat, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-xs text-white/80">
                       <Check className={`w-4 h-4 shrink-0 mt-0.5 ${
-                        plan.highlighted ? 'text-cyan-400' : 'text-white/40'
+                        plan.highlighted ? 'text-emerald-400' : 'text-white/40'
                       }`} />
                       <span>{feat}</span>
                     </div>
@@ -215,7 +215,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
                 onClick={() => onOpenContact(plan.name)}
                 className={`w-full py-4 rounded-2xl font-manrope font-black text-xs uppercase tracking-widest transition-all cursor-pointer flex items-center justify-center gap-2 ${
                   plan.highlighted
-                    ? 'bg-gradient-to-r from-cyan-400 to-blue-400 text-black shadow-lg shadow-cyan-500/25 hover:scale-[1.02]'
+                    ? 'bg-gradient-to-r from-emerald-400 to-emerald-500 text-black shadow-lg shadow-emerald-500/25 hover:scale-[1.02]'
                     : 'bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/30'
                 }`}
               >
@@ -230,3 +230,5 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
     </section>
   );
 };
+
+

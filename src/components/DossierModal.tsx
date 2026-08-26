@@ -53,7 +53,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
           >
             {/* Background Glow */}
             <div className={`absolute top-0 right-0 w-60 h-60 rounded-full blur-3xl pointer-events-none ${
-              isAcademy ? 'bg-[#c7a15a]/10' : 'bg-cyan-500/10'
+              isAcademy ? 'bg-[#6f7f64]/10' : 'bg-emerald-500/10'
             }`} />
 
             {/* Close Button */}
@@ -88,12 +88,12 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <div className={`p-2 rounded-xl border ${
-                    isAcademy ? 'bg-[#c7a15a]/10 border-[#c7a15a]/30 text-[#c7a15a]' : 'bg-cyan-500/10 border-cyan-500/30 text-cyan-400'
+                    isAcademy ? 'bg-[#6f7f64]/10 border-[#6f7f64]/30 text-[#6f7f64]' : 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400'
                   }`}>
                     <FileText className="w-5 h-5" />
                   </div>
                   <span className={`text-[10px] font-black uppercase tracking-widest ${
-                    isAcademy ? 'text-[#c7a15a]' : 'text-cyan-400'
+                    isAcademy ? 'text-[#6f7f64]' : 'text-emerald-400'
                   }`}>
                     {isAcademy
                       ? isEnglish
@@ -117,10 +117,10 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                 <p className="text-xs text-white/60 leading-relaxed mb-6">
                   {isAcademy
                     ? isEnglish
-                      ? 'Incluye catálogo de itinerarios, arquitectura de marca blanca, comparativa de costes y guía específica para EPG, listening, grammar y progreso por niveles.'
+                      ? 'Incluye catálogo de itinerarios, personalización completa con tu marca, comparativa de costes y guía específica para EPG, listening, grammar y progreso por niveles.'
                       : isOther
-                        ? 'Incluye catálogo de itinerarios, arquitectura de marca blanca, comparativa de costes y guía específica para autoescuelas, ciencias, refuerzo y otros centros.'
-                        : 'Incluye catálogo de itinerarios, arquitectura de marca blanca, comparativa de costes y modelo de contrato, con foco también en academias de inglés y otros centros que trabajen EPG, listening, grammar y progreso por niveles.'
+                        ? 'Incluye catálogo de itinerarios, personalización completa con tu marca, comparativa de costes y guía específica para autoescuelas, ciencias, refuerzo y otros centros.'
+                        : 'Incluye catálogo de itinerarios, personalización completa con tu marca, comparativa de costes y modelo de contrato, con foco también en academias de inglés y otros centros que trabajen EPG, listening, grammar y progreso por niveles.'
                     : 'Incluye especificación pedagógica de roleplay, rúbricas curriculares y plan de formación al claustro docente.'}
                 </p>
 
@@ -135,7 +135,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                       placeholder="Ej. Laura Gómez"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#c7a15a] focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#6f7f64] focus:outline-none"
                     />
                   </div>
 
@@ -149,7 +149,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                       placeholder="laura@centroeducativo.es"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#c7a15a] focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#6f7f64] focus:outline-none"
                     />
                   </div>
 
@@ -164,7 +164,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                         placeholder="+34 600 000 000"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#c7a15a] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#6f7f64] focus:outline-none"
                       />
                     </div>
 
@@ -184,7 +184,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                         placeholder={isAcademy ? (isEnglish ? 'English School' : isOther ? 'Autoescuela / Centro de Refuerzo' : 'Centro de formación') : 'Instituto FP'}
                         value={formData.organization}
                         onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#c7a15a] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#6f7f64] focus:outline-none"
                       />
                     </div>
                   </div>
@@ -193,8 +193,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                     type="submit"
                     className={`w-full py-4 rounded-xl font-manrope font-black text-xs uppercase tracking-widest transition-all cursor-pointer flex items-center justify-center gap-2 shadow-xl ${
                       isAcademy
-                        ? 'bg-gradient-to-r from-[#c7a15a] to-[#d9bc77] text-black shadow-[#c7a15a]/25 hover:scale-[1.01]'
-                        : 'bg-gradient-to-r from-cyan-400 to-blue-400 text-black shadow-cyan-500/25 hover:scale-[1.01]'
+                        ? 'bg-gradient-to-r from-[#6f7f64] to-[#bcc8b7] text-black shadow-[#6f7f64]/25 hover:scale-[1.01]'
+                        : 'bg-gradient-to-r from-emerald-400 to-emerald-500 text-black shadow-emerald-500/25 hover:scale-[1.01]'
                     }`}
                   >
                     <Download className="w-4 h-4" />
@@ -214,4 +214,5 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
     </AnimatePresence>
   );
 };
+
 

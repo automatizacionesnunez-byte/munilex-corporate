@@ -12,19 +12,19 @@ export const FpDemoSection: React.FC<FpDemoSectionProps> = ({ onOpenContact }) =
       number: '01',
       title: 'Sesión Diagnóstica y Análisis Curricular',
       desc: 'Analizamos las familias profesionales (Sanidad, IT, Administración, etc.), ciclos y número de alumnos de tu centro para adaptar los simuladores de roleplay y el temario.',
-      icon: <Laptop className="w-6 h-6 text-cyan-400" />,
+      icon: <Laptop className="w-6 h-6 text-emerald-400" />,
     },
     {
       number: '02',
       title: 'Despliegue de un Entorno Piloto en Vivo',
       desc: 'Habilitamos un acceso de prueba con tu identidad para que el equipo directivo y los jefes de departamento prueben el roleplay de voz/texto y la generación de exámenes.',
-      icon: <Sparkles className="w-6 h-6 text-cyan-400" />,
+      icon: <Sparkles className="w-6 h-6 text-emerald-400" />,
     },
     {
       number: '03',
       title: 'Propuesta Personalizada y Acompañamiento',
       desc: 'Elaboramos una propuesta a medida ajustada a la realidad de tu centro público, concertado o privado, con formación incluida para todo el claustro de profesores.',
-      icon: <PhoneCall className="w-6 h-6 text-cyan-400" />,
+      icon: <PhoneCall className="w-6 h-6 text-emerald-400" />,
     },
   ];
 
@@ -34,7 +34,7 @@ export const FpDemoSection: React.FC<FpDemoSectionProps> = ({ onOpenContact }) =
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-bold text-cyan-400 uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-bold text-emerald-400 uppercase tracking-widest mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Implementación a Medida de tu Centro</span>
           </div>
@@ -56,14 +56,14 @@ export const FpDemoSection: React.FC<FpDemoSectionProps> = ({ onOpenContact }) =
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="p-8 sm:p-10 rounded-[2.5rem] bg-[#111827] border border-white/10 hover:border-cyan-500/30 transition-all duration-300 relative group flex flex-col justify-between"
+              className="p-8 sm:p-10 rounded-[2.5rem] bg-[#111827] border border-white/10 hover:border-emerald-500/30 transition-all duration-300 relative group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-8">
                   <div className="w-14 h-14 rounded-2xl bg-[#1a2435] flex items-center justify-center border border-white/5 group-hover:scale-105 transition-transform">
                     {step.icon}
                   </div>
-                  <span className="text-2xl font-manrope font-black text-cyan-400/40 font-mono">
+                  <span className="text-2xl font-manrope font-black text-emerald-400/40 font-mono">
                     {step.number}
                   </span>
                 </div>
@@ -84,9 +84,9 @@ export const FpDemoSection: React.FC<FpDemoSectionProps> = ({ onOpenContact }) =
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="rounded-[3rem] p-8 sm:p-14 bg-gradient-to-br from-[#162132] via-[#111827] to-[#0E0F15] border border-cyan-500/30 shadow-2xl shadow-cyan-500/10 text-center relative overflow-hidden"
+          className="rounded-[3rem] p-8 sm:p-14 bg-gradient-to-br from-[#162132] via-[#111827] to-[#0E0F15] border border-emerald-500/30 shadow-2xl shadow-emerald-500/10 text-center relative overflow-hidden"
         >
-          <div className="absolute -top-20 -right-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -top-20 -right-20 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="max-w-2xl mx-auto space-y-6 relative z-10">
             <h3 className="text-2xl sm:text-4xl font-manrope font-black text-white uppercase tracking-tight">
@@ -99,7 +99,7 @@ export const FpDemoSection: React.FC<FpDemoSectionProps> = ({ onOpenContact }) =
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={onOpenContact}
-                className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-gradient-to-r from-cyan-400 via-cyan-300 to-blue-400 text-black font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-cyan-500/25 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center justify-center gap-3"
+                className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 text-black font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-emerald-500/25 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center justify-center gap-3"
               >
                 <span>Solicitar Demostración en Directo</span>
                 <ArrowRight className="w-4 h-4" />
@@ -108,15 +108,15 @@ export const FpDemoSection: React.FC<FpDemoSectionProps> = ({ onOpenContact }) =
 
             <div className="pt-6 flex flex-wrap items-center justify-center gap-6 text-xs text-white/40 font-medium">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                 <span>Sin compromiso de permanencia</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                 <span>Formación docente inicial incluida</span>
               </div>
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 <span>100% Adaptado al marco de tu CCAA</span>
               </div>
             </div>
@@ -127,3 +127,5 @@ export const FpDemoSection: React.FC<FpDemoSectionProps> = ({ onOpenContact }) =
     </section>
   );
 };
+
+

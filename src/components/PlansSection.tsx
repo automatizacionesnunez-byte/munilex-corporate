@@ -13,21 +13,21 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
       header: 'Planes para Academias de Oposiciones',
       titleTop: 'Planes diseñados para',
       titleBottom: 'escalar tu academia de oposiciones',
-      intro: 'Sin costes ocultos. Licencias calculadas mensualmente en función del número real de alumnos activos en tu plataforma, con un modelo pensado para academias que necesitan previsibilidad.',
+      intro: 'Sin costes ocultos. Licencias calculadas mensualmente según el número real de alumnos activos, con un modelo pensado para academias que necesitan previsibilidad y control.',
       feature: 'Catálogo COMPLETO de itinerarios y materias (oposiciones, refuerzo y preparación especializada)',
     },
     ingles: {
       header: 'Planes para Academias de Inglés',
       titleTop: 'Planes diseñados para',
       titleBottom: 'escalar tu academia de inglés',
-      intro: 'Sin costes ocultos. Licencias calculadas mensualmente en función del número real de alumnos activos en tu plataforma, con un modelo pensado para academias de idiomas que necesitan previsibilidad.',
+      intro: 'Sin costes ocultos. Licencias calculadas mensualmente según el número real de alumnos activos, con un modelo pensado para academias de idiomas que necesitan previsibilidad y control.',
       feature: 'Catálogo COMPLETO de itinerarios y materias (EPG, listening, grammar, speaking y progreso por niveles)',
     },
     otros: {
       header: 'Planes para Otros Centros',
       titleTop: 'Planes diseñados para',
       titleBottom: 'escalar tu centro especializado',
-      intro: 'Sin costes ocultos. Licencias calculadas mensualmente en función del número real de alumnos activos en tu plataforma, con un modelo pensado para centros que necesitan previsibilidad.',
+      intro: 'Sin costes ocultos. Licencias calculadas mensualmente según el número real de alumnos activos, con un modelo pensado para centros que necesitan previsibilidad y control.',
       feature: 'Catálogo COMPLETO de itinerarios y materias (autoescuela, ciencias, refuerzo y formación especializada)',
     },
   }[variant];
@@ -36,10 +36,10 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
     {
       id: 'iniciacion',
       name: 'Plan Iniciación',
-      tagline: '"Empieza por lo básico"',
+      tagline: '"Empieza con una base sólida"',
       badge: 'Acceso Rápido',
-      icon: <Rocket className="w-6 h-6 text-[#c7a15a]" />,
-      desc: 'Integración del ecosistema Munilex con acceso a 2 itinerarios, materias o programas (posibilidad de añadir extras). Ideal para centros que quieren validar la IA sin grandes inversiones.',
+      icon: <Rocket className="w-6 h-6 text-[#6f7f64]" />,
+      desc: 'Integración inicial de Munilex con acceso a 2 itinerarios, materias o programas, con posibilidad de ampliar más adelante. Ideal para centros que quieren validar la IA sin grandes inversiones.',
       scope: {
         opos: '2 itinerarios o materias',
         delivery: '1 - 2 semanas',
@@ -63,9 +63,9 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
     },
     {
       id: 'marca',
-      name: 'Plan Marca',
-      tagline: '"Tu tecnología propia"',
-      badge: 'Más Popular • Marca Blanca',
+      name: 'Plan Profesional',
+      tagline: '"Tu plataforma con identidad propia"',
+      badge: 'Más Popular • Identidad Propia',
       icon: <Heart className="w-6 h-6 text-black" />,
       desc: 'Incluye todas las funciones del Plan Iniciación. Personalización completa con tus colores, logo, dominio propio y soporte prioritario.',
       scope: {
@@ -81,21 +81,21 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
       features: [
         'Todo lo incluido en el Plan Iniciación',
         copy.feature,
-        'Marca Blanca 100% (Logo, paleta HSL, tipografías)',
+        'Personalización completa de marca (logo, colores y tipografías)',
         'Dominio propio personalizado (ej. campus.tuacademia.es)',
         '1 Funcionalidad extra a medida incluida',
         'Plantillas de correo con tu identidad corporativa',
         'Gestor de cuenta y onboarding de profesores',
       ],
-      cta: 'Configurar Plan Marca',
+      cta: 'Configurar Plan Profesional',
       highlighted: true,
     },
     {
       id: 'ecosistema',
-      name: 'Plan Ecosistema',
-      tagline: '"Tu sistema educativo a medida"',
+      name: 'Plan A Medida',
+      tagline: '"Tu solución educativa a medida"',
       badge: 'Enterprise',
-      icon: <Globe className="w-6 h-6 text-cyan-400" />,
+      icon: <Globe className="w-6 h-6 text-emerald-400" />,
       desc: 'Desarrollo 100% personalizado, funcionalidades ilimitadas, integración de contenidos exclusivos y metodologías propias con infraestructura dedicada de alta escalabilidad.',
       scope: {
         opos: 'A medida + Ingesta de contenidos propios',
@@ -108,7 +108,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
         { range: 'Infraestructura', price: 'Dedicada' },
       ],
       features: [
-        'Todo lo del Plan Marca + Arquitectura dedicada',
+        'Todo lo del Plan Profesional + arquitectura dedicada',
         'Digitalización e ingesta de materiales privados del centro',
         'Integración API con Moodle, Canvas, Holded o ERP del centro',
         'Módulos de roleplay IA para pruebas orales, entrevistas y atención al cliente',
@@ -126,7 +126,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c7a15a]/10 border border-[#c7a15a]/20 text-xs font-bold text-[#c7a15a] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#6f7f64]/10 border border-[#6f7f64]/20 text-xs font-bold text-[#6f7f64] uppercase tracking-widest mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>{copy.header}</span>
           </div>
@@ -150,12 +150,12 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`rounded-[3rem] p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden transition-all duration-300 ${
                 plan.highlighted
-                  ? 'bg-[#162132] border-2 border-[#c7a15a] shadow-2xl shadow-[#c7a15a]/15 lg:-translate-y-4'
+                  ? 'bg-[#162132] border-2 border-[#6f7f64] shadow-2xl shadow-[#6f7f64]/15 lg:-translate-y-4'
                   : 'bg-[#111827] border border-white/10 hover:border-white/20'
               }`}
             >
               {plan.highlighted && (
-                <div className="absolute top-0 right-0 left-0 bg-gradient-to-r from-[#c7a15a] via-[#f4e5c9] to-[#8d6a34] py-1.5 text-center text-black font-manrope font-black text-[10px] uppercase tracking-widest">
+                <div className="absolute top-0 right-0 left-0 bg-gradient-to-r from-[#6f7f64] via-[#eef2e7] to-[#4b5847] py-1.5 text-center text-black font-manrope font-black text-[10px] uppercase tracking-widest">
                   {plan.badge}
                 </div>
               )}
@@ -165,7 +165,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
                 <div className={`flex items-center justify-between mb-6 ${plan.highlighted ? 'mt-4' : ''}`}>
                   <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border ${
                     plan.highlighted
-                      ? 'bg-[#c7a15a] text-black border-[#c7a15a]'
+                      ? 'bg-[#6f7f64] text-black border-[#6f7f64]'
                       : 'bg-[#1a2435] border-white/5'
                   }`}>
                     {plan.icon}
@@ -180,7 +180,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
                 <h3 className="text-2xl sm:text-3xl font-manrope font-black text-white uppercase tracking-tight mb-1">
                   {plan.name}
                 </h3>
-                <div className="text-xs font-bold text-[#c7a15a] italic uppercase tracking-wider mb-4">
+                <div className="text-xs font-bold text-[#6f7f64] italic uppercase tracking-wider mb-4">
                   {plan.tagline}
                 </div>
 
@@ -207,10 +207,10 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
                 {/* Pricing Table Box */}
                 <div className={`p-4 rounded-2xl mb-8 border ${
                   plan.highlighted
-                    ? 'bg-[#c7a15a]/10 border-[#c7a15a]/30'
+                    ? 'bg-[#6f7f64]/10 border-[#6f7f64]/30'
                     : 'bg-white/[0.02] border-white/5'
                 }`}>
-                <div className="text-[10px] font-black uppercase text-[#c7a15a] tracking-wider mb-2.5">
+                <div className="text-[10px] font-black uppercase text-[#6f7f64] tracking-wider mb-2.5">
                     Licencia Alumno / Mes
                   </div>
                   <div className="space-y-1.5 text-xs font-bold">
@@ -231,7 +231,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
                   {plan.features.map((feat, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-xs text-white/80">
                       <Check className={`w-4 h-4 shrink-0 mt-0.5 ${
-                        plan.highlighted ? 'text-[#c7a15a]' : 'text-white/40'
+                        plan.highlighted ? 'text-[#6f7f64]' : 'text-white/40'
                       }`} />
                       <span>{feat}</span>
                     </div>
@@ -244,7 +244,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
                 onClick={() => onOpenContact(plan.name)}
                 className={`w-full py-4 rounded-2xl font-manrope font-black text-xs uppercase tracking-widest transition-all cursor-pointer flex items-center justify-center gap-2 ${
                   plan.highlighted
-                    ? 'bg-gradient-to-r from-[#c7a15a] to-[#d9bc77] text-black shadow-lg shadow-[#c7a15a]/25 hover:scale-[1.02]'
+                    ? 'bg-gradient-to-r from-[#6f7f64] to-[#bcc8b7] text-black shadow-lg shadow-[#6f7f64]/25 hover:scale-[1.02]'
                     : 'bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/30'
                 }`}
               >
@@ -259,4 +259,5 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
     </section>
   );
 };
+
 

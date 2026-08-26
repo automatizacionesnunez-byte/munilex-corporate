@@ -23,8 +23,8 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
   return (
     <section className="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
       {/* Background Gradients & Glows */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-[#c7a15a]/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-[#6f7f64]/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[radial-gradient(#00F0FF_1px,transparent_1px)] [background-size:24px_24px]" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
@@ -34,10 +34,10 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
             initial={{ opacity: 0, y: -15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-panel border border-cyan-500/30 text-xs font-semibold text-cyan-200 shadow-lg shadow-cyan-500/10"
+            className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-panel border border-emerald-500/30 text-xs font-semibold text-emerald-200 shadow-lg shadow-emerald-500/10"
           >
-            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-            <span className="text-cyan-400 font-black uppercase tracking-wider text-[10px]">EdTech FP & Dual</span>
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
+            <span className="text-emerald-400 font-black uppercase tracking-wider text-[10px]">EdTech FP & Dual</span>
             <span className="text-white/30">•</span>
             <span>FP Básica, Grado Medio y Grado Superior</span>
           </motion.div>
@@ -78,7 +78,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
           >
             <button
               onClick={onOpenContact}
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-400 via-cyan-300 to-blue-500 text-black font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center gap-3"
+              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-600 text-black font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center gap-3"
             >
               <span>Agendar Demo Piloto para mi Centro</span>
               <ArrowRight className="w-4 h-4" />
@@ -86,29 +86,29 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
 
             <a
               href="#fp-features"
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-manrope font-bold text-xs uppercase tracking-widest transition-all duration-200 flex items-center justify-center gap-2 hover:border-cyan-400/40"
+              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-manrope font-bold text-xs uppercase tracking-widest transition-all duration-200 flex items-center justify-center gap-2 hover:border-emerald-400/40"
             >
               <span>Explorar Módulos & Roleplay</span>
-              <ChevronRight className="w-4 h-4 text-cyan-400" />
+              <ChevronRight className="w-4 h-4 text-emerald-400" />
             </a>
           </motion.div>
 
           {/* Quick Trust Highlights */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-white/50 font-medium pb-4">
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
               <span>Roleplay por Voz & Texto</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
               <span>Flashcards & Tests Curriculares</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
               <span>Dashboard & Calendario del Profesor</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
               <span>Módulo de Bienestar Emocional</span>
             </div>
           </div>
@@ -119,13 +119,13 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-14 max-w-5xl mx-auto rounded-[2.5rem] bg-[#111827] border border-cyan-500/20 p-4 sm:p-7 shadow-2xl shadow-black/80 relative overflow-hidden"
+          className="mt-14 max-w-5xl mx-auto rounded-[2.5rem] bg-[#111827] border border-emerald-500/20 p-4 sm:p-7 shadow-2xl shadow-black/80 relative overflow-hidden"
         >
           {/* Header Bar of Simulator */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-white/5">
             <div className="flex items-center gap-3">
-              <div className="w-3 h-3 rounded-full bg-cyan-400/80" />
-              <div className="w-3 h-3 rounded-full bg-blue-400/80" />
+              <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
+              <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
               <div className="w-3 h-3 rounded-full bg-purple-400/80" />
               <span className="text-xs text-white/40 font-mono ml-2">campus-fp.tucentro.es — Munilex FP Suite</span>
             </div>
@@ -136,7 +136,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                 onClick={() => setActiveFpTab('roleplay')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeFpTab === 'roleplay'
-                    ? 'bg-cyan-400 text-black shadow-md font-bold'
+                    ? 'bg-emerald-500 text-black shadow-md font-bold'
                     : 'text-white/60 hover:text-white'
                 }`}
               >
@@ -147,7 +147,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                 onClick={() => setActiveFpTab('tutor')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeFpTab === 'tutor'
-                    ? 'bg-cyan-400 text-black shadow-md font-bold'
+                    ? 'bg-emerald-500 text-black shadow-md font-bold'
                     : 'text-white/60 hover:text-white'
                 }`}
               >
@@ -158,7 +158,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                 onClick={() => setActiveFpTab('exam')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeFpTab === 'exam'
-                    ? 'bg-cyan-400 text-black shadow-md font-bold'
+                    ? 'bg-emerald-500 text-black shadow-md font-bold'
                     : 'text-white/60 hover:text-white'
                 }`}
               >
@@ -194,29 +194,29 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-red-400 animate-ping" />
-                        <span className="text-[10px] font-black uppercase text-cyan-400 tracking-wider">Simulación en Vivo (Audio & Chat)</span>
+                        <span className="text-[10px] font-black uppercase text-emerald-400 tracking-wider">Simulación en Vivo (Audio & Chat)</span>
                       </div>
                       <span className="text-[11px] text-white/40">Grado Superior Sanidad / Farmacia</span>
                     </div>
                     <div className="space-y-3 text-xs">
                       <div className="p-3.5 bg-white/5 rounded-xl text-white/80 border border-white/5 flex items-start gap-2.5">
-                        <Mic className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                        <Mic className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                         <div>
-                          <strong className="text-cyan-300 block mb-0.5">IA (Paciente / Cliente en mostrador):</strong>
+                          <strong className="text-emerald-300 block mb-0.5">IA (Paciente / Cliente en mostrador):</strong>
                           "Tengo dolor agudo de estómago y fiebre desde anoche. Deme un antibiótico fuerte sin receta para que se me pase rápido."
                         </div>
                       </div>
-                      <div className="p-3.5 bg-cyan-950/20 border border-cyan-500/20 rounded-xl text-white/90">
+                      <div className="p-3.5 bg-emerald-950/20 border border-emerald-500/20 rounded-xl text-white/90">
                         <strong className="text-white block mb-0.5">Alumno FP (Respuesta verbal grabada):</strong>
                         "No podemos dispensar antibióticos sin prescripción facultativa. Ante fiebre y dolor agudo, le aconsejo acudir a urgencias de su centro de salud para diagnóstico médico."
                       </div>
                     </div>
                   </div>
 
-                  <div className="md:col-span-6 bg-[#162132] p-6 rounded-2xl border border-cyan-500/30 shadow-lg relative">
+                  <div className="md:col-span-6 bg-[#162132] p-6 rounded-2xl border border-emerald-500/30 shadow-lg relative">
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
-                        <Sparkles className="w-4 h-4 text-cyan-400" />
+                        <Sparkles className="w-4 h-4 text-emerald-400" />
                         <span className="text-xs font-bold text-white">Evaluación Automática por Rúbrica</span>
                       </div>
                       <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xs">
@@ -232,7 +232,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                         <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                         <span>Trato empático, asertivo y derivación clínica adecuada.</span>
                       </div>
-                      <div className="p-3 bg-[#080d15] rounded-xl border border-white/5 text-[11px] text-cyan-200">
+                      <div className="p-3 bg-[#080d15] rounded-xl border border-white/5 text-[11px] text-emerald-200">
                         🎤 <strong>Análisis de Voz:</strong> Tono calmado, fluidez de 135 ppm y sin titubeos en la negativa legal.
                       </div>
                     </div>
@@ -249,15 +249,15 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                   className="grid md:grid-cols-12 gap-6"
                 >
                   <div className="md:col-span-6 bg-[#080d15] p-6 rounded-2xl border border-white/5 space-y-4">
-                    <div className="text-[10px] font-black uppercase text-cyan-400 tracking-wider">
+                    <div className="text-[10px] font-black uppercase text-emerald-400 tracking-wider">
                       Tutoría 24/7 del Temario Oficial
                     </div>
                     <div className="p-3.5 bg-white/5 rounded-xl text-xs text-white/80">
                       <div className="text-white/40 mb-1">Alumno FP (DAM):</div>
                       "¿Qué diferencia hay entre una clave primaria (Primary Key) y una clave foránea (Foreign Key) en SQL?"
                     </div>
-                    <div className="p-3.5 bg-[#162132] border border-cyan-500/20 rounded-xl text-xs text-white/90">
-                      <div className="text-cyan-300 font-bold mb-1">Tutor IA:</div>
+                    <div className="p-3.5 bg-[#162132] border border-emerald-500/20 rounded-xl text-xs text-white/90">
+                      <div className="text-emerald-300 font-bold mb-1">Tutor IA:</div>
                       La <strong>Primary Key</strong> identifica unívocamente cada fila de una tabla (única y NOT NULL). La <strong>Foreign Key</strong> establece una relación referencial hacia la clave primaria de otra tabla para garantizar la integridad referencial.
                     </div>
                   </div>
@@ -266,10 +266,10 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                     <div>
                       <div className="flex items-center justify-between mb-3">
                         <span className="text-xs font-bold text-white">Flashcard de Repaso Espaciado</span>
-                        <span className="text-[10px] bg-cyan-400/20 text-cyan-300 px-2 py-0.5 rounded-full font-mono">Repaso #3</span>
+                        <span className="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-mono">Repaso #3</span>
                       </div>
                       <div className="p-4 bg-[#080d15] rounded-xl border border-white/5 text-xs text-white/80 mb-4">
-                        <div className="text-[#c7a15a] font-bold mb-1">¿Qué principio SOLID establece que una clase debe tener una única razón para cambiar?</div>
+                        <div className="text-[#6f7f64] font-bold mb-1">¿Qué principio SOLID establece que una clase debe tener una única razón para cambiar?</div>
                         <div className="text-emerald-400 font-semibold mt-2">→ Principio de Responsabilidad Única (SRP).</div>
                       </div>
                     </div>
@@ -291,7 +291,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                   className="bg-[#080d15] p-6 rounded-2xl border border-white/5"
                 >
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider">
+                    <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider">
                       Generador de Exámenes Curriculares para Docentes
                     </span>
                     <span className="text-xs text-white/40">Familia: Administración y Gestión / Finanzas</span>
@@ -355,10 +355,10 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
         {/* Stats Grid for FP */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-5xl mx-auto">
           {[
-            { value: "Roleplay Dual", label: "Simulación por Voz y Texto", icon: <Mic className="w-4 h-4 text-cyan-400" /> },
-            { value: "Agenda & Calendario", label: "Fechas de Exámenes y Entregas", icon: <Calendar className="w-4 h-4 text-cyan-400" /> },
-            { value: "Dashboard Docente", label: "Control y Analítica del Aula", icon: <Users className="w-4 h-4 text-cyan-400" /> },
-            { value: "Moodle & Classroom", label: "Exportación Directa GIFT / XML", icon: <Layers className="w-4 h-4 text-cyan-400" /> },
+            { value: "Roleplay Dual", label: "Simulación por Voz y Texto", icon: <Mic className="w-4 h-4 text-emerald-400" /> },
+            { value: "Agenda & Calendario", label: "Fechas de Exámenes y Entregas", icon: <Calendar className="w-4 h-4 text-emerald-400" /> },
+            { value: "Dashboard Docente", label: "Control y Analítica del Aula", icon: <Users className="w-4 h-4 text-emerald-400" /> },
+            { value: "Moodle & Classroom", label: "Exportación Directa GIFT / XML", icon: <Layers className="w-4 h-4 text-emerald-400" /> },
           ].map((stat, i) => (
             <div key={i} className="p-6 rounded-2xl glass-panel border border-white/5 text-center">
               <div className="flex justify-center mb-2">{stat.icon}</div>
@@ -372,3 +372,5 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
     </section>
   );
 };
+
+

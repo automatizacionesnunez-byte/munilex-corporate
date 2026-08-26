@@ -6,7 +6,7 @@ export const SecurityCompliance: React.FC = () => {
     {
       title: 'Alineación con EU AI Act',
       desc: 'Nuestros sistemas de IA educativa cumplen con las directrices europeas de transparencia, explicabilidad y supervisión humana requeridas para plataformas formativas.',
-      icon: <Scale className="w-6 h-6 text-[#c7a15a]" />,
+      icon: <Scale className="w-6 h-6 text-[#6f7f64]" />,
     },
     {
       title: 'Esquema Nacional de Seguridad (ENS)',
@@ -16,7 +16,7 @@ export const SecurityCompliance: React.FC = () => {
     {
       title: 'Soberanía de Datos 100% en UE',
       desc: 'Tus bases de datos, exámenes y registros de alumnos residen en servidores de la Unión Europea bajo estricto cumplimiento del RGPD.',
-      icon: <Database className="w-6 h-6 text-cyan-400" />,
+      icon: <Database className="w-6 h-6 text-emerald-400" />,
     },
     {
       title: 'Protección de Temarios Propios',
@@ -31,7 +31,7 @@ export const SecurityCompliance: React.FC = () => {
     {
       title: 'Copias de Seguridad Automatizadas',
       desc: 'Backups diarios redundantes con recuperación ante desastres en minutos y monitorización de disponibilidad 24/7.',
-      icon: <FileCheck2 className="w-6 h-6 text-blue-400" />,
+      icon: <FileCheck2 className="w-6 h-6 text-emerald-500" />,
     },
   ];
 
@@ -50,7 +50,7 @@ export const SecurityCompliance: React.FC = () => {
             <span className="gold-gradient-text">CUMPLIMIENTO LEGAL</span>
           </h2>
           <p className="text-base sm:text-lg text-white/60 leading-relaxed">
-            Tu reputación es lo primero. Despliega tecnología de última generación con la total tranquilidad de cumplir la normativa española y europea más exigente.
+            Tu reputación es lo primero. Activa tecnología de última generación con la total tranquilidad de cumplir la normativa española y europea más exigente.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export const SecurityCompliance: React.FC = () => {
           {securityCards.map((card, index) => (
             <div
               key={index}
-              className="p-8 rounded-[2.5rem] bg-[#111827] border border-white/10 hover:border-[#c7a15a]/30 transition-all duration-300 group flex flex-col justify-between"
+              className="p-8 rounded-[2.5rem] bg-[#111827] border border-white/10 hover:border-[#6f7f64]/30 transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-[#080d15] border border-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -80,3 +80,4 @@ export const SecurityCompliance: React.FC = () => {
     </section>
   );
 };
+

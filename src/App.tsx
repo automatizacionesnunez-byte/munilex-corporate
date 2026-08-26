@@ -13,6 +13,7 @@ import { FpDemoSection } from './components/FpDemoSection';
 import { TeamSection } from './components/TeamSection';
 import { SecurityCompliance } from './components/SecurityCompliance';
 import { FaqSection } from './components/FaqSection';
+import { LegalSection } from './components/LegalSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
@@ -35,7 +36,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#080d15] text-[#E2E8F0] selection:bg-[#c7a15a]/30 selection:text-white font-inter">
+    <div className="min-h-screen bg-[#f5f3ed] text-[#1f2937] selection:bg-[#6f7f64]/25 selection:text-[#0f172a] font-inter">
       {/* Top Navbar with 4-Tab Switcher & Dossier Trigger */}
       <Navbar
         activeMainTab={activeTab}
@@ -49,12 +50,12 @@ export function App() {
 
       {/* Floating Center Selector for Mobile / Quick Switch */}
       <div className="pt-24 md:hidden max-w-sm mx-auto px-6">
-        <div className="grid grid-cols-2 gap-2 p-1.5 rounded-2xl bg-[#111827] border border-white/10 shadow-lg text-center">
+        <div className="grid grid-cols-2 gap-2 p-1.5 rounded-2xl bg-white border border-black/5 shadow-lg text-center">
           <button
             onClick={() => setActiveTab('academias')}
             className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'academias'
-                ? 'bg-[#c7a15a] text-black shadow-md'
+                ? 'bg-[#6f7f64] text-black shadow-md'
                 : 'text-white/60 hover:text-white'
             }`}
           >
@@ -65,7 +66,7 @@ export function App() {
             onClick={() => setActiveTab('fp')}
             className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'fp'
-                ? 'bg-cyan-400 text-black shadow-md'
+                ? 'bg-emerald-500 text-black shadow-md'
                 : 'text-white/60 hover:text-white'
             }`}
           >
@@ -76,7 +77,7 @@ export function App() {
             onClick={() => setActiveTab('ingles')}
             className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'ingles'
-                ? 'bg-[#c7a15a] text-black shadow-md'
+                ? 'bg-[#6f7f64] text-black shadow-md'
                 : 'text-white/60 hover:text-white'
             }`}
           >
@@ -87,7 +88,7 @@ export function App() {
             onClick={() => setActiveTab('otros')}
             className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'otros'
-                ? 'bg-[#c7a15a] text-black shadow-md'
+                ? 'bg-[#6f7f64] text-black shadow-md'
                 : 'text-white/60 hover:text-white'
             }`}
           >
@@ -139,6 +140,7 @@ export function App() {
         <TeamSection />
         <SecurityCompliance />
         <FaqSection />
+        <LegalSection />
         <ContactSection
           targetType={activeTab}
           initialPlan={selectedPlanForContact}
@@ -163,3 +165,4 @@ export function App() {
 }
 
 export default App;
+

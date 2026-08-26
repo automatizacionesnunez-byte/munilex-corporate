@@ -41,7 +41,7 @@ export const FpComparisonSection: React.FC<FpComparisonSectionProps> = ({ onOpen
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-bold text-cyan-400 uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-bold text-emerald-400 uppercase tracking-widest mb-4">
             <GraduationCap className="w-3.5 h-3.5" />
             <span>Innovación en el Aula de FP</span>
           </div>
@@ -55,7 +55,7 @@ export const FpComparisonSection: React.FC<FpComparisonSectionProps> = ({ onOpen
         </div>
 
         {/* Comparison Table / Grid */}
-        <div className="max-w-5xl mx-auto rounded-[3rem] bg-[#111827] border border-cyan-500/20 overflow-hidden shadow-2xl shadow-black/80">
+        <div className="max-w-5xl mx-auto rounded-[3rem] bg-[#111827] border border-emerald-500/20 overflow-hidden shadow-2xl shadow-black/80">
           {/* Header Row */}
           <div className="grid grid-cols-12 bg-[#080d15] p-6 sm:p-8 border-b border-white/10 text-xs font-black uppercase tracking-wider">
             <div className="col-span-4 text-white/40">Dimensión Formativa</div>
@@ -63,7 +63,7 @@ export const FpComparisonSection: React.FC<FpComparisonSectionProps> = ({ onOpen
               <ShieldAlert className="w-4 h-4" />
               <span>Enfoque Tradicional</span>
             </div>
-            <div className="col-span-4 text-cyan-400 flex items-center gap-1.5">
+            <div className="col-span-4 text-emerald-400 flex items-center gap-1.5">
               <Sparkles className="w-4 h-4" />
               <span>Suite Munilex FP</span>
             </div>
@@ -89,8 +89,8 @@ export const FpComparisonSection: React.FC<FpComparisonSectionProps> = ({ onOpen
                   <span>{item.traditional}</span>
                 </div>
 
-                <div className="col-span-6 sm:col-span-4 font-semibold text-white flex items-start gap-2 bg-cyan-500/5 p-3 rounded-xl border border-cyan-500/20">
-                  <Check className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                <div className="col-span-6 sm:col-span-4 font-semibold text-white flex items-start gap-2 bg-emerald-500/5 p-3 rounded-xl border border-emerald-500/20">
+                  <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <span>{item.munilex}</span>
                 </div>
               </motion.div>
@@ -105,7 +105,7 @@ export const FpComparisonSection: React.FC<FpComparisonSectionProps> = ({ onOpen
             </div>
             <button
               onClick={onOpenContact}
-              className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-400 text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-cyan-500/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
+              className="px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-400 to-emerald-500 text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-emerald-500/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
             >
               Solicitar Demostración
             </button>
@@ -116,3 +116,4 @@ export const FpComparisonSection: React.FC<FpComparisonSectionProps> = ({ onOpen
     </section>
   );
 };
+

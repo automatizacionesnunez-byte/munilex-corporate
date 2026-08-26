@@ -38,7 +38,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
     },
     otros: {
       intro: 'Elimina el coste de contratar desarrolladores o comprar plataformas obsoletas. Munilex te entrega un software listo para operar y comercializar hoy mismo, pensado para autoescuelas, centros de ciencias, refuerzo y formación especializada.',
-      card2: 'Corrige ejercicios, tareas y respuestas en segundos, ideal para teoría, práctica, simulaciones y seguimiento del alumno.',
+      card2: 'Corrige ejercicios, tareas y respuestas en segundos, ideal para teoría, práctica, simulaciones y progreso del alumno.',
       card3: 'Todas las preguntas se generan con explicación, nivel y rúbrica para clases, pruebas internas y evaluaciones propias.',
       card4: 'Responde dudas del alumno de forma inmediata a cualquier hora del día o de la noche, evitando saturación del profesorado.',
       card5: 'Visualiza el rendimiento de tus grupos, detecta inactivos y exporta informes ejecutivos en un clic.',
@@ -49,19 +49,19 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
   return (
     <section id="bento" className="py-28 md:py-36 relative bg-[#080d15]">
       {/* Background Decor */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#c7a15a]/5 rounded-full blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#6f7f64]/5 rounded-full blur-[130px] pointer-events-none" />
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-purple-500/5 rounded-full blur-[130px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c7a15a]/10 border border-[#c7a15a]/20 text-xs font-bold text-[#c7a15a] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#6f7f64]/10 border border-[#6f7f64]/20 text-xs font-bold text-[#6f7f64] uppercase tracking-widest mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Módulos de la Plataforma</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-white uppercase leading-tight mb-6">
             TODO LO QUE TU CENTRO NECESITA EN <br />
-            <span className="gold-gradient-text">UN SOLO ECOSISTEMA</span>
+            <span className="gold-gradient-text">UNA SOLA PLATAFORMA</span>
           </h2>
           <p className="text-base sm:text-lg text-white/60 leading-relaxed">
             {copy.intro}
@@ -70,23 +70,23 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
 
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          {/* Card 1: 100% Marca Blanca (Span 7) */}
+          {/* Card 1: Identidad propia (Span 7) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="md:col-span-7 bg-[#111827] rounded-[2.5rem] p-8 sm:p-10 border border-white/10 relative overflow-hidden group hover:border-[#c7a15a]/40 transition-all duration-300 flex flex-col justify-between"
+            className="md:col-span-7 bg-[#111827] rounded-[2.5rem] p-8 sm:p-10 border border-white/10 relative overflow-hidden group hover:border-[#6f7f64]/40 transition-all duration-300 flex flex-col justify-between"
           >
-            <div className="absolute top-0 right-0 w-80 h-80 bg-[#c7a15a]/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-[#c7a15a]/20 transition-all" />
+            <div className="absolute top-0 right-0 w-80 h-80 bg-[#6f7f64]/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-[#6f7f64]/20 transition-all" />
 
             <div>
               <div className="flex items-center justify-between mb-8">
-                <div className="w-14 h-14 rounded-2xl bg-[#1a2435] flex items-center justify-center text-[#c7a15a] border border-white/5">
+                <div className="w-14 h-14 rounded-2xl bg-[#1a2435] flex items-center justify-center text-[#6f7f64] border border-white/5">
                   <Building2 className="w-7 h-7" />
                 </div>
                 <span className="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-white/70">
-                  White-Label Integral
+                  Identidad propia
                 </span>
               </div>
 
@@ -94,7 +94,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
                 Tu Marca, Tu Dominio y Tu Identidad Visual
               </h3>
               <p className="text-white/65 text-sm sm:text-base leading-relaxed mb-8">
-                Tus alumnos nunca sabrán que hay tecnología externa. La plataforma se personaliza íntegramente con tu logo, tipografías, colores de marca y subdominio personalizado (ej. <code>campus.tucentro.es</code>).
+                La experiencia se presenta como parte de tu centro: logo, tipografías, colores corporativos y subdominio personalizado (ej. <code>campus.tucentro.es</code>).
               </p>
             </div>
 
@@ -108,8 +108,8 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
                 <div className="text-[10px] text-white/40 uppercase font-mono">Correos</div>
                 <div className="font-bold text-white mt-1">noreply@tuweb.es</div>
               </div>
-              <div className="p-3 bg-[#c7a15a]/10 rounded-xl border border-[#c7a15a]/20">
-                <div className="text-[10px] text-[#c7a15a] uppercase font-mono font-bold">Look & Feel</div>
+              <div className="p-3 bg-[#6f7f64]/10 rounded-xl border border-[#6f7f64]/20">
+                <div className="text-[10px] text-[#6f7f64] uppercase font-mono font-bold">Look & Feel</div>
                 <div className="font-bold text-white mt-1">100% Adaptado</div>
               </div>
             </div>
@@ -121,7 +121,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="md:col-span-5 bg-[#111827] rounded-[2.5rem] p-8 sm:p-10 border border-white/10 relative overflow-hidden group hover:border-[#c7a15a]/40 transition-all duration-300 flex flex-col justify-between"
+            className="md:col-span-5 bg-[#111827] rounded-[2.5rem] p-8 sm:p-10 border border-white/10 relative overflow-hidden group hover:border-[#6f7f64]/40 transition-all duration-300 flex flex-col justify-between"
           >
             <div className="absolute top-0 right-0 w-60 h-60 bg-purple-500/10 rounded-full blur-[80px] pointer-events-none" />
 
@@ -131,7 +131,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
                   <FileCheck className="w-7 h-7" />
                 </div>
                 <span className="px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-purple-300">
-                  IA Generativa
+                  Evaluación y apoyo IA
                 </span>
               </div>
 
@@ -160,10 +160,10 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="md:col-span-4 bg-[#111827] rounded-[2.5rem] p-8 border border-white/10 relative overflow-hidden group hover:border-[#c7a15a]/40 transition-all duration-300 flex flex-col justify-between"
+            className="md:col-span-4 bg-[#111827] rounded-[2.5rem] p-8 border border-white/10 relative overflow-hidden group hover:border-[#6f7f64]/40 transition-all duration-300 flex flex-col justify-between"
           >
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#1a2435] flex items-center justify-center text-cyan-400 mb-6 border border-white/5">
+              <div className="w-12 h-12 rounded-2xl bg-[#1a2435] flex items-center justify-center text-emerald-400 mb-6 border border-white/5">
                 <Layers className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-manrope font-extrabold text-white mb-3">
@@ -176,11 +176,11 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
 
             <div className="space-y-2 pt-4 border-t border-white/5 text-xs text-white/70">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                 <span>{variant === 'ingles' ? '+42 niveles, itinerarios y programas actualizados' : '+42 itinerarios, materias y programas actualizados'}</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                 <span>{variant === 'ingles' ? 'Preguntas tipo examen, listening y ejercicios reales' : 'Preguntas tipo examen, ejercicios reales y casos prácticos'}</span>
               </div>
             </div>
@@ -192,10 +192,10 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="md:col-span-4 bg-[#111827] rounded-[2.5rem] p-8 border border-white/10 relative overflow-hidden group hover:border-[#c7a15a]/40 transition-all duration-300 flex flex-col justify-between"
+            className="md:col-span-4 bg-[#111827] rounded-[2.5rem] p-8 border border-white/10 relative overflow-hidden group hover:border-[#6f7f64]/40 transition-all duration-300 flex flex-col justify-between"
           >
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#1a2435] flex items-center justify-center text-[#c7a15a] mb-6 border border-white/5">
+              <div className="w-12 h-12 rounded-2xl bg-[#1a2435] flex items-center justify-center text-[#6f7f64] mb-6 border border-white/5">
                 <Bot className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-manrope font-extrabold text-white mb-3">
@@ -208,7 +208,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
 
             <div className="p-3.5 bg-[#080d15] rounded-xl border border-white/5 text-xs text-white/70 flex items-center justify-between">
               <span>Resolución de dudas</span>
-              <span className="font-bold text-[#c7a15a]">&lt; 2 segundos</span>
+              <span className="font-bold text-[#6f7f64]">&lt; 2 segundos</span>
             </div>
           </motion.div>
 
@@ -218,7 +218,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="md:col-span-4 bg-[#111827] rounded-[2.5rem] p-8 border border-white/10 relative overflow-hidden group hover:border-[#c7a15a]/40 transition-all duration-300 flex flex-col justify-between"
+            className="md:col-span-4 bg-[#111827] rounded-[2.5rem] p-8 border border-white/10 relative overflow-hidden group hover:border-[#6f7f64]/40 transition-all duration-300 flex flex-col justify-between"
           >
             <div>
               <div className="w-12 h-12 rounded-2xl bg-[#1a2435] flex items-center justify-center text-emerald-400 mb-6 border border-white/5">
@@ -240,9 +240,9 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
         </div>
 
         {/* Bottom CTA bar */}
-        <div className="mt-14 p-8 rounded-3xl bg-gradient-to-r from-[#162132] via-[#111827] to-[#162132] border border-[#c7a15a]/30 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="mt-14 p-8 rounded-3xl bg-gradient-to-r from-[#162132] via-[#111827] to-[#162132] border border-[#6f7f64]/30 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-[#c7a15a]/20 flex items-center justify-center text-[#c7a15a]">
+            <div className="w-12 h-12 rounded-2xl bg-[#6f7f64]/20 flex items-center justify-center text-[#6f7f64]">
               <Lock className="w-6 h-6" />
             </div>
             <div>
@@ -261,4 +261,5 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
     </section>
   );
 };
+
 

@@ -21,7 +21,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
     organization: '',
     role: isAcademy ? 'Dirección / Propietario del centro' : 'Equipo Directivo / Jefatura de FP',
     studentsCount: initialStudents ? `${initialStudents} alumnos` : (isAcademy ? '50 a 150 alumnos' : '100 a 300 alumnos'),
-    planInterest: initialPlan || (isAcademy ? 'Plan Marca (White-Label)' : 'Piloto Centro FP'),
+    planInterest: initialPlan || (isAcademy ? 'Plan Profesional' : 'Piloto Centro FP'),
     fpFamily: 'Informática y Comunicaciones (DAM / DAW / ASIR)',
     message: '',
   });
@@ -35,7 +35,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
     <section id="contact" className="py-28 md:py-36 relative bg-[#07080B] overflow-hidden">
       {/* Background Lighting */}
       <div className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full blur-[160px] pointer-events-none ${
-        isAcademy ? 'bg-[#c7a15a]/10' : 'bg-cyan-500/10'
+        isAcademy ? 'bg-[#6f7f64]/10' : 'bg-emerald-500/10'
       }`} />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
@@ -45,8 +45,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
           <div className="lg:col-span-5 space-y-8">
             <div className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border text-xs font-bold uppercase tracking-widest ${
               isAcademy
-                ? 'bg-[#c7a15a]/10 border-[#c7a15a]/20 text-[#c7a15a]'
-                : 'bg-cyan-500/10 border-cyan-500/20 text-cyan-400'
+                ? 'bg-[#6f7f64]/10 border-[#6f7f64]/20 text-[#6f7f64]'
+                : 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400'
             }`}>
               <Sparkles className="w-3.5 h-3.5" />
               <span>
@@ -93,17 +93,17 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                 ? isEnglish
                   ? 'Agenda una sesión personalizada de 20 minutos donde te mostraremos la plataforma en vivo con EPG, listening, gramática, progreso y niveles adaptados a tu academia de inglés.'
                   : isOther
-                    ? 'Agenda una sesión personalizada de 20 minutos donde te mostraremos cómo automatizar matrículas, seguimiento, pruebas y comunicación para autoescuelas, centros de ciencias, refuerzo y otros centros.'
-                    : 'Agenda una sesión personalizada de 20 minutos donde te mostraremos la plataforma en vivo con tus colores corporativos y calcularemos tu propuesta económica exacta para academias de oposiciones y otros centros.'
+                    ? 'Agenda una sesión personalizada de 20 minutos donde te mostraremos cómo automatizar matrículas, actividad, pruebas y comunicación para autoescuelas, centros de ciencias, refuerzo y otros centros.'
+                    : 'Agenda una sesión personalizada de 20 minutos donde te mostraremos la plataforma en vivo con tus colores corporativos y calcularemos una propuesta económica exacta para academias de oposiciones y otros centros.'
                 : 'Solicita una demostración en directo adaptada a las familias profesionales de tu centro para que tu claustro docente pruebe el roleplay y la evaluación curricular.'}
             </p>
 
             {/* Quality & Limited Capacity Callout (CRO Urgency) */}
             <div className="p-4 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center gap-3 text-xs text-white/70">
-              <Clock className={`w-5 h-5 shrink-0 ${isAcademy ? 'text-[#c7a15a]' : 'text-cyan-400'}`} />
+              <Clock className={`w-5 h-5 shrink-0 ${isAcademy ? 'text-[#6f7f64]' : 'text-emerald-400'}`} />
               <div>
                 <strong className="text-white block">Capacidad de Onboarding Mensual:</strong>
-                <span>Máx. 3 centros por mes para garantizar despliegue llave en mano y soporte continuo.</span>
+                <span>Máx. 3 centros por mes para garantizar una puesta en marcha cuidada y soporte continuo.</span>
               </div>
             </div>
 
@@ -149,7 +149,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
 
               <div className="flex items-center gap-4 p-4 rounded-2xl bg-[#111827] border border-white/5">
                 <div className={`w-12 h-12 rounded-xl bg-[#080d15] flex items-center justify-center ${
-                  isAcademy ? 'text-[#c7a15a]' : 'text-cyan-400'
+                  isAcademy ? 'text-[#6f7f64]' : 'text-emerald-400'
                 }`}>
                   <Mail className="w-5 h-5" />
                 </div>
@@ -219,7 +219,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         placeholder="Ej. Carlos Mendoza"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#c7a15a] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
                       />
                     </div>
 
@@ -233,7 +233,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         placeholder="carlos@centroeducativo.es"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#c7a15a] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -249,7 +249,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         placeholder="+34 612 345 678"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#c7a15a] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
                       />
                     </div>
 
@@ -263,7 +263,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         placeholder={isAcademy ? (isEnglish ? 'Oxford English Center / Wall Street School' : isOther ? 'Autoescuela / Academia de Física / Centro de Refuerzo' : 'Academia Oposiciones Élite') : 'IES / Centro de FP San Viator'}
                         value={formData.organization}
                         onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#c7a15a] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -276,7 +276,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                       <select
                         value={formData.studentsCount}
                         onChange={(e) => setFormData({ ...formData, studentsCount: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#c7a15a] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
                       >
                         <option value="10 a 50 alumnos">10 a 50 alumnos</option>
                         <option value="50 a 150 alumnos">50 a 150 alumnos</option>
@@ -293,11 +293,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         <select
                           value={formData.planInterest}
                           onChange={(e) => setFormData({ ...formData, planInterest: e.target.value })}
-                          className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#c7a15a] focus:outline-none transition-colors"
+                          className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
                         >
                           <option value="Plan Iniciación">Plan Iniciación (2 itinerarios / materias)</option>
-                          <option value="Plan Marca (White-Label)">Plan Marca (Marca Blanca 100%)</option>
-                          <option value="Plan Ecosistema">Plan Ecosistema (Desarrollo a Medida)</option>
+                          <option value="Plan Profesional">Plan Profesional (Identidad propia)</option>
+                          <option value="Plan A Medida">Plan A Medida (Desarrollo específico)</option>
                           <option value="Aún no estoy seguro">Aún no estoy seguro / Asesoramiento</option>
                         </select>
                       </div>
@@ -309,7 +309,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         <select
                           value={formData.fpFamily}
                           onChange={(e) => setFormData({ ...formData, fpFamily: e.target.value })}
-                          className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#c7a15a] focus:outline-none transition-colors"
+                          className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
                         >
                           <option value="Informática y Comunicaciones">Informática y Comunicaciones (DAM / DAW / ASIR)</option>
                           <option value="Sanidad">Sanidad (Cuidados, Farmacia, Laboratorio...)</option>
@@ -336,14 +336,14 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                       rows={3}
                       placeholder={isAcademy
                         ? isEnglish
-                          ? 'Ej. Somos una academia de inglés. Queremos IA para EPG, listening, gramática, speaking, progreso por niveles y seguimiento...'
+                          ? 'Ej. Somos una academia de inglés. Queremos IA para EPG, listening, gramática, speaking y progreso por niveles...'
                           : isOther
-                            ? 'Ej. Somos una autoescuela, una academia de física o un centro de refuerzo. Queremos IA para matrículas, pruebas, tutorías y seguimiento...'
-                            : 'Ej. Somos una academia de oposiciones. Queremos IA para tests, tutorías y seguimiento...'
+                            ? 'Ej. Somos una autoescuela, una academia de física o un centro de refuerzo. Queremos IA para matrículas, pruebas, tutorías y atención al alumno...'
+                            : 'Ej. Somos una academia de oposiciones. Queremos IA para tests, tutorías y corrección asistida...'
                         : 'Ej. Nos interesa especialmente el roleplay por voz para el módulo de FOL / IPE y atención al cliente en Sanidad...'}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#c7a15a] focus:outline-none transition-colors resize-none"
+                      className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#6f7f64] focus:outline-none transition-colors resize-none"
                     />
                   </div>
 
@@ -351,8 +351,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                     type="submit"
                     className={`w-full py-4 rounded-xl font-manrope font-black text-xs uppercase tracking-widest shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2 ${
                       isAcademy
-                        ? 'bg-gradient-to-r from-[#c7a15a] via-[#d9bc77] to-[#b68f4e] text-black shadow-[#c7a15a]/25'
-                        : 'bg-gradient-to-r from-cyan-400 via-cyan-300 to-blue-400 text-black shadow-cyan-500/25'
+                        ? 'bg-gradient-to-r from-[#6f7f64] via-[#bcc8b7] to-[#7b8d74] text-black shadow-[#6f7f64]/25'
+                        : 'bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 text-black shadow-emerald-500/25'
                     }`}
                   >
                     <span>{isAcademy ? 'Solicitar Demostración y Presupuesto' : 'Solicitar Demostración Piloto en Directo'}</span>
@@ -372,3 +372,5 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
     </section>
   );
 };
+
+

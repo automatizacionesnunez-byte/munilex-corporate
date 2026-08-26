@@ -13,7 +13,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
       badge: 'Comparativa para Oposiciones',
       titleTop: '¿Desarrollar por tu cuenta',
       titleBottom: 'o escalar con Munilex?',
-      intro: 'Descubre por qué las academias de oposiciones delegan su infraestructura tecnológica para centrarse en captar, enseñar y retener alumnos, sin perder control de su marca ni de su margen.',
+      intro: 'Descubre por qué muchas academias de oposiciones prefieren apoyarse en una plataforma ya preparada para centrarse en captar, enseñar y retener alumnos, sin perder control de su marca ni de su margen.',
       ctaTitle: '¿Listo para lanzar tu propia plataforma en 14 días?',
       ctaBody: 'Agenda una sesión de consultoría técnica sin compromiso con nuestros fundadores.',
       button: 'Solicitar Demostración',
@@ -22,7 +22,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
       badge: 'Comparativa para Inglés',
       titleTop: '¿Crear tu propia academia de inglés',
       titleBottom: 'o apoyarte en Munilex?',
-      intro: 'Descubre por qué las academias de inglés delegan su infraestructura tecnológica para centrarse en enseñar, practicar y medir progreso por niveles, sin perder control de su marca ni de su margen.',
+      intro: 'Descubre por qué muchas academias de inglés prefieren una base tecnológica ya resuelta para centrarse en enseñar, practicar y medir progreso por niveles, sin perder control de su marca ni de su margen.',
       ctaTitle: '¿Listo para lanzar tu plataforma de inglés en 14 días?',
       ctaBody: 'Agenda una sesión de consultoría sin compromiso para ver EPG, listening, grammar y progreso en vivo.',
       button: 'Solicitar Demo de Inglés',
@@ -31,7 +31,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
       badge: 'Comparativa para Otros Centros',
       titleTop: '¿Gestionar todo a mano',
       titleBottom: 'o automatizar tu centro con IA?',
-      intro: 'Descubre por qué autoescuelas, centros de ciencias y otros centros delegan su infraestructura tecnológica para centrarse en enseñar y automatizar más tareas, sin perder control de su marca ni de su margen.',
+      intro: 'Descubre por qué autoescuelas, centros de ciencias y otros centros prefieren una base tecnológica ya resuelta para centrarse en enseñar y automatizar más tareas, sin perder control de su marca ni de su margen.',
       ctaTitle: '¿Listo para lanzar tu plataforma para tu centro en 14 días?',
       ctaBody: 'Agenda una sesión de consultoría técnica sin compromiso con nuestros fundadores.',
       button: 'Solicitar Demostración',
@@ -42,7 +42,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
     {
       factor: 'Inversión Inicial en Software',
       traditional: '25.000 € – 60.000 € contratando agencia o programadores',
-      munilex: '0 € de desarrollo. Despliegue en cuotas por alumno activo.',
+      munilex: '0 € de desarrollo. Puesta en marcha en cuotas por alumno activo.',
     },
     {
       factor: 'Tiempo de Lanzamiento',
@@ -77,7 +77,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c7a15a]/10 border border-[#c7a15a]/20 text-xs font-bold text-[#c7a15a] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#6f7f64]/10 border border-[#6f7f64]/20 text-xs font-bold text-[#6f7f64] uppercase tracking-widest mb-4">
             <Zap className="w-3.5 h-3.5" />
             <span>{copy.badge}</span>
           </div>
@@ -99,9 +99,9 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
               <ShieldAlert className="w-4 h-4" />
               <span>Modelo Tradicional</span>
             </div>
-            <div className="col-span-4 text-[#c7a15a] flex items-center gap-1.5">
+            <div className="col-span-4 text-[#6f7f64] flex items-center gap-1.5">
               <Sparkles className="w-4 h-4" />
-              <span>Ecosistema Munilex</span>
+              <span>Plataforma Munilex</span>
             </div>
           </div>
 
@@ -125,8 +125,8 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
                   <span>{item.traditional}</span>
                 </div>
 
-                <div className="col-span-6 sm:col-span-4 font-semibold text-white flex items-start gap-2 bg-[#c7a15a]/5 p-3 rounded-xl border border-[#c7a15a]/20">
-                  <Check className="w-4 h-4 text-[#c7a15a] shrink-0 mt-0.5" />
+                <div className="col-span-6 sm:col-span-4 font-semibold text-white flex items-start gap-2 bg-[#6f7f64]/5 p-3 rounded-xl border border-[#6f7f64]/20">
+                  <Check className="w-4 h-4 text-[#6f7f64] shrink-0 mt-0.5" />
                   <span>{item.munilex}</span>
                 </div>
               </motion.div>
@@ -141,7 +141,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
             </div>
             <button
               onClick={onOpenContact}
-              className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#c7a15a] to-[#d9bc77] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-[#c7a15a]/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
+              className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#6f7f64] to-[#bcc8b7] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-[#6f7f64]/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
             >
               {copy.button}
             </button>
@@ -152,4 +152,5 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
     </section>
   );
 };
+
 
