@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const familySubtitle = () => {
     if (activeMainTab === 'fp') return 'Soluciones IA para Centros de FP';
-    if (activeMainTab === 'ingles') return 'IA para academias de idiomas';
+    if (activeMainTab === 'ingles') return 'IA para academias de idiomas: EPG, listening, grammar y progreso';
     if (activeMainTab === 'otros') return 'IA para autoescuelas, refuerzo y centros especializados';
     return 'Tecnología B2B para Academias';
   };

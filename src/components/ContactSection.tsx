@@ -66,7 +66,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
 
             <p className="text-base text-white/60 leading-relaxed">
               {isAcademy
-                ? 'Agenda una sesión personalizada de 20 minutos donde te mostraremos la plataforma en vivo con tus colores corporativos y calcularemos tu propuesta económica exacta para academias de oposiciones, inglés, autoescuelas y centros de refuerzo.'
+                ? 'Agenda una sesión personalizada de 20 minutos donde te mostraremos la plataforma en vivo con tus colores corporativos y calcularemos tu propuesta económica exacta para academias de oposiciones, inglés, autoescuelas y centros de refuerzo. Si trabajas inglés, también te enseñamos EPG, listening, gramática, progreso y niveles adaptados.'
                 : 'Solicita una demostración en directo adaptada a las familias profesionales de tu centro para que tu claustro docente pruebe el roleplay y la evaluación curricular.'}
             </p>
 
@@ -295,7 +295,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                     <textarea
                       rows={3}
                       placeholder={isAcademy
-                        ? 'Ej. Somos una academia de oposiciones, un centro de inglés o una autoescuela. Queremos IA para tests, tutorías y seguimiento...'
+                        ? 'Ej. Somos una academia de oposiciones, un centro de inglés o una autoescuela. Queremos IA para tests, tutorías, EPG, listening, gramática, progreso por niveles y seguimiento...'
                         : 'Ej. Nos interesa especialmente el roleplay por voz para el módulo de FOL / IPE y atención al cliente en Sanidad...'}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}

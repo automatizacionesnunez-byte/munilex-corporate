@@ -102,7 +102,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                 </h3>
                 <p className="text-xs text-white/60 leading-relaxed mb-6">
                   {isAcademy
-                    ? 'Incluye catálogo de temarios oficiales, arquitectura de marca blanca, comparativa de costes y modelo de contrato.'
+                    ? 'Incluye catálogo de itinerarios, arquitectura de marca blanca, comparativa de costes y modelo de contrato, con foco también en academias de inglés y otros centros que trabajen EPG, listening, grammar y progreso por niveles.'
                     : 'Incluye especificación pedagógica de roleplay, rúbricas curriculares y plan de formación al claustro docente.'}
                 </p>
 

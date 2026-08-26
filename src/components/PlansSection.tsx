@@ -55,7 +55,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
       ],
       features: [
         'Todo lo incluido en el Plan Iniciación',
-        'Catálogo COMPLETO de itinerarios y materias (idiomas, refuerzo, autoescuela, técnica, etc.)',
+        'Catálogo COMPLETO de itinerarios y materias (idiomas, EPG, listening, grammar, refuerzo, autoescuela, técnica, etc.)',
         'Marca Blanca 100% (Logo, paleta HSL, tipografías)',
         'Dominio propio personalizado (ej. campus.tuacademia.es)',
         '1 Funcionalidad extra a medida incluida',
