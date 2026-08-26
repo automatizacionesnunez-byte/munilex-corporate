@@ -24,7 +24,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
     <section className="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
       {/* Background Gradients & Glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-[#6f7f64]/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-[#10b981]/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[radial-gradient(#00F0FF_1px,transparent_1px)] [background-size:24px_24px]" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
@@ -269,7 +269,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                         <span className="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-mono">Repaso #3</span>
                       </div>
                       <div className="p-4 bg-[#080d15] rounded-xl border border-white/5 text-xs text-white/80 mb-4">
-                        <div className="text-[#6f7f64] font-bold mb-1">¿Qué principio SOLID establece que una clase debe tener una única razón para cambiar?</div>
+                        <div className="text-[#10b981] font-bold mb-1">¿Qué principio SOLID establece que una clase debe tener una única razón para cambiar?</div>
                         <div className="text-emerald-400 font-semibold mt-2">→ Principio de Responsabilidad Única (SRP).</div>
                       </div>
                     </div>
@@ -372,5 +372,6 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
     </section>
   );
 };
+
 
 

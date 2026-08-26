@@ -35,7 +35,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
     <section id="contact" className="py-28 md:py-36 relative bg-[#07080B] overflow-hidden">
       {/* Background Lighting */}
       <div className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full blur-[160px] pointer-events-none ${
-        isAcademy ? 'bg-[#6f7f64]/10' : 'bg-emerald-500/10'
+        isAcademy ? 'bg-[#10b981]/10' : 'bg-emerald-500/10'
       }`} />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
@@ -45,7 +45,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
           <div className="lg:col-span-5 space-y-8">
             <div className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border text-xs font-bold uppercase tracking-widest ${
               isAcademy
-                ? 'bg-[#6f7f64]/10 border-[#6f7f64]/20 text-[#6f7f64]'
+                ? 'bg-[#10b981]/10 border-[#10b981]/20 text-[#10b981]'
                 : 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400'
             }`}>
               <Sparkles className="w-3.5 h-3.5" />
@@ -100,7 +100,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
 
             {/* Quality & Limited Capacity Callout (CRO Urgency) */}
             <div className="p-4 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center gap-3 text-xs text-white/70">
-              <Clock className={`w-5 h-5 shrink-0 ${isAcademy ? 'text-[#6f7f64]' : 'text-emerald-400'}`} />
+              <Clock className={`w-5 h-5 shrink-0 ${isAcademy ? 'text-[#10b981]' : 'text-emerald-400'}`} />
               <div>
                 <strong className="text-white block">Capacidad de Onboarding Mensual:</strong>
                 <span>Máx. 3 centros por mes para garantizar una puesta en marcha cuidada y soporte continuo.</span>
@@ -149,7 +149,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
 
               <div className="flex items-center gap-4 p-4 rounded-2xl bg-[#111827] border border-white/5">
                 <div className={`w-12 h-12 rounded-xl bg-[#080d15] flex items-center justify-center ${
-                  isAcademy ? 'text-[#6f7f64]' : 'text-emerald-400'
+                  isAcademy ? 'text-[#10b981]' : 'text-emerald-400'
                 }`}>
                   <Mail className="w-5 h-5" />
                 </div>
@@ -219,7 +219,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         placeholder="Ej. Carlos Mendoza"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#10b981] focus:outline-none transition-colors"
                       />
                     </div>
 
@@ -233,7 +233,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         placeholder="carlos@centroeducativo.es"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#10b981] focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -249,7 +249,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         placeholder="+34 612 345 678"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#10b981] focus:outline-none transition-colors"
                       />
                     </div>
 
@@ -263,7 +263,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         placeholder={isAcademy ? (isEnglish ? 'Oxford English Center / Wall Street School' : isOther ? 'Autoescuela / Academia de Física / Centro de Refuerzo' : 'Academia Oposiciones Élite') : 'IES / Centro de FP San Viator'}
                         value={formData.organization}
                         onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#10b981] focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -276,7 +276,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                       <select
                         value={formData.studentsCount}
                         onChange={(e) => setFormData({ ...formData, studentsCount: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#10b981] focus:outline-none transition-colors"
                       >
                         <option value="10 a 50 alumnos">10 a 50 alumnos</option>
                         <option value="50 a 150 alumnos">50 a 150 alumnos</option>
@@ -293,7 +293,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         <select
                           value={formData.planInterest}
                           onChange={(e) => setFormData({ ...formData, planInterest: e.target.value })}
-                          className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
+                          className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#10b981] focus:outline-none transition-colors"
                         >
                           <option value="Plan Iniciación">Plan Iniciación (2 itinerarios / materias)</option>
                           <option value="Plan Profesional">Plan Profesional (Identidad propia)</option>
@@ -309,7 +309,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         <select
                           value={formData.fpFamily}
                           onChange={(e) => setFormData({ ...formData, fpFamily: e.target.value })}
-                          className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#6f7f64] focus:outline-none transition-colors"
+                          className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white text-sm focus:border-[#10b981] focus:outline-none transition-colors"
                         >
                           <option value="Informática y Comunicaciones">Informática y Comunicaciones (DAM / DAW / ASIR)</option>
                           <option value="Sanidad">Sanidad (Cuidados, Farmacia, Laboratorio...)</option>
@@ -343,7 +343,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                         : 'Ej. Nos interesa especialmente el roleplay por voz para el módulo de FOL / IPE y atención al cliente en Sanidad...'}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#6f7f64] focus:outline-none transition-colors resize-none"
+                      className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#10b981] focus:outline-none transition-colors resize-none"
                     />
                   </div>
 
@@ -351,7 +351,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                     type="submit"
                     className={`w-full py-4 rounded-xl font-manrope font-black text-xs uppercase tracking-widest shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2 ${
                       isAcademy
-                        ? 'bg-gradient-to-r from-[#6f7f64] via-[#bcc8b7] to-[#7b8d74] text-black shadow-[#6f7f64]/25'
+                        ? 'bg-gradient-to-r from-[#10b981] via-[#a7f3d0] to-[#7b8d74] text-black shadow-[#10b981]/25'
                         : 'bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 text-black shadow-emerald-500/25'
                     }`}
                   >
@@ -372,5 +372,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
     </section>
   );
 };
+
 
 

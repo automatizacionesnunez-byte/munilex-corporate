@@ -41,13 +41,13 @@ export const TeamSection: React.FC = () => {
   return (
     <section id="team" className="py-28 md:py-36 relative bg-[#07080B] border-t border-white/5">
       {/* Glow background */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#6f7f64]/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#10b981]/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#6f7f64]/10 border border-[#6f7f64]/20 text-xs font-bold text-[#6f7f64] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#10b981]/10 border border-[#10b981]/20 text-xs font-bold text-[#10b981] uppercase tracking-widest mb-4">
             <Scale className="w-3.5 h-3.5" />
             <span>Liderazgo Jurídico y Tecnológico</span>
           </div>
@@ -69,7 +69,7 @@ export const TeamSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="bg-[#111827] rounded-[3rem] p-8 sm:p-10 border border-white/10 hover:border-[#6f7f64]/40 transition-all duration-300 flex flex-col justify-between group shadow-xl shadow-black/60"
+              className="bg-[#111827] rounded-[3rem] p-8 sm:p-10 border border-white/10 hover:border-[#10b981]/40 transition-all duration-300 flex flex-col justify-between group shadow-xl shadow-black/60"
             >
               <div>
                 {/* Header Profile Photo & Badges */}
@@ -78,15 +78,15 @@ export const TeamSection: React.FC = () => {
                     <img
                       src={founder.image}
                       alt={founder.name}
-                      className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl object-cover border-2 border-[#6f7f64]/30 shadow-lg shadow-[#6f7f64]/10 group-hover:scale-105 transition-transform duration-300"
+                      className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl object-cover border-2 border-[#10b981]/30 shadow-lg shadow-[#10b981]/10 group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute -bottom-2 -right-2 p-1.5 rounded-xl bg-[#080d15] border border-[#6f7f64]/30 text-[#6f7f64]">
+                    <div className="absolute -bottom-2 -right-2 p-1.5 rounded-xl bg-[#080d15] border border-[#10b981]/30 text-[#10b981]">
                       <Brain className="w-4 h-4" />
                     </div>
                   </div>
 
                   <div>
-                    <span className="inline-block text-[10px] font-black uppercase tracking-wider text-[#6f7f64] bg-[#6f7f64]/10 px-2.5 py-1 rounded-md mb-2">
+                    <span className="inline-block text-[10px] font-black uppercase tracking-wider text-[#10b981] bg-[#10b981]/10 px-2.5 py-1 rounded-md mb-2">
                       {founder.role}
                     </span>
                     <h3 className="text-xl sm:text-2xl font-manrope font-black text-white leading-tight mb-1">
@@ -145,7 +145,7 @@ export const TeamSection: React.FC = () => {
 
         {/* Corporate Trust Badge */}
         <div className="mt-14 max-w-2xl mx-auto p-6 rounded-2xl bg-[#111827]/60 border border-white/5 text-center text-xs text-white/50 flex items-center justify-center gap-3">
-          <ShieldCheck className="w-5 h-5 text-[#6f7f64] shrink-0" />
+          <ShieldCheck className="w-5 h-5 text-[#10b981] shrink-0" />
           <span>
             <strong>Munilex Academy, S.L.</strong> (CIF: B88655980) · Sociedad mercantil registrada en España.
           </span>
@@ -155,4 +155,5 @@ export const TeamSection: React.FC = () => {
     </section>
   );
 };
+
 

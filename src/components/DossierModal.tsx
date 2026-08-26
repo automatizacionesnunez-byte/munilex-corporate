@@ -53,7 +53,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
           >
             {/* Background Glow */}
             <div className={`absolute top-0 right-0 w-60 h-60 rounded-full blur-3xl pointer-events-none ${
-              isAcademy ? 'bg-[#6f7f64]/10' : 'bg-emerald-500/10'
+              isAcademy ? 'bg-[#10b981]/10' : 'bg-emerald-500/10'
             }`} />
 
             {/* Close Button */}
@@ -88,12 +88,12 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <div className={`p-2 rounded-xl border ${
-                    isAcademy ? 'bg-[#6f7f64]/10 border-[#6f7f64]/30 text-[#6f7f64]' : 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400'
+                    isAcademy ? 'bg-[#10b981]/10 border-[#10b981]/30 text-[#10b981]' : 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400'
                   }`}>
                     <FileText className="w-5 h-5" />
                   </div>
                   <span className={`text-[10px] font-black uppercase tracking-widest ${
-                    isAcademy ? 'text-[#6f7f64]' : 'text-emerald-400'
+                    isAcademy ? 'text-[#10b981]' : 'text-emerald-400'
                   }`}>
                     {isAcademy
                       ? isEnglish
@@ -135,7 +135,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                       placeholder="Ej. Laura Gómez"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#6f7f64] focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#10b981] focus:outline-none"
                     />
                   </div>
 
@@ -149,7 +149,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                       placeholder="laura@centroeducativo.es"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#6f7f64] focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#10b981] focus:outline-none"
                     />
                   </div>
 
@@ -164,7 +164,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                         placeholder="+34 600 000 000"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#6f7f64] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#10b981] focus:outline-none"
                       />
                     </div>
 
@@ -184,7 +184,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                         placeholder={isAcademy ? (isEnglish ? 'English School' : isOther ? 'Autoescuela / Centro de Refuerzo' : 'Centro de formación') : 'Instituto FP'}
                         value={formData.organization}
                         onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#6f7f64] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#10b981] focus:outline-none"
                       />
                     </div>
                   </div>
@@ -193,7 +193,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                     type="submit"
                     className={`w-full py-4 rounded-xl font-manrope font-black text-xs uppercase tracking-widest transition-all cursor-pointer flex items-center justify-center gap-2 shadow-xl ${
                       isAcademy
-                        ? 'bg-gradient-to-r from-[#6f7f64] to-[#bcc8b7] text-black shadow-[#6f7f64]/25 hover:scale-[1.01]'
+                        ? 'bg-gradient-to-r from-[#10b981] to-[#a7f3d0] text-black shadow-[#10b981]/25 hover:scale-[1.01]'
                         : 'bg-gradient-to-r from-emerald-400 to-emerald-500 text-black shadow-emerald-500/25 hover:scale-[1.01]'
                     }`}
                   >
@@ -214,5 +214,6 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
     </AnimatePresence>
   );
 };
+
 
 

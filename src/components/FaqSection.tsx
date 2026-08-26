@@ -38,7 +38,7 @@ export const FaqSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#6f7f64]/10 border border-[#6f7f64]/20 text-xs font-bold text-[#6f7f64] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#10b981]/10 border border-[#10b981]/20 text-xs font-bold text-[#10b981] uppercase tracking-widest mb-4">
             <HelpCircle className="w-3.5 h-3.5" />
             <span>Resolución de Dudas</span>
           </div>
@@ -64,8 +64,8 @@ export const FaqSection: React.FC = () => {
                 <span className="font-manrope font-bold text-white text-base sm:text-lg">
                   {faq.q}
                 </span>
-                <div className={`w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-[#6f7f64] shrink-0 transition-transform duration-300 ${
-                  openIndex === index ? 'rotate-180 bg-[#6f7f64]/20' : ''
+                <div className={`w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-[#10b981] shrink-0 transition-transform duration-300 ${
+                  openIndex === index ? 'rotate-180 bg-[#10b981]/20' : ''
                 }`}>
                   <ChevronDown className="w-4 h-4" />
                 </div>
@@ -93,4 +93,5 @@ export const FaqSection: React.FC = () => {
     </section>
   );
 };
+
 

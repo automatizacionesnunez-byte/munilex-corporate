@@ -61,9 +61,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
   return (
     <section className="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
       {/* Background Gradients & Glows */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#6f7f64]/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#10b981]/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[radial-gradient(#6f7f64_1px,transparent_1px)] [background-size:24px_24px]" />
+      <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:24px_24px]" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         {/* Top Floating Badge */}
@@ -72,10 +72,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             initial={{ opacity: 0, y: -15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-panel border border-[#6f7f64]/30 text-xs font-semibold text-[#eef2e7] shadow-lg shadow-[#6f7f64]/10"
+            className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-panel border border-[#10b981]/30 text-xs font-semibold text-[#ecfdf5] shadow-lg shadow-[#10b981]/10"
           >
-            <span className="w-2 h-2 rounded-full bg-[#6f7f64] animate-ping" />
-            <span className="text-[#6f7f64] font-black uppercase tracking-wider text-[10px]">{heroCopy.badge}</span>
+            <span className="w-2 h-2 rounded-full bg-[#10b981] animate-ping" />
+            <span className="text-[#10b981] font-black uppercase tracking-wider text-[10px]">{heroCopy.badge}</span>
             <span className="text-white/30">•</span>
             <span>Plataforma corporativa de IA educativa</span>
           </motion.div>
@@ -108,7 +108,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
           </motion.p>
 
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-white/70 mb-10">
-            <span className="w-2 h-2 rounded-full bg-[#6f7f64]" />
+            <span className="w-2 h-2 rounded-full bg-[#10b981]" />
             <span>{heroCopy.simulator}</span>
           </div>
 
@@ -121,7 +121,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
           >
             <button
               onClick={onOpenContact}
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-[#6f7f64] via-[#bcc8b7] to-[#7b8d74] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-[#6f7f64]/25 hover:shadow-[#6f7f64]/40 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center gap-3"
+              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-[#10b981] via-[#a7f3d0] to-[#7b8d74] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-[#10b981]/25 hover:shadow-[#10b981]/40 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center gap-3"
             >
               <span>{heroCopy.ctaPrimary}</span>
               <ArrowRight className="w-4 h-4" />
@@ -129,29 +129,29 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
 
             <a
               href="#calculator"
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-manrope font-bold text-xs uppercase tracking-widest transition-all duration-200 flex items-center justify-center gap-2 hover:border-[#6f7f64]/40"
+              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-manrope font-bold text-xs uppercase tracking-widest transition-all duration-200 flex items-center justify-center gap-2 hover:border-[#10b981]/40"
             >
               <span>{heroCopy.ctaSecondary}</span>
-              <ChevronRight className="w-4 h-4 text-[#6f7f64]" />
+              <ChevronRight className="w-4 h-4 text-[#10b981]" />
             </a>
           </motion.div>
 
           {/* Quick Trust Highlights */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-white/50 font-medium pb-4">
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#6f7f64]" />
+              <CheckCircle2 className="w-4 h-4 text-[#10b981]" />
               <span>Puesta en marcha acompañada</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#6f7f64]" />
+              <CheckCircle2 className="w-4 h-4 text-[#10b981]" />
               <span>Sin costes de servidores propios</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#6f7f64]" />
+              <CheckCircle2 className="w-4 h-4 text-[#10b981]" />
               <span>Tarifas decrecientes por volumen</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#6f7f64]" />
+              <CheckCircle2 className="w-4 h-4 text-[#10b981]" />
               <span>Cumplimiento RGPD & EU AI Act</span>
             </div>
           </div>
@@ -185,7 +185,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                 onClick={() => setActiveTab('eval')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'eval'
-                    ? 'bg-[#6f7f64] text-black shadow-md'
+                    ? 'bg-[#10b981] text-black shadow-md'
                     : 'text-white/60 hover:text-white'
                 }`}
               >
@@ -196,7 +196,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                 onClick={() => setActiveTab('test')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'test'
-                    ? 'bg-[#6f7f64] text-black shadow-md'
+                    ? 'bg-[#10b981] text-black shadow-md'
                     : 'text-white/60 hover:text-white'
                 }`}
                 >
@@ -207,7 +207,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                 onClick={() => setActiveTab('tutor')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'tutor'
-                    ? 'bg-[#6f7f64] text-black shadow-md'
+                    ? 'bg-[#10b981] text-black shadow-md'
                     : 'text-white/60 hover:text-white'
                 }`}
                 >
@@ -230,7 +230,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                 >
                   <div className="md:col-span-6 bg-[#080d15] p-6 rounded-2xl border border-white/5">
                     <div className="flex items-center justify-between mb-3">
-                      <span className="text-[10px] font-black uppercase text-[#6f7f64] tracking-wider">
+                      <span className="text-[10px] font-black uppercase text-[#10b981] tracking-wider">
                         {variant === 'ingles' ? 'Respuesta del Alumno' : 'Entrega del Alumno'}
                       </span>
                       <span className="text-[11px] text-white/40">
@@ -250,10 +250,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                     </p>
                   </div>
 
-                  <div className="md:col-span-6 bg-[#162132] p-6 rounded-2xl border border-[#6f7f64]/30 shadow-lg relative">
+                  <div className="md:col-span-6 bg-[#162132] p-6 rounded-2xl border border-[#10b981]/30 shadow-lg relative">
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
-                        <Sparkles className="w-4 h-4 text-[#6f7f64]" />
+                        <Sparkles className="w-4 h-4 text-[#10b981]" />
                         <span className="text-xs font-bold text-white">
                           {variant === 'ingles' ? 'Evaluación Inteligente Munilex English' : 'Evaluación Inteligente Munilex'}
                         </span>
@@ -281,7 +281,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                             : 'Devuelve correcciones accionables para mejorar en la siguiente entrega.'}
                         </span>
                       </div>
-                      <div className="p-3 bg-[#080d15] rounded-xl border border-white/5 text-[11px] text-[#eef2e7]">
+                      <div className="p-3 bg-[#080d15] rounded-xl border border-white/5 text-[11px] text-[#ecfdf5]">
                         💡 <strong>Consejo del Tutor IA:</strong>{' '}
                         {variant === 'ingles'
                           ? 'Repite la práctica por niveles y refuerza listening y grammar con correcciones cortas.'
@@ -301,7 +301,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                   className="bg-[#080d15] p-6 rounded-2xl border border-white/5"
                 >
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-bold text-[#6f7f64] uppercase tracking-wider">
+                    <span className="text-xs font-bold text-[#10b981] uppercase tracking-wider">
                       {variant === 'ingles' ? 'Ejercicio Adaptativo de Inglés' : 'Pregunta Adaptativa de Examen'}
                     </span>
                     <span className="text-xs text-white/40">
@@ -333,7 +333,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                     </div>
                   </div>
                   <div className="p-3 bg-[#111827] rounded-xl border border-white/5 text-xs text-white/60">
-                    <span className="font-bold text-[#6f7f64]">Justificación Pedagógica:</span>{' '}
+                    <span className="font-bold text-[#10b981]">Justificación Pedagógica:</span>{' '}
                     {variant === 'ingles'
                       ? 'El sistema explica por qué una respuesta funciona, qué falta y cómo subir de nivel al alumno con lenguaje claro.'
                       : 'El sistema explica por qué una respuesta funciona, qué falta y cómo subir la nota del alumno con lenguaje claro.'}
@@ -361,10 +361,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                   </div>
 
                   <div className="flex gap-3 max-w-2xl ml-auto flex-row-reverse">
-                    <div className="w-8 h-8 rounded-full bg-[#6f7f64] flex items-center justify-center text-xs font-black text-black shrink-0">
+                    <div className="w-8 h-8 rounded-full bg-[#10b981] flex items-center justify-center text-xs font-black text-black shrink-0">
                       IA
                     </div>
-                    <div className="p-4 rounded-2xl bg-[#162132] border border-[#6f7f64]/30 text-xs text-white/90 space-y-2">
+                    <div className="p-4 rounded-2xl bg-[#162132] border border-[#10b981]/30 text-xs text-white/90 space-y-2">
                       <p>
                         {variant === 'otros'
                           ? 'La corrección señala errores de fondo, de forma y de estructura para que el alumno mejore con rapidez y el centro gane orden operativo.'
@@ -386,10 +386,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-5xl mx-auto">
           {[
-            { value: "10-14 Días", label: "Tiempo de Entrega & Despliegue", icon: <Clock className="w-4 h-4 text-[#6f7f64]" /> },
-            { value: "+42", label: variant === 'ingles' ? 'Itinerarios, niveles y programas' : 'Itinerarios, materias y programas', icon: <Layers className="w-4 h-4 text-[#6f7f64]" /> },
-            { value: "100%", label: "Identidad propia (Tu logo y dominio)", icon: <Building2 className="w-4 h-4 text-[#6f7f64]" /> },
-            { value: "ENS & AI Act", label: "Máxima Seguridad Normativa", icon: <ShieldCheck className="w-4 h-4 text-[#6f7f64]" /> },
+            { value: "10-14 Días", label: "Tiempo de Entrega & Despliegue", icon: <Clock className="w-4 h-4 text-[#10b981]" /> },
+            { value: "+42", label: variant === 'ingles' ? 'Itinerarios, niveles y programas' : 'Itinerarios, materias y programas', icon: <Layers className="w-4 h-4 text-[#10b981]" /> },
+            { value: "100%", label: "Identidad propia (Tu logo y dominio)", icon: <Building2 className="w-4 h-4 text-[#10b981]" /> },
+            { value: "ENS & AI Act", label: "Máxima Seguridad Normativa", icon: <ShieldCheck className="w-4 h-4 text-[#10b981]" /> },
           ].map((stat, i) => (
             <div key={i} className="p-6 rounded-2xl glass-panel border border-white/5 text-center">
               <div className="flex justify-center mb-2">{stat.icon}</div>
@@ -402,5 +402,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
     </section>
   );
 };
+
 
 

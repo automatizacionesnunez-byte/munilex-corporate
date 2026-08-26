@@ -9,7 +9,7 @@ export const Footer = () => {
           {/* Col 1: Brand Info & Legal Entity (5 cols) */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-[#6f7f64] flex items-center justify-center font-manrope font-black text-black text-base">
+              <div className="w-8 h-8 rounded-lg bg-[#10b981] flex items-center justify-center font-manrope font-black text-black text-base">
                 M
               </div>
               <span className="font-manrope font-black text-lg text-white tracking-tight">
@@ -24,7 +24,7 @@ export const Footer = () => {
               <div className="font-bold text-white">Munilex Academy, S.L.</div>
               <div>CIF: B88655980</div>
               <div className="flex items-center gap-1.5">
-                <MapPin className="w-3 h-3 text-[#6f7f64]" />
+                <MapPin className="w-3 h-3 text-[#10b981]" />
                 <span>Madrid, España</span>
               </div>
             </div>
@@ -41,11 +41,11 @@ export const Footer = () => {
               Soluciones
             </div>
             <ul className="space-y-2">
-              <li><a href="#bento" className="hover:text-[#6f7f64] transition-colors">Identidad propia</a></li>
-              <li><a href="#bento" className="hover:text-[#6f7f64] transition-colors">Corrección IA Casos</a></li>
-              <li><a href="#bento" className="hover:text-[#6f7f64] transition-colors">Simulacros Oficiales</a></li>
-              <li><a href="#bento" className="hover:text-[#6f7f64] transition-colors">Tutor IA 24/7</a></li>
-              <li><a href="#team" className="hover:text-[#6f7f64] transition-colors">Equipo & Juristas</a></li>
+              <li><a href="#bento" className="hover:text-[#10b981] transition-colors">Identidad propia</a></li>
+              <li><a href="#bento" className="hover:text-[#10b981] transition-colors">Corrección IA Casos</a></li>
+              <li><a href="#bento" className="hover:text-[#10b981] transition-colors">Simulacros Oficiales</a></li>
+              <li><a href="#bento" className="hover:text-[#10b981] transition-colors">Tutor IA 24/7</a></li>
+              <li><a href="#team" className="hover:text-[#10b981] transition-colors">Equipo & Juristas</a></li>
             </ul>
           </div>
 
@@ -55,11 +55,11 @@ export const Footer = () => {
               Tarifas & ROI
             </div>
             <ul className="space-y-2">
-              <li><a href="#plans" className="hover:text-[#6f7f64] transition-colors">Plan Iniciación</a></li>
-              <li><a href="#plans" className="hover:text-[#6f7f64] transition-colors">Plan Profesional</a></li>
-              <li><a href="#plans" className="hover:text-[#6f7f64] transition-colors">Plan A Medida</a></li>
-              <li><a href="#calculator" className="hover:text-[#6f7f64] transition-colors">Calculadora ROI</a></li>
-              <li><a href="#security" className="hover:text-[#6f7f64] transition-colors">Seguridad & ENS</a></li>
+              <li><a href="#plans" className="hover:text-[#10b981] transition-colors">Plan Iniciación</a></li>
+              <li><a href="#plans" className="hover:text-[#10b981] transition-colors">Plan Profesional</a></li>
+              <li><a href="#plans" className="hover:text-[#10b981] transition-colors">Plan A Medida</a></li>
+              <li><a href="#calculator" className="hover:text-[#10b981] transition-colors">Calculadora ROI</a></li>
+              <li><a href="#security" className="hover:text-[#10b981] transition-colors">Seguridad & ENS</a></li>
             </ul>
           </div>
 
@@ -82,13 +82,13 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:administracion@munilex.es" className="flex items-center gap-1.5 hover:text-[#6f7f64] transition-colors">
-                  <Mail className="w-3.5 h-3.5 text-[#6f7f64] shrink-0" />
+                <a href="mailto:administracion@munilex.es" className="flex items-center gap-1.5 hover:text-[#10b981] transition-colors">
+                  <Mail className="w-3.5 h-3.5 text-[#10b981] shrink-0" />
                   <span>administracion@munilex.es</span>
                 </a>
               </li>
               <li className="pt-2 border-t border-white/5">
-                <a href="https://munilexacademy.es" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-white/70 hover:text-[#6f7f64] transition-colors">
+                <a href="https://munilexacademy.es" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-white/70 hover:text-[#10b981] transition-colors">
                   <span>Munilex Academy (Alumnos)</span>
                   <ArrowUpRight className="w-3 h-3 text-white/30" />
                 </a>
@@ -114,5 +114,6 @@ export const Footer = () => {
     </footer>
   );
 };
+
 
 

@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold: #6f7f64;
-  --color-gold-light: #eef2e7;
-  --color-gold-dark: #4b5847;
+  --color-gold: #10b981;
+  --color-gold-light: #ecfdf5;
+  --color-gold-dark: #14532d;
   --color-dark-bg: #080d15;
   --color-dark-card: #111827;
   --color-dark-card-hover: #162132;
@@ -28,10 +28,10 @@
   
   body {
     background:
-      radial-gradient(circle at top, rgba(111, 127, 100, 0.11), transparent 34%),
-      radial-gradient(circle at 20% 20%, rgba(238, 242, 231, 0.9), transparent 28%),
-      #f5f3ed;
-    color: #1f2937;
+      radial-gradient(circle at top, rgba(16, 185, 129, 0.12), transparent 34%),
+      radial-gradient(circle at 20% 20%, rgba(245, 158, 11, 0.12), transparent 28%),
+      #070b12;
+    color: #e5eef8;
     font-family: var(--font-inter), sans-serif;
   }
 
@@ -44,10 +44,10 @@
 
 /* Glassmorphism & Card Glows */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(17, 24, 39, 0.78);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-panel-hover {
@@ -55,24 +55,24 @@
 }
 
 .glass-panel-hover:hover {
-  background: rgba(255, 255, 255, 0.96);
-  border-color: rgba(111, 127, 100, 0.26);
+  background: rgba(22, 33, 50, 0.92);
+  border-color: rgba(16, 185, 129, 0.28);
   transform: translateY(-2px);
-  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.14), 0 0 28px -8px rgba(111, 127, 100, 0.15);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.72), 0 0 28px -8px rgba(16, 185, 129, 0.15);
 }
 
 .gold-glow {
-  box-shadow: 0 0 35px -8px rgba(111, 127, 100, 0.22);
+  box-shadow: 0 0 35px -8px rgba(16, 185, 129, 0.22);
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #f8fafc 10%, #eef2e7 50%, #6f7f64 100%);
+  background: linear-gradient(135deg, #fff7ed 10%, #f59e0b 45%, #10b981 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .cyan-gradient-text {
-  background: linear-gradient(135deg, #ffffff 20%, #eef2e7 50%, #bcc8b7 100%);
+  background: linear-gradient(135deg, #ffffff 20%, #d1fae5 50%, #10b981 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -108,15 +108,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f5f3ed;
+  background: #070b12;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b9c8b7;
+  background: #25313f;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6f7f64;
+  background: #10b981;
 }
+
 

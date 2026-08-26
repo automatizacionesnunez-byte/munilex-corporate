@@ -77,7 +77,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#6f7f64]/10 border border-[#6f7f64]/20 text-xs font-bold text-[#6f7f64] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#10b981]/10 border border-[#10b981]/20 text-xs font-bold text-[#10b981] uppercase tracking-widest mb-4">
             <Zap className="w-3.5 h-3.5" />
             <span>{copy.badge}</span>
           </div>
@@ -99,7 +99,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
               <ShieldAlert className="w-4 h-4" />
               <span>Modelo Tradicional</span>
             </div>
-            <div className="col-span-4 text-[#6f7f64] flex items-center gap-1.5">
+            <div className="col-span-4 text-[#10b981] flex items-center gap-1.5">
               <Sparkles className="w-4 h-4" />
               <span>Plataforma Munilex</span>
             </div>
@@ -125,8 +125,8 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
                   <span>{item.traditional}</span>
                 </div>
 
-                <div className="col-span-6 sm:col-span-4 font-semibold text-white flex items-start gap-2 bg-[#6f7f64]/5 p-3 rounded-xl border border-[#6f7f64]/20">
-                  <Check className="w-4 h-4 text-[#6f7f64] shrink-0 mt-0.5" />
+                <div className="col-span-6 sm:col-span-4 font-semibold text-white flex items-start gap-2 bg-[#10b981]/5 p-3 rounded-xl border border-[#10b981]/20">
+                  <Check className="w-4 h-4 text-[#10b981] shrink-0 mt-0.5" />
                   <span>{item.munilex}</span>
                 </div>
               </motion.div>
@@ -141,7 +141,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
             </div>
             <button
               onClick={onOpenContact}
-              className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#6f7f64] to-[#bcc8b7] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-[#6f7f64]/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
+              className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#10b981] to-[#a7f3d0] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-[#10b981]/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
             >
               {copy.button}
             </button>
@@ -152,5 +152,6 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
     </section>
   );
 };
+
 
 

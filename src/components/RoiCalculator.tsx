@@ -68,12 +68,12 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
   return (
     <section id="calculator" className="py-28 md:py-36 relative bg-[#07080B] overflow-hidden">
       {/* Background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#6f7f64]/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#10b981]/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#6f7f64]/10 border border-[#6f7f64]/20 text-xs font-bold text-[#6f7f64] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#10b981]/10 border border-[#10b981]/20 text-xs font-bold text-[#10b981] uppercase tracking-widest mb-4">
             <Calculator className="w-3.5 h-3.5" />
             <span>{copy.badge}</span>
           </div>
@@ -94,7 +94,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
             <div className="lg:col-span-7 space-y-8">
               {/* Plan Switcher */}
               <div>
-                <label className="block text-xs font-black uppercase text-[#6f7f64] tracking-wider mb-3">
+                <label className="block text-xs font-black uppercase text-[#10b981] tracking-wider mb-3">
                   1. Selecciona el Tipo de Plan
                 </label>
                 <div className="grid grid-cols-2 gap-3">
@@ -102,7 +102,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                     onClick={() => setSelectedPlan('iniciacion')}
                     className={`p-4 rounded-2xl border text-left transition-all cursor-pointer ${
                       selectedPlan === 'iniciacion'
-                        ? 'bg-[#1C1E2A] border-[#6f7f64] shadow-lg shadow-[#6f7f64]/10'
+                        ? 'bg-[#1C1E2A] border-[#10b981] shadow-lg shadow-[#10b981]/10'
                         : 'bg-[#080d15] border-white/5 text-white/60 hover:text-white'
                     }`}
                   >
@@ -114,11 +114,11 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                     onClick={() => setSelectedPlan('profesional')}
                     className={`p-4 rounded-2xl border text-left transition-all cursor-pointer relative ${
                       selectedPlan === 'profesional'
-                        ? 'bg-[#1C1E2A] border-[#6f7f64] shadow-lg shadow-[#6f7f64]/10'
+                        ? 'bg-[#1C1E2A] border-[#10b981] shadow-lg shadow-[#10b981]/10'
                         : 'bg-[#080d15] border-white/5 text-white/60 hover:text-white'
                     }`}
                   >
-                    <span className="absolute -top-2.5 right-3 px-2 py-0.5 rounded-full bg-[#6f7f64] text-black text-[9px] font-black uppercase">
+                    <span className="absolute -top-2.5 right-3 px-2 py-0.5 rounded-full bg-[#10b981] text-black text-[9px] font-black uppercase">
                       Recomendado
                     </span>
                     <div className="text-sm font-bold text-white mb-1">Plan Profesional</div>
@@ -134,7 +134,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                     2. Número de Alumnos Activos
                   </label>
                   <div className="flex items-center gap-1.5 px-3.5 py-1 rounded-xl bg-[#080d15] border border-white/10 text-white font-mono font-bold text-sm">
-                    <Users className="w-3.5 h-3.5 text-[#6f7f64]" />
+                    <Users className="w-3.5 h-3.5 text-[#10b981]" />
                     <span>{students} alumnos</span>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                   step="10"
                   value={students}
                   onChange={(e) => setStudents(parseInt(e.target.value))}
-                  className="w-full h-2 bg-[#080d15] rounded-lg appearance-none cursor-pointer accent-[#6f7f64]"
+                  className="w-full h-2 bg-[#080d15] rounded-lg appearance-none cursor-pointer accent-[#10b981]"
                 />
                 <div className="flex justify-between text-[11px] text-white/40 mt-2 font-mono">
                   <span>10 alumnos</span>
@@ -185,11 +185,11 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
             </div>
 
             {/* Results Side (Col 5) */}
-            <div className="lg:col-span-5 bg-[#080d15] p-8 rounded-[2.5rem] border border-[#6f7f64]/30 relative overflow-hidden flex flex-col justify-between h-full">
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#6f7f64]/10 rounded-full blur-2xl pointer-events-none" />
+            <div className="lg:col-span-5 bg-[#080d15] p-8 rounded-[2.5rem] border border-[#10b981]/30 relative overflow-hidden flex flex-col justify-between h-full">
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#10b981]/10 rounded-full blur-2xl pointer-events-none" />
 
               <div>
-                <div className="text-[10px] font-black uppercase text-[#6f7f64] tracking-widest mb-1">
+                <div className="text-[10px] font-black uppercase text-[#10b981] tracking-widest mb-1">
                   Desglose de Rentabilidad Mensual
                 </div>
                 <div className="text-xl font-manrope font-black text-white mb-6">
@@ -199,7 +199,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                 <div className="space-y-4 pb-6 border-b border-white/10">
                   <div className="flex justify-between items-center text-xs">
                     <span className="text-white/60">Coste Licencia Munilex / Alumno</span>
-                    <span className="font-mono font-bold text-[#6f7f64] bg-[#6f7f64]/10 px-2 py-0.5 rounded-md">
+                    <span className="font-mono font-bold text-[#10b981] bg-[#10b981]/10 px-2 py-0.5 rounded-md">
                       {costPerStudent.toFixed(2)} € / mes
                     </span>
                   </div>
@@ -233,7 +233,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
               {/* Action Button */}
               <button
                 onClick={() => onOpenContact(selectedPlan, students)}
-              className="w-full mt-8 py-4 rounded-xl bg-gradient-to-r from-[#6f7f64] to-[#bcc8b7] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-[#6f7f64]/20 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer flex items-center justify-center gap-2"
+              className="w-full mt-8 py-4 rounded-xl bg-gradient-to-r from-[#10b981] to-[#a7f3d0] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-[#10b981]/20 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>{copy.button} {students} Alumnos</span>
                 <ArrowRight className="w-4 h-4" />
@@ -246,5 +246,6 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
     </section>
   );
 };
+
 
 
