@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowRight, Building2, FileText, GraduationCap, Menu, Sparkles, X } from 'lucide-react';
+import { ArrowRight, Building2, FileText, GraduationCap, Languages, Layers3, Menu, Sparkles, X } from 'lucide-react';
 
 export type MainTabType = 'academias' | 'fp' | 'ingles' | 'otros';
 
@@ -142,7 +142,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
-            <span className="w-3.5 h-3.5 rounded-full border border-current" />
+            <Languages className="w-3.5 h-3.5" />
             <span>Inglés</span>
           </button>
 
@@ -154,7 +154,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
-            <span className="w-3.5 h-3.5 rounded-full border border-current" />
+            <Layers3 className="w-3.5 h-3.5" />
             <span>Otros centros</span>
           </button>
         </div>
@@ -237,7 +237,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                 activeMainTab === 'ingles' ? 'bg-[#c7a15a] text-black shadow-md' : 'text-white/60'
               }`}
             >
-              Inglés
+              <div className="flex items-center justify-center gap-1">
+                <Languages className="w-3.5 h-3.5" />
+                <span>Inglés</span>
+              </div>
             </button>
             <button
               onClick={() => {
@@ -248,7 +251,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                 activeMainTab === 'otros' ? 'bg-[#c7a15a] text-black shadow-md' : 'text-white/60'
               }`}
             >
-              Otros centros
+              <div className="flex items-center justify-center gap-1">
+                <Layers3 className="w-3.5 h-3.5" />
+                <span>Otros centros</span>
+              </div>
             </button>
           </div>
 

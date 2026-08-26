@@ -17,7 +17,7 @@ import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { DossierModal } from './components/DossierModal';
-import { Building2, GraduationCap } from 'lucide-react';
+import { Building2, GraduationCap, Languages, Layers3 } from 'lucide-react';
 
 export function App() {
   const [activeTab, setActiveTab] = useState<MainTabType>('academias');
@@ -80,7 +80,7 @@ export function App() {
                 : 'text-white/60 hover:text-white'
             }`}
           >
-            <span className="w-3.5 h-3.5 rounded-full border border-current" />
+            <Languages className="w-3.5 h-3.5" />
             <span>Inglés</span>
           </button>
           <button
@@ -91,7 +91,7 @@ export function App() {
                 : 'text-white/60 hover:text-white'
             }`}
           >
-            <span className="w-3.5 h-3.5 rounded-full border border-current" />
+            <Layers3 className="w-3.5 h-3.5" />
             <span>Otros centros</span>
           </button>
         </div>
