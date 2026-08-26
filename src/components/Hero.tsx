@@ -25,9 +25,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
   const heroCopy = {
     academias: {
       badge: 'Academia de Oposiciones',
-      title: 'Software de Marca Blanca e IA para Academias de Oposiciones',
+      titleTop: 'OPOSICIONES',
+      titleBottom: 'IA PARA ESCALAR TU ACADEMIA',
       subtitle: 'Tests, temarios, tutorías y seguimiento con IA bajo tu propio logo y dominio',
-      body: 'Digitaliza tu academia con plataforma propia en 14 días. Centraliza contenidos, tests, tutorías, seguimiento y corrección asistida por IA para escalar matrícula y retención sin perder tu marca.',
+      body: 'Digitaliza tu academia con plataforma propia en 14 días. Centraliza contenidos, tests, tutorías, seguimiento y corrección asistida por IA para preparar más alumnos con menos carga operativa.',
       ctaPrimary: 'Solicitar Demo de Oposiciones',
       ctaSecondary: 'Calcular Costes & Margen',
       simulator: 'Supuesto práctico y tutoría guiada',
@@ -35,9 +36,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
     },
     ingles: {
       badge: 'Academia de Inglés',
-      title: 'Software de Marca Blanca e IA para Academias de Inglés',
+      titleTop: 'INGLÉS',
+      titleBottom: 'IA PARA AVANZAR POR NIVELES',
       subtitle: 'EPG, listening, grammar, progreso y niveles adaptados a cada alumno',
-      body: 'Organiza clases, práctica y seguimiento con una experiencia clara para academias de idiomas. Automiza ejercicios, refuerzo y evolución por niveles para que el alumno vea avance real y el centro gane orden.',
+      body: 'Organiza clases, práctica y seguimiento con una experiencia clara para academias de idiomas. Automatiza ejercicios, refuerzo y evolución por niveles para que el alumno vea avance real y el centro gane orden.',
       ctaPrimary: 'Solicitar Demo de Inglés',
       ctaSecondary: 'Ver Progreso & Rentabilidad',
       simulator: 'Listening, grammar y evaluación',
@@ -45,8 +47,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
     },
     otros: {
       badge: 'Otros Centros',
-      title: 'Software de Marca Blanca e IA para Otros Centros',
-      subtitle: 'Autoescuelas, física, química, refuerzo, técnicas y formación especializada',
+      titleTop: 'OTROS CENTROS',
+      titleBottom: 'IA PARA AUTOMATIZAR TU DÍA A DÍA',
+      subtitle: 'Autoescuelas, física, química, refuerzo y formación especializada',
       body: 'Si enseñas una materia, un proceso o una habilidad, la IA puede ayudarte a automatizar pruebas, seguimiento, tutorías y atención al alumno. Ideal para centros muy concretos y también para negocios más generales.',
       ctaPrimary: 'Solicitar Demo para tu Centro',
       ctaSecondary: 'Ver Automatización & Margen',
@@ -86,13 +89,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-6xl lg:text-7xl font-manrope font-black tracking-tight leading-[1.02] text-white uppercase mb-8"
           >
-            TU MARCA.{' '}
+            {heroCopy.titleTop}{' '}
             <span className="gold-gradient-text block sm:inline">
-              NUESTRA IA.
+              {heroCopy.titleBottom}
             </span>
             <span className="block text-lg sm:text-2xl font-bold tracking-normal text-white/80 mt-3 normal-case">
-            {heroCopy.title}
-          </span>
+              {heroCopy.subtitle}
+            </span>
           </motion.h1>
 
           <motion.p
@@ -106,7 +109,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
 
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-white/70 mb-10">
             <span className="w-2 h-2 rounded-full bg-[#c7a15a]" />
-            <span>{heroCopy.subtitle}</span>
+            <span>{heroCopy.simulator}</span>
           </div>
 
           {/* Action CTAs */}
