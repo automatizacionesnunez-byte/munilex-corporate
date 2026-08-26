@@ -4,9 +4,16 @@ import { X, Check, Sparkles, ShieldAlert, Zap } from 'lucide-react';
 
 interface ComparisonSectionProps {
   onOpenContact: () => void;
+  variant: 'academias' | 'ingles' | 'otros';
 }
 
-export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenContact }) => {
+export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenContact, variant }) => {
+  const intro = {
+    academias: 'Descubre por qué las academias de oposiciones delegan su infraestructura tecnológica para centrarse en captar, enseñar y retener alumnos, sin perder control de su marca ni de su margen.',
+    ingles: 'Descubre por qué las academias de inglés delegan su infraestructura tecnológica para centrarse en enseñar, practicar y medir progreso por niveles, sin perder control de su marca ni de su margen.',
+    otros: 'Descubre por qué autoescuelas, centros de ciencias y otros centros delegan su infraestructura tecnológica para centrarse en enseñar y automatizar más tareas, sin perder control de su marca ni de su margen.',
+  }[variant];
+
   const comparisons = [
     {
       factor: 'Inversión Inicial en Software',
@@ -55,7 +62,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
             <span className="gold-gradient-text">ESCALAR CON MUNILEX?</span>
           </h2>
           <p className="text-base sm:text-lg text-white/60 leading-relaxed">
-            Descubre por qué los centros líderes delegan su infraestructura tecnológica para centrarse en captar, enseñar y retener alumnos, sin perder control de su marca ni de su margen.
+            {intro}
           </p>
         </div>
 
@@ -105,8 +112,20 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
           {/* Table Footer CTA */}
           <div className="p-8 bg-[#080d15] border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
-              <div className="font-bold text-white text-base">¿Listo para lanzar tu propia plataforma en 14 días?</div>
-              <div className="text-xs text-white/50">Agenda una sesión de consultoría técnica sin compromiso con nuestros fundadores.</div>
+              <div className="font-bold text-white text-base">
+                {variant === 'ingles'
+                  ? '¿Listo para lanzar tu plataforma de inglés en 14 días?'
+                  : variant === 'otros'
+                    ? '¿Listo para lanzar tu plataforma para tu centro en 14 días?'
+                    : '¿Listo para lanzar tu propia plataforma en 14 días?'}
+              </div>
+              <div className="text-xs text-white/50">
+                {variant === 'ingles'
+                  ? 'Agenda una sesión de consultoría sin compromiso para ver EPG, listening, grammar y progreso en vivo.'
+                  : variant === 'otros'
+                    ? 'Agenda una sesión de consultoría técnica sin compromiso con nuestros fundadores.'
+                    : 'Agenda una sesión de consultoría técnica sin compromiso con nuestros fundadores.'}
+              </div>
             </div>
             <button
               onClick={onOpenContact}

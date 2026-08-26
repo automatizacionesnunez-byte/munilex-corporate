@@ -11,6 +11,8 @@ interface ContactSectionProps {
 
 export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, initialPlan, initialStudents }) => {
   const isAcademy = targetType !== 'fp';
+  const isEnglish = targetType === 'ingles';
+  const isOther = targetType === 'otros';
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -47,14 +49,36 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                 : 'bg-cyan-500/10 border-cyan-500/20 text-cyan-400'
             }`}>
               <Sparkles className="w-3.5 h-3.5" />
-              <span>{isAcademy ? 'Contacto Directo B2B para Centros' : 'Contacto Institucional FP'}</span>
+              <span>
+                {isAcademy
+                  ? isEnglish
+                    ? 'Contacto Directo para Academia de Inglés'
+                    : isOther
+                      ? 'Contacto Directo para Otros Centros'
+                      : 'Contacto Directo B2B para Centros'
+                  : 'Contacto Institucional FP'}
+              </span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-white uppercase leading-tight">
               {isAcademy ? (
                 <>
-                  IMPULSA TU CENTRO <br />
-                  <span className="gold-gradient-text">CON TECNOLOGÍA IA</span>
+                  {isEnglish ? (
+                    <>
+                      IMPULSA TU ACADEMIA <br />
+                      <span className="gold-gradient-text">DE INGLÉS CON IA</span>
+                    </>
+                  ) : isOther ? (
+                    <>
+                      AUTOMATIZA TU CENTRO <br />
+                      <span className="gold-gradient-text">CON TECNOLOGÍA IA</span>
+                    </>
+                  ) : (
+                    <>
+                      IMPULSA TU CENTRO <br />
+                      <span className="gold-gradient-text">CON TECNOLOGÍA IA</span>
+                    </>
+                  )}
                 </>
               ) : (
                 <>
@@ -66,7 +90,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
 
             <p className="text-base text-white/60 leading-relaxed">
               {isAcademy
-                ? 'Agenda una sesión personalizada de 20 minutos donde te mostraremos la plataforma en vivo con tus colores corporativos y calcularemos tu propuesta económica exacta para academias de oposiciones, inglés, autoescuelas y centros de refuerzo. Si trabajas inglés, también te enseñamos EPG, listening, gramática, progreso y niveles adaptados.'
+                ? isEnglish
+                  ? 'Agenda una sesión personalizada de 20 minutos donde te mostraremos la plataforma en vivo con EPG, listening, gramática, progreso y niveles adaptados a tu academia de inglés.'
+                  : isOther
+                    ? 'Agenda una sesión personalizada de 20 minutos donde te mostraremos cómo automatizar matrículas, seguimiento, pruebas y comunicación para autoescuelas, centros de ciencias, refuerzo y otros centros.'
+                    : 'Agenda una sesión personalizada de 20 minutos donde te mostraremos la plataforma en vivo con tus colores corporativos y calcularemos tu propuesta económica exacta para academias de oposiciones y otros centros.'
                 : 'Solicita una demostración en directo adaptada a las familias profesionales de tu centro para que tu claustro docente pruebe el roleplay y la evaluación curricular.'}
             </p>
 
@@ -91,7 +119,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                   <MessageCircle className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-white/40 font-medium">Dirección Comercial & Centros</div>
+                  <div className="text-xs text-white/40 font-medium">
+                    {isEnglish ? 'Dirección Comercial & Idiomas' : isOther ? 'Dirección Comercial & Otros Centros' : 'Dirección Comercial & Centros'}
+                  </div>
                   <div className="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">
                     Francisco de Paula Marín · +34 649 49 05 80
                   </div>
@@ -169,7 +199,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="text-xl font-manrope font-black text-white uppercase tracking-tight mb-2">
-                    {isAcademy ? 'Solicitar Auditoría & Demostración B2B' : 'Solicitar Demostración Piloto para Centro FP'}
+                    {isAcademy
+                      ? isEnglish
+                        ? 'Solicitar Demostración para Academia de Inglés'
+                        : isOther
+                          ? 'Solicitar Demostración para Otros Centros'
+                          : 'Solicitar Auditoría & Demostración B2B'
+                      : 'Solicitar Demostración Piloto para Centro FP'}
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4">
@@ -219,12 +255,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
 
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-white/70 mb-2">
-                        {isAcademy ? 'Nombre de tu Centro *' : 'Nombre del Instituto / Centro FP *'}
+                        {isAcademy ? (isEnglish ? 'Nombre de tu Academia de Inglés *' : isOther ? 'Nombre de tu Centro *' : 'Nombre de tu Centro *') : 'Nombre del Instituto / Centro FP *'}
                       </label>
                       <input
                         type="text"
                         required
-                        placeholder={isAcademy ? 'Academia Oposiciones Élite / English School / Autoescuela' : 'IES / Centro de FP San Viator'}
+                        placeholder={isAcademy ? (isEnglish ? 'Oxford English Center / Wall Street School' : isOther ? 'Autoescuela / Academia de Física / Centro de Refuerzo' : 'Academia Oposiciones Élite') : 'IES / Centro de FP San Viator'}
                         value={formData.organization}
                         onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                         className="w-full px-4 py-3.5 rounded-xl bg-[#080d15] border border-white/10 text-white placeholder-white/20 text-sm focus:border-[#c7a15a] focus:outline-none transition-colors"
@@ -289,13 +325,21 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-white/70 mb-2">
                       {isAcademy
-                        ? '¿Qué clases, materias o necesidades específicas tienes? (Opcional)'
+                        ? isEnglish
+                          ? '¿Qué niveles, clases o necesidades específicas tienes? (Opcional)'
+                          : isOther
+                            ? '¿Qué materias, procesos o necesidades específicas tienes? (Opcional)'
+                            : '¿Qué clases, materias o necesidades específicas tienes? (Opcional)'
                         : '¿Qué módulos o necesidades de simulación queréis reforzar? (Opcional)'}
                     </label>
                     <textarea
                       rows={3}
                       placeholder={isAcademy
-                        ? 'Ej. Somos una academia de oposiciones, un centro de inglés o una autoescuela. Queremos IA para tests, tutorías, EPG, listening, gramática, progreso por niveles y seguimiento...'
+                        ? isEnglish
+                          ? 'Ej. Somos una academia de inglés. Queremos IA para EPG, listening, gramática, speaking, progreso por niveles y seguimiento...'
+                          : isOther
+                            ? 'Ej. Somos una autoescuela, una academia de física o un centro de refuerzo. Queremos IA para matrículas, pruebas, tutorías y seguimiento...'
+                            : 'Ej. Somos una academia de oposiciones. Queremos IA para tests, tutorías y seguimiento...'
                         : 'Ej. Nos interesa especialmente el roleplay por voz para el módulo de FOL / IPE y atención al cliente en Sanidad...'}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}

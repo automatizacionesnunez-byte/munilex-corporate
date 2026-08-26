@@ -92,7 +92,7 @@ export function App() {
             }`}
           >
             <span className="w-3.5 h-3.5 rounded-full border border-current" />
-            <span>Otros</span>
+            <span>Otros centros</span>
           </button>
         </div>
       </div>
@@ -111,12 +111,24 @@ export function App() {
         ) : (
           <>
             {/* Vertiente 1: Academias de Oposiciones, Inglés y otros centros */}
-            <Hero onOpenContact={() => scrollToContact()} />
+            <Hero
+              onOpenContact={() => scrollToContact()}
+              variant={activeTab === 'ingles' ? 'ingles' : activeTab === 'otros' ? 'otros' : 'academias'}
+            />
             <TechMarquee />
-            <BentoGrid onOpenContact={() => scrollToContact()} />
-            <ComparisonSection onOpenContact={() => scrollToContact()} />
+            <BentoGrid
+              onOpenContact={() => scrollToContact()}
+              variant={activeTab === 'ingles' ? 'ingles' : activeTab === 'otros' ? 'otros' : 'academias'}
+            />
+            <ComparisonSection
+              onOpenContact={() => scrollToContact()}
+              variant={activeTab === 'ingles' ? 'ingles' : activeTab === 'otros' ? 'otros' : 'academias'}
+            />
             <RoiCalculator onOpenContact={(plan, students) => scrollToContact(plan, students)} />
-            <PlansSection onOpenContact={(plan) => scrollToContact(plan)} />
+            <PlansSection
+              onOpenContact={(plan) => scrollToContact(plan)}
+              variant={activeTab === 'ingles' ? 'ingles' : activeTab === 'otros' ? 'otros' : 'academias'}
+            />
           </>
         )}
 

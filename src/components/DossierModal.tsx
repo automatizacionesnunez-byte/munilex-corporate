@@ -28,6 +28,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
   };
 
   const isAcademy = targetType !== 'fp';
+  const isEnglish = targetType === 'ingles';
+  const isOther = targetType === 'otros';
 
   return (
     <AnimatePresence>
@@ -93,16 +95,32 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                   <span className={`text-[10px] font-black uppercase tracking-widest ${
                     isAcademy ? 'text-[#c7a15a]' : 'text-cyan-400'
                   }`}>
-                    {isAcademy ? 'Dossier Técnico & Tarifas B2B' : 'Guía Curricular & Roleplay FP'}
+                    {isAcademy
+                      ? isEnglish
+                        ? 'Dossier de Inglés & Tarifas B2B'
+                        : isOther
+                          ? 'Dossier para Otros Centros & Tarifas B2B'
+                          : 'Dossier Técnico & Tarifas B2B'
+                      : 'Guía Curricular & Roleplay FP'}
                   </span>
                 </div>
 
                 <h3 className="text-xl sm:text-2xl font-manrope font-black text-white uppercase tracking-tight mb-2">
-                  {isAcademy ? 'Descargar Dossier Completo para Academias' : 'Descargar Guía de Innovación para Centros FP'}
+                  {isAcademy
+                    ? isEnglish
+                      ? 'Descargar Dossier Completo para Academia de Inglés'
+                      : isOther
+                        ? 'Descargar Dossier Completo para Otros Centros'
+                        : 'Descargar Dossier Completo para Academias'
+                    : 'Descargar Guía de Innovación para Centros FP'}
                 </h3>
                 <p className="text-xs text-white/60 leading-relaxed mb-6">
                   {isAcademy
-                    ? 'Incluye catálogo de itinerarios, arquitectura de marca blanca, comparativa de costes y modelo de contrato, con foco también en academias de inglés y otros centros que trabajen EPG, listening, grammar y progreso por niveles.'
+                    ? isEnglish
+                      ? 'Incluye catálogo de itinerarios, arquitectura de marca blanca, comparativa de costes y guía específica para EPG, listening, grammar y progreso por niveles.'
+                      : isOther
+                        ? 'Incluye catálogo de itinerarios, arquitectura de marca blanca, comparativa de costes y guía específica para autoescuelas, ciencias, refuerzo y otros centros.'
+                        : 'Incluye catálogo de itinerarios, arquitectura de marca blanca, comparativa de costes y modelo de contrato, con foco también en academias de inglés y otros centros que trabajen EPG, listening, grammar y progreso por niveles.'
                     : 'Incluye especificación pedagógica de roleplay, rúbricas curriculares y plan de formación al claustro docente.'}
                 </p>
 
@@ -152,12 +170,18 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
 
                     <div>
                       <label className="block text-[11px] font-bold uppercase tracking-wider text-white/70 mb-1.5">
-                        {isAcademy ? 'Nombre Academia *' : 'Nombre Instituto / Centro *'}
+                        {isAcademy
+                          ? isEnglish
+                            ? 'Nombre Academia de Inglés *'
+                            : isOther
+                              ? 'Nombre Centro *'
+                              : 'Nombre Academia *'
+                          : 'Nombre Instituto / Centro *'}
                       </label>
                       <input
                         type="text"
                         required
-                        placeholder={isAcademy ? 'Centro de formación' : 'Instituto FP'}
+                        placeholder={isAcademy ? (isEnglish ? 'English School' : isOther ? 'Autoescuela / Centro de Refuerzo' : 'Centro de formación') : 'Instituto FP'}
                         value={formData.organization}
                         onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#c7a15a] focus:outline-none"

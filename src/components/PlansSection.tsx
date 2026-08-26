@@ -4,9 +4,28 @@ import { Rocket, Heart, Globe, Check, Sparkles, ArrowRight } from 'lucide-react'
 
 interface PlansSectionProps {
   onOpenContact: (plan?: string) => void;
+  variant: 'academias' | 'ingles' | 'otros';
 }
 
-export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => {
+export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, variant }) => {
+  const copy = {
+    academias: {
+      header: 'Planes para Academias de Oposiciones',
+      intro: 'Sin costes ocultos. Licencias calculadas mensualmente en función del número real de alumnos activos en tu plataforma, con un modelo pensado para academias que necesitan previsibilidad.',
+      feature: 'Catálogo COMPLETO de itinerarios y materias (oposiciones, refuerzo y preparación especializada)',
+    },
+    ingles: {
+      header: 'Planes para Academias de Inglés',
+      intro: 'Sin costes ocultos. Licencias calculadas mensualmente en función del número real de alumnos activos en tu plataforma, con un modelo pensado para academias de idiomas que necesitan previsibilidad.',
+      feature: 'Catálogo COMPLETO de itinerarios y materias (EPG, listening, grammar, speaking y progreso por niveles)',
+    },
+    otros: {
+      header: 'Planes para Otros Centros',
+      intro: 'Sin costes ocultos. Licencias calculadas mensualmente en función del número real de alumnos activos en tu plataforma, con un modelo pensado para centros que necesitan previsibilidad.',
+      feature: 'Catálogo COMPLETO de itinerarios y materias (autoescuela, ciencias, refuerzo y formación especializada)',
+    },
+  }[variant];
+
   const plans = [
     {
       id: 'iniciacion',
@@ -55,7 +74,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
       ],
       features: [
         'Todo lo incluido en el Plan Iniciación',
-        'Catálogo COMPLETO de itinerarios y materias (idiomas, EPG, listening, grammar, refuerzo, autoescuela, técnica, etc.)',
+        copy.feature,
         'Marca Blanca 100% (Logo, paleta HSL, tipografías)',
         'Dominio propio personalizado (ej. campus.tuacademia.es)',
         '1 Funcionalidad extra a medida incluida',
@@ -103,14 +122,14 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c7a15a]/10 border border-[#c7a15a]/20 text-xs font-bold text-[#c7a15a] uppercase tracking-widest mb-4">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Tarifas Claras y Transparentes</span>
+            <span>{copy.header}</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-white uppercase leading-tight mb-6">
             PLANES DISEÑADOS PARA <br />
             <span className="gold-gradient-text">ESCALAR TU CENTRO</span>
           </h2>
           <p className="text-base sm:text-lg text-white/60 leading-relaxed">
-            Sin costes ocultos. Licencias calculadas mensualmente en función del número real de alumnos activos en tu plataforma, con un modelo pensado para dueños de centros que necesitan previsibilidad.
+            {copy.intro}
           </p>
         </div>
 
