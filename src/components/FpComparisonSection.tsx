@@ -55,9 +55,9 @@ export const FpComparisonSection: React.FC<FpComparisonSectionProps> = ({ onOpen
         </div>
 
         {/* Comparison Table / Grid */}
-        <div className="max-w-5xl mx-auto rounded-[3rem] bg-[#13141B] border border-cyan-500/20 overflow-hidden shadow-2xl shadow-black/80">
+        <div className="max-w-5xl mx-auto rounded-[3rem] bg-[#111827] border border-cyan-500/20 overflow-hidden shadow-2xl shadow-black/80">
           {/* Header Row */}
-          <div className="grid grid-cols-12 bg-[#0B0C10] p-6 sm:p-8 border-b border-white/10 text-xs font-black uppercase tracking-wider">
+          <div className="grid grid-cols-12 bg-[#080d15] p-6 sm:p-8 border-b border-white/10 text-xs font-black uppercase tracking-wider">
             <div className="col-span-4 text-white/40">Dimensión Formativa</div>
             <div className="col-span-4 text-red-400/80 flex items-center gap-1.5">
               <ShieldAlert className="w-4 h-4" />
@@ -98,7 +98,7 @@ export const FpComparisonSection: React.FC<FpComparisonSectionProps> = ({ onOpen
           </div>
 
           {/* Table Footer CTA */}
-          <div className="p-8 bg-[#0B0C10] border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="p-8 bg-[#080d15] border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
               <div className="font-bold text-white text-base">¿Quieres ver una simulación adaptada a tus ciclos?</div>
               <div className="text-xs text-white/50">Organizamos una sesión demostrativa para tu equipo directivo o departamento.</div>

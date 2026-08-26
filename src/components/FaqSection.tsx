@@ -12,19 +12,19 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: '¿Podemos incorporar nuestros propios temarios, supuestos y preguntas exclusivas?',
-      a: 'Absolutamente. Puedes combinar el catálogo oficial de Munilex (+42 temarios) con tus propios materiales exclusivos. Los temarios propios quedan completamente securizados y protegidos bajo acuerdo de confidencialidad.',
+      a: 'Absolutamente. Puedes combinar el catálogo oficial de Munilex (+42 programas, itinerarios y materias) con tus propios materiales exclusivos. Los materiales del centro quedan completamente securizados y protegidos bajo acuerdo de confidencialidad.',
     },
     {
       q: '¿Cómo se contabilizan y facturan las licencias de alumnos?',
       a: 'La facturación es mensual y flexible. Se contabilizan únicamente los alumnos que han tenido acceso activo durante el mes natural, aplicando el escalado por volumen (3€ -> 2.5€ -> 1.5€ en Iniciación; 4€ -> 3€ -> 2€ en Marca). No pagas por alumnos inactivos o bajas.',
     },
     {
-      q: '¿La IA puede inventar leyes o dar respuestas incorrectas (alucinaciones)?',
-      a: 'No. El motor de Munilex opera mediante arquitectura RAG (Retrieval-Augmented Generation) sobre fuentes jurídicas oficiales y boletines (BOE, DOGA, BOCM, etc.). Todas las justificaciones incluyen el artículo y ley exacta.',
+      q: '¿La IA puede inventar contenidos o dar respuestas incorrectas (alucinaciones)?',
+      a: 'No. El motor de Munilex opera mediante arquitectura RAG (Retrieval-Augmented Generation) sobre fuentes oficiales y contenidos validados por el centro. Todas las justificaciones incluyen la referencia exacta que necesites para auditar la respuesta.',
     },
     {
       q: '¿Necesitamos contratar servidores o personal de soporte técnico propio?',
-      a: 'Ninguno. Munilex entrega una solución 100% administrada en la nube (Cloudflare + Supabase en UE). Nosotros nos encargamos de las actualizaciones normativas, copias de seguridad y velocidad de respuesta.',
+      a: 'Ninguno. Munilex entrega una solución 100% administrada en la nube (Cloudflare + Supabase en UE). Nosotros nos encargamos de las actualizaciones, copias de seguridad y velocidad de respuesta.',
     },
     {
       q: '¿Es posible integrar la plataforma con nuestro Moodle o sistema de cobro?',
@@ -33,12 +33,12 @@ export const FaqSection: React.FC = () => {
   ];
 
   return (
-    <section id="faq" className="py-28 md:py-36 relative bg-[#0B0C10]">
+    <section id="faq" className="py-28 md:py-36 relative bg-[#080d15]">
       <div className="max-w-4xl mx-auto px-6 md:px-10 relative z-10">
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/20 text-xs font-bold text-[#d4af37] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c7a15a]/10 border border-[#c7a15a]/20 text-xs font-bold text-[#c7a15a] uppercase tracking-widest mb-4">
             <HelpCircle className="w-3.5 h-3.5" />
             <span>Resolución de Dudas</span>
           </div>
@@ -55,7 +55,7 @@ export const FaqSection: React.FC = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="rounded-3xl bg-[#13141B] border border-white/5 overflow-hidden transition-colors"
+              className="rounded-3xl bg-[#111827] border border-white/5 overflow-hidden transition-colors"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -64,8 +64,8 @@ export const FaqSection: React.FC = () => {
                 <span className="font-manrope font-bold text-white text-base sm:text-lg">
                   {faq.q}
                 </span>
-                <div className={`w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-[#d4af37] shrink-0 transition-transform duration-300 ${
-                  openIndex === index ? 'rotate-180 bg-[#d4af37]/20' : ''
+                <div className={`w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-[#c7a15a] shrink-0 transition-transform duration-300 ${
+                  openIndex === index ? 'rotate-180 bg-[#c7a15a]/20' : ''
                 }`}>
                   <ChevronDown className="w-4 h-4" />
                 </div>

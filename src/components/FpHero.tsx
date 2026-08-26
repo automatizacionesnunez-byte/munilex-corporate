@@ -24,7 +24,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
     <section className="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
       {/* Background Gradients & Glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-[#d4af37]/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-[#c7a15a]/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[radial-gradient(#00F0FF_1px,transparent_1px)] [background-size:24px_24px]" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
@@ -119,7 +119,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-14 max-w-5xl mx-auto rounded-[2.5rem] bg-[#13141B] border border-cyan-500/20 p-4 sm:p-7 shadow-2xl shadow-black/80 relative overflow-hidden"
+          className="mt-14 max-w-5xl mx-auto rounded-[2.5rem] bg-[#111827] border border-cyan-500/20 p-4 sm:p-7 shadow-2xl shadow-black/80 relative overflow-hidden"
         >
           {/* Header Bar of Simulator */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-white/5">
@@ -131,7 +131,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
             </div>
 
             {/* Interactive Tabs */}
-            <div className="flex flex-wrap items-center bg-[#0B0C10] p-1.5 rounded-xl border border-white/5 gap-1">
+            <div className="flex flex-wrap items-center bg-[#080d15] p-1.5 rounded-xl border border-white/5 gap-1">
               <button
                 onClick={() => setActiveFpTab('roleplay')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
@@ -190,7 +190,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                   exit={{ opacity: 0, y: -10 }}
                   className="grid md:grid-cols-12 gap-6"
                 >
-                  <div className="md:col-span-6 bg-[#0B0C10] p-6 rounded-2xl border border-white/5">
+                  <div className="md:col-span-6 bg-[#080d15] p-6 rounded-2xl border border-white/5">
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-red-400 animate-ping" />
@@ -213,7 +213,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                     </div>
                   </div>
 
-                  <div className="md:col-span-6 bg-[#181A24] p-6 rounded-2xl border border-cyan-500/30 shadow-lg relative">
+                  <div className="md:col-span-6 bg-[#162132] p-6 rounded-2xl border border-cyan-500/30 shadow-lg relative">
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
                         <Sparkles className="w-4 h-4 text-cyan-400" />
@@ -232,7 +232,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                         <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                         <span>Trato empático, asertivo y derivación clínica adecuada.</span>
                       </div>
-                      <div className="p-3 bg-[#0B0C10] rounded-xl border border-white/5 text-[11px] text-cyan-200">
+                      <div className="p-3 bg-[#080d15] rounded-xl border border-white/5 text-[11px] text-cyan-200">
                         🎤 <strong>Análisis de Voz:</strong> Tono calmado, fluidez de 135 ppm y sin titubeos en la negativa legal.
                       </div>
                     </div>
@@ -248,7 +248,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                   exit={{ opacity: 0, y: -10 }}
                   className="grid md:grid-cols-12 gap-6"
                 >
-                  <div className="md:col-span-6 bg-[#0B0C10] p-6 rounded-2xl border border-white/5 space-y-4">
+                  <div className="md:col-span-6 bg-[#080d15] p-6 rounded-2xl border border-white/5 space-y-4">
                     <div className="text-[10px] font-black uppercase text-cyan-400 tracking-wider">
                       Tutoría 24/7 del Temario Oficial
                     </div>
@@ -256,20 +256,20 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                       <div className="text-white/40 mb-1">Alumno FP (DAM):</div>
                       "¿Qué diferencia hay entre una clave primaria (Primary Key) y una clave foránea (Foreign Key) en SQL?"
                     </div>
-                    <div className="p-3.5 bg-[#181A24] border border-cyan-500/20 rounded-xl text-xs text-white/90">
+                    <div className="p-3.5 bg-[#162132] border border-cyan-500/20 rounded-xl text-xs text-white/90">
                       <div className="text-cyan-300 font-bold mb-1">Tutor IA:</div>
                       La <strong>Primary Key</strong> identifica unívocamente cada fila de una tabla (única y NOT NULL). La <strong>Foreign Key</strong> establece una relación referencial hacia la clave primaria de otra tabla para garantizar la integridad referencial.
                     </div>
                   </div>
 
-                  <div className="md:col-span-6 bg-[#181A24] p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+                  <div className="md:col-span-6 bg-[#162132] p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center justify-between mb-3">
                         <span className="text-xs font-bold text-white">Flashcard de Repaso Espaciado</span>
                         <span className="text-[10px] bg-cyan-400/20 text-cyan-300 px-2 py-0.5 rounded-full font-mono">Repaso #3</span>
                       </div>
-                      <div className="p-4 bg-[#0B0C10] rounded-xl border border-white/5 text-xs text-white/80 mb-4">
-                        <div className="text-[#d4af37] font-bold mb-1">¿Qué principio SOLID establece que una clase debe tener una única razón para cambiar?</div>
+                      <div className="p-4 bg-[#080d15] rounded-xl border border-white/5 text-xs text-white/80 mb-4">
+                        <div className="text-[#c7a15a] font-bold mb-1">¿Qué principio SOLID establece que una clase debe tener una única razón para cambiar?</div>
                         <div className="text-emerald-400 font-semibold mt-2">→ Principio de Responsabilidad Única (SRP).</div>
                       </div>
                     </div>
@@ -288,7 +288,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="bg-[#0B0C10] p-6 rounded-2xl border border-white/5"
+                  className="bg-[#080d15] p-6 rounded-2xl border border-white/5"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider">
@@ -316,7 +316,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                   exit={{ opacity: 0, y: -10 }}
                   className="grid md:grid-cols-12 gap-6"
                 >
-                  <div className="md:col-span-6 bg-[#0B0C10] p-6 rounded-2xl border border-white/5">
+                  <div className="md:col-span-6 bg-[#080d15] p-6 rounded-2xl border border-white/5">
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-[10px] font-black uppercase text-purple-400 tracking-wider">Cuaderno de Bienestar & Salud Mental</span>
                       <span className="text-[11px] text-white/40">Espacio Seguro del Alumno</span>
@@ -332,7 +332,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                     </div>
                   </div>
 
-                  <div className="md:col-span-6 bg-[#181A24] p-6 rounded-2xl border border-purple-500/30 flex flex-col justify-between">
+                  <div className="md:col-span-6 bg-[#162132] p-6 rounded-2xl border border-purple-500/30 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center gap-2 text-xs font-bold text-purple-300 mb-2">
                         <HeartHandshake className="w-4 h-4" />

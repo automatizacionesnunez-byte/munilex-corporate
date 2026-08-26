@@ -21,7 +21,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
     {
       factor: 'Actualizaciones Legislativas (BOE / CCAA)',
       traditional: 'Revisión manual lenta; riesgo de preguntas desactualizadas',
-      munilex: 'Supervisión jurídica continua y banco oficial siempre al día',
+      munilex: 'Supervisión continua de contenidos y banco siempre al día',
     },
     {
       factor: 'Corrección de Casos Prácticos',
@@ -46,7 +46,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/20 text-xs font-bold text-[#d4af37] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c7a15a]/10 border border-[#c7a15a]/20 text-xs font-bold text-[#c7a15a] uppercase tracking-widest mb-4">
             <Zap className="w-3.5 h-3.5" />
             <span>Comparativa de Costes & Eficiencia</span>
           </div>
@@ -55,20 +55,20 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
             <span className="gold-gradient-text">ESCALAR CON MUNILEX?</span>
           </h2>
           <p className="text-base sm:text-lg text-white/60 leading-relaxed">
-            Descubre por qué las academias líderes delegan su infraestructura tecnológica para centrarse en captar y enseñar a sus opositores.
+            Descubre por qué los centros líderes delegan su infraestructura tecnológica para centrarse en captar, enseñar y retener alumnos, sin perder control de su marca ni de su margen.
           </p>
         </div>
 
         {/* Comparison Table / Grid */}
-        <div className="max-w-5xl mx-auto rounded-[3rem] bg-[#13141B] border border-white/10 overflow-hidden shadow-2xl shadow-black/80">
+        <div className="max-w-5xl mx-auto rounded-[3rem] bg-[#111827] border border-white/10 overflow-hidden shadow-2xl shadow-black/80">
           {/* Header Row */}
-          <div className="grid grid-cols-12 bg-[#0B0C10] p-6 sm:p-8 border-b border-white/10 text-xs font-black uppercase tracking-wider">
+          <div className="grid grid-cols-12 bg-[#080d15] p-6 sm:p-8 border-b border-white/10 text-xs font-black uppercase tracking-wider">
             <div className="col-span-4 text-white/40">Factor Crítico</div>
             <div className="col-span-4 text-red-400/80 flex items-center gap-1.5">
               <ShieldAlert className="w-4 h-4" />
-              <span>Desarrollo Tradicional</span>
+              <span>Modelo Tradicional</span>
             </div>
-            <div className="col-span-4 text-[#d4af37] flex items-center gap-1.5">
+            <div className="col-span-4 text-[#c7a15a] flex items-center gap-1.5">
               <Sparkles className="w-4 h-4" />
               <span>Ecosistema Munilex</span>
             </div>
@@ -94,8 +94,8 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
                   <span>{item.traditional}</span>
                 </div>
 
-                <div className="col-span-6 sm:col-span-4 font-semibold text-white flex items-start gap-2 bg-[#d4af37]/5 p-3 rounded-xl border border-[#d4af37]/20">
-                  <Check className="w-4 h-4 text-[#d4af37] shrink-0 mt-0.5" />
+                <div className="col-span-6 sm:col-span-4 font-semibold text-white flex items-start gap-2 bg-[#c7a15a]/5 p-3 rounded-xl border border-[#c7a15a]/20">
+                  <Check className="w-4 h-4 text-[#c7a15a] shrink-0 mt-0.5" />
                   <span>{item.munilex}</span>
                 </div>
               </motion.div>
@@ -103,14 +103,14 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
           </div>
 
           {/* Table Footer CTA */}
-          <div className="p-8 bg-[#0B0C10] border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="p-8 bg-[#080d15] border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
               <div className="font-bold text-white text-base">¿Listo para lanzar tu propia plataforma en 14 días?</div>
               <div className="text-xs text-white/50">Agenda una sesión de consultoría técnica sin compromiso con nuestros fundadores.</div>
             </div>
             <button
               onClick={onOpenContact}
-              className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#d4af37] to-[#e6c65b] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-[#d4af37]/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
+              className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#c7a15a] to-[#d9bc77] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-[#c7a15a]/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
             >
               Solicitar Demostración
             </button>
@@ -121,3 +121,4 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
     </section>
   );
 };
+

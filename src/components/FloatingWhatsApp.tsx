@@ -8,7 +8,7 @@ export const FloatingWhatsApp: React.FC = () => {
     <div className="fixed bottom-6 right-6 z-50">
       {/* Expanded popup */}
       {isOpen && (
-        <div className="mb-3 w-80 rounded-3xl bg-[#13141B] border border-white/10 p-5 shadow-2xl shadow-black/80 text-xs">
+        <div className="mb-3 w-80 rounded-3xl bg-[#111827] border border-white/10 p-5 shadow-2xl shadow-black/80 text-xs">
           <div className="flex items-center justify-between pb-3 border-b border-white/5 mb-3">
             <div className="flex items-center gap-2">
               <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />

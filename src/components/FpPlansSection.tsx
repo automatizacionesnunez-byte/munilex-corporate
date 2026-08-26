@@ -92,7 +92,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
   ];
 
   return (
-    <section id="fp-plans" className="py-28 md:py-36 relative bg-[#0B0C10]">
+    <section id="fp-plans" className="py-28 md:py-36 relative bg-[#080d15]">
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         
         {/* Section Header */}
@@ -121,8 +121,8 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`rounded-[3rem] p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden transition-all duration-300 ${
                 plan.highlighted
-                  ? 'bg-[#181A24] border-2 border-cyan-400 shadow-2xl shadow-cyan-500/15 lg:-translate-y-4'
-                  : 'bg-[#13141B] border border-white/10 hover:border-white/20'
+                  ? 'bg-[#162132] border-2 border-cyan-400 shadow-2xl shadow-cyan-500/15 lg:-translate-y-4'
+                  : 'bg-[#111827] border border-white/10 hover:border-white/20'
               }`}
             >
               {plan.highlighted && (
@@ -137,7 +137,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
                   <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border ${
                     plan.highlighted
                       ? 'bg-cyan-400 text-black border-cyan-400'
-                      : 'bg-[#1E202C] border-white/5'
+                      : 'bg-[#1a2435] border-white/5'
                   }`}>
                     {plan.icon}
                   </div>
@@ -160,7 +160,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
                 </p>
 
                 {/* Scope & Timing Box */}
-                <div className="p-4 rounded-2xl bg-[#0B0C10] border border-white/5 mb-6 space-y-2 text-xs">
+                <div className="p-4 rounded-2xl bg-[#080d15] border border-white/5 mb-6 space-y-2 text-xs">
                   <div className="flex justify-between">
                     <span className="text-white/40 font-medium">Alcance:</span>
                     <span className="text-white font-bold">{plan.scope.cycles}</span>

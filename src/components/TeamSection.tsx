@@ -27,10 +27,10 @@ export const TeamSection: React.FC = () => {
     {
       name: 'Francisco de Paula Marín',
       role: 'Fundador & Director Académico / Comercial (CMO)',
-      specialty: 'Estrategia de Oposiciones, Docencia Jurídica & B2B',
+      specialty: 'Estrategia de Centros Educativos, Docencia Jurídica & B2B',
       image: franciscoMarinImg,
-      bio: 'Abogado y Docente con más de 10 años de experiencia preparando opositores y alumnos de Derecho en toda España. Director de TFM en el Máster de Abogacía de la UNIR y formador colaborador en academias de referencia nacional.',
-      credentials: ['Abogado Colegiado', 'Director TFM Máster UNIR', '+10 Años en Oposiciones', 'Dirección Académica'],
+      bio: 'Abogado y Docente con más de 10 años de experiencia acompañando a academias, centros de formación y alumnos de Derecho en toda España. Director de TFM en el Máster de Abogacía de la UNIR y formador colaborador en proyectos educativos de referencia nacional.',
+      credentials: ['Abogado Colegiado', 'Director TFM Máster UNIR', '+10 Años en Formación', 'Dirección Académica'],
       phone: '+34 649 49 05 80',
       phoneLink: 'https://wa.me/34649490580',
       email: 'administracion@munilex.es',
@@ -41,13 +41,13 @@ export const TeamSection: React.FC = () => {
   return (
     <section id="team" className="py-28 md:py-36 relative bg-[#07080B] border-t border-white/5">
       {/* Glow background */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#d4af37]/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#c7a15a]/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/20 text-xs font-bold text-[#d4af37] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c7a15a]/10 border border-[#c7a15a]/20 text-xs font-bold text-[#c7a15a] uppercase tracking-widest mb-4">
             <Scale className="w-3.5 h-3.5" />
             <span>Liderazgo Jurídico y Tecnológico</span>
           </div>
@@ -56,7 +56,7 @@ export const TeamSection: React.FC = () => {
             <span className="gold-gradient-text">PREPARADORES DE ÉLITE</span>
           </h2>
           <p className="text-base sm:text-lg text-white/60 leading-relaxed">
-            Nuestra tecnología no es un software genérico. Detrás de cada algoritmo hay abogados, profesores universitarios y directores de academias con años de experiencia real en tribunales de oposición.
+            Nuestra tecnología no es un software genérico. Detrás de cada algoritmo hay abogados, profesores universitarios y directores de centros con años de experiencia real en formación y operación comercial.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export const TeamSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="bg-[#13141B] rounded-[3rem] p-8 sm:p-10 border border-white/10 hover:border-[#d4af37]/40 transition-all duration-300 flex flex-col justify-between group shadow-xl shadow-black/60"
+              className="bg-[#111827] rounded-[3rem] p-8 sm:p-10 border border-white/10 hover:border-[#c7a15a]/40 transition-all duration-300 flex flex-col justify-between group shadow-xl shadow-black/60"
             >
               <div>
                 {/* Header Profile Photo & Badges */}
@@ -78,15 +78,15 @@ export const TeamSection: React.FC = () => {
                     <img
                       src={founder.image}
                       alt={founder.name}
-                      className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl object-cover border-2 border-[#d4af37]/30 shadow-lg shadow-[#d4af37]/10 group-hover:scale-105 transition-transform duration-300"
+                      className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl object-cover border-2 border-[#c7a15a]/30 shadow-lg shadow-[#c7a15a]/10 group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute -bottom-2 -right-2 p-1.5 rounded-xl bg-[#0B0C10] border border-[#d4af37]/30 text-[#d4af37]">
+                    <div className="absolute -bottom-2 -right-2 p-1.5 rounded-xl bg-[#080d15] border border-[#c7a15a]/30 text-[#c7a15a]">
                       <Brain className="w-4 h-4" />
                     </div>
                   </div>
 
                   <div>
-                    <span className="inline-block text-[10px] font-black uppercase tracking-wider text-[#d4af37] bg-[#d4af37]/10 px-2.5 py-1 rounded-md mb-2">
+                    <span className="inline-block text-[10px] font-black uppercase tracking-wider text-[#c7a15a] bg-[#c7a15a]/10 px-2.5 py-1 rounded-md mb-2">
                       {founder.role}
                     </span>
                     <h3 className="text-xl sm:text-2xl font-manrope font-black text-white leading-tight mb-1">
@@ -144,8 +144,8 @@ export const TeamSection: React.FC = () => {
         </div>
 
         {/* Corporate Trust Badge */}
-        <div className="mt-14 max-w-2xl mx-auto p-6 rounded-2xl bg-[#13141B]/60 border border-white/5 text-center text-xs text-white/50 flex items-center justify-center gap-3">
-          <ShieldCheck className="w-5 h-5 text-[#d4af37] shrink-0" />
+        <div className="mt-14 max-w-2xl mx-auto p-6 rounded-2xl bg-[#111827]/60 border border-white/5 text-center text-xs text-white/50 flex items-center justify-center gap-3">
+          <ShieldCheck className="w-5 h-5 text-[#c7a15a] shrink-0" />
           <span>
             <strong>Munilex Academy, S.L.</strong> (CIF: B88655980) · Sociedad mercantil registrada en España.
           </span>

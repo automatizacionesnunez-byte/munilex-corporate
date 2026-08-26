@@ -35,8 +35,8 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0B0C10] text-[#E2E8F0] selection:bg-[#d4af37]/30 selection:text-white font-inter">
-      {/* Top Navbar with 2-Tab Switcher & Dossier Trigger */}
+    <div className="min-h-screen bg-[#080d15] text-[#E2E8F0] selection:bg-[#c7a15a]/30 selection:text-white font-inter">
+      {/* Top Navbar with 4-Tab Switcher & Dossier Trigger */}
       <Navbar
         activeMainTab={activeTab}
         onSelectTab={(tab) => {
@@ -49,17 +49,17 @@ export function App() {
 
       {/* Floating Center Selector for Mobile / Quick Switch */}
       <div className="pt-24 md:hidden max-w-sm mx-auto px-6">
-        <div className="grid grid-cols-2 gap-2 p-1.5 rounded-2xl bg-[#13141B] border border-white/10 shadow-lg text-center">
+        <div className="grid grid-cols-2 gap-2 p-1.5 rounded-2xl bg-[#111827] border border-white/10 shadow-lg text-center">
           <button
             onClick={() => setActiveTab('academias')}
             className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'academias'
-                ? 'bg-[#d4af37] text-black shadow-md'
+                ? 'bg-[#c7a15a] text-black shadow-md'
                 : 'text-white/60 hover:text-white'
             }`}
           >
             <Building2 className="w-3.5 h-3.5" />
-            <span>Academias</span>
+            <span>Oposiciones</span>
           </button>
           <button
             onClick={() => setActiveTab('fp')}
@@ -70,24 +70,36 @@ export function App() {
             }`}
           >
             <GraduationCap className="w-3.5 h-3.5" />
-            <span>Centros FP</span>
+            <span>FP</span>
+          </button>
+          <button
+            onClick={() => setActiveTab('ingles')}
+            className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
+              activeTab === 'ingles'
+                ? 'bg-[#c7a15a] text-black shadow-md'
+                : 'text-white/60 hover:text-white'
+            }`}
+          >
+            <span className="w-3.5 h-3.5 rounded-full border border-current" />
+            <span>Inglés</span>
+          </button>
+          <button
+            onClick={() => setActiveTab('otros')}
+            className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
+              activeTab === 'otros'
+                ? 'bg-[#c7a15a] text-black shadow-md'
+                : 'text-white/60 hover:text-white'
+            }`}
+          >
+            <span className="w-3.5 h-3.5 rounded-full border border-current" />
+            <span>Otros</span>
           </button>
         </div>
       </div>
 
       {/* Main Content Sections - Dynamic based on selected tab */}
       <main>
-        {activeTab === 'academias' ? (
-          <>
-            {/* Vertiente 1: Academias y Oposiciones */}
-            <Hero onOpenContact={() => scrollToContact()} />
-            <TechMarquee />
-            <BentoGrid onOpenContact={() => scrollToContact()} />
-            <ComparisonSection onOpenContact={() => scrollToContact()} />
-            <RoiCalculator onOpenContact={(plan, students) => scrollToContact(plan, students)} />
-            <PlansSection onOpenContact={(plan) => scrollToContact(plan)} />
-          </>
-        ) : (
+        {activeTab === 'fp' ? (
           <>
             {/* Vertiente 2: Centros de Formación Profesional (FP) */}
             <FpHero onOpenContact={() => scrollToContact()} />
@@ -95,6 +107,16 @@ export function App() {
             <FpBentoGrid onOpenContact={() => scrollToContact()} />
             <FpComparisonSection onOpenContact={() => scrollToContact()} />
             <FpDemoSection onOpenContact={() => scrollToContact('Piloto Centro FP')} />
+          </>
+        ) : (
+          <>
+            {/* Vertiente 1: Academias de Oposiciones, Inglés y otros centros */}
+            <Hero onOpenContact={() => scrollToContact()} />
+            <TechMarquee />
+            <BentoGrid onOpenContact={() => scrollToContact()} />
+            <ComparisonSection onOpenContact={() => scrollToContact()} />
+            <RoiCalculator onOpenContact={(plan, students) => scrollToContact(plan, students)} />
+            <PlansSection onOpenContact={(plan) => scrollToContact(plan)} />
           </>
         )}
 

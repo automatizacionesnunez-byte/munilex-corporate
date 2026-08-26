@@ -9,7 +9,7 @@ export const Footer = () => {
           {/* Col 1: Brand Info & Legal Entity (5 cols) */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-[#d4af37] flex items-center justify-center font-manrope font-black text-black text-base">
+              <div className="w-8 h-8 rounded-lg bg-[#c7a15a] flex items-center justify-center font-manrope font-black text-black text-base">
                 M
               </div>
               <span className="font-manrope font-black text-lg text-white tracking-tight">
@@ -17,14 +17,14 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-white/50 max-w-sm leading-relaxed text-xs">
-              La plataforma de IA educativa y marca blanca líder para academias de oposiciones y centros de formación en España.
+              La plataforma de IA educativa y marca blanca para academias, centros de FP, academias de inglés y otros centros especializados en España.
             </p>
             
             <div className="space-y-1.5 pt-2 text-[11px] text-white/60">
               <div className="font-bold text-white">Munilex Academy, S.L.</div>
               <div>CIF: B88655980</div>
               <div className="flex items-center gap-1.5">
-                <MapPin className="w-3 h-3 text-[#d4af37]" />
+                <MapPin className="w-3 h-3 text-[#c7a15a]" />
                 <span>Madrid, España</span>
               </div>
             </div>
@@ -41,11 +41,11 @@ export const Footer = () => {
               Soluciones
             </div>
             <ul className="space-y-2">
-              <li><a href="#bento" className="hover:text-[#d4af37] transition-colors">Marca Blanca 100%</a></li>
-              <li><a href="#bento" className="hover:text-[#d4af37] transition-colors">Corrección IA Casos</a></li>
-              <li><a href="#bento" className="hover:text-[#d4af37] transition-colors">Simulacros Oficiales</a></li>
-              <li><a href="#bento" className="hover:text-[#d4af37] transition-colors">Tutor Jurídico 24/7</a></li>
-              <li><a href="#team" className="hover:text-[#d4af37] transition-colors">Equipo & Juristas</a></li>
+              <li><a href="#bento" className="hover:text-[#c7a15a] transition-colors">Marca Blanca 100%</a></li>
+              <li><a href="#bento" className="hover:text-[#c7a15a] transition-colors">Corrección IA Casos</a></li>
+              <li><a href="#bento" className="hover:text-[#c7a15a] transition-colors">Simulacros Oficiales</a></li>
+              <li><a href="#bento" className="hover:text-[#c7a15a] transition-colors">Tutor Jurídico 24/7</a></li>
+              <li><a href="#team" className="hover:text-[#c7a15a] transition-colors">Equipo & Juristas</a></li>
             </ul>
           </div>
 
@@ -55,11 +55,11 @@ export const Footer = () => {
               Tarifas & ROI
             </div>
             <ul className="space-y-2">
-              <li><a href="#plans" className="hover:text-[#d4af37] transition-colors">Plan Iniciación</a></li>
-              <li><a href="#plans" className="hover:text-[#d4af37] transition-colors">Plan Marca</a></li>
-              <li><a href="#plans" className="hover:text-[#d4af37] transition-colors">Plan Ecosistema</a></li>
-              <li><a href="#calculator" className="hover:text-[#d4af37] transition-colors">Calculadora ROI</a></li>
-              <li><a href="#security" className="hover:text-[#d4af37] transition-colors">Seguridad & ENS</a></li>
+              <li><a href="#plans" className="hover:text-[#c7a15a] transition-colors">Plan Iniciación</a></li>
+              <li><a href="#plans" className="hover:text-[#c7a15a] transition-colors">Plan Marca</a></li>
+              <li><a href="#plans" className="hover:text-[#c7a15a] transition-colors">Plan Ecosistema</a></li>
+              <li><a href="#calculator" className="hover:text-[#c7a15a] transition-colors">Calculadora ROI</a></li>
+              <li><a href="#security" className="hover:text-[#c7a15a] transition-colors">Seguridad & ENS</a></li>
             </ul>
           </div>
 
@@ -82,13 +82,13 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:administracion@munilex.es" className="flex items-center gap-1.5 hover:text-[#d4af37] transition-colors">
-                  <Mail className="w-3.5 h-3.5 text-[#d4af37] shrink-0" />
+                <a href="mailto:administracion@munilex.es" className="flex items-center gap-1.5 hover:text-[#c7a15a] transition-colors">
+                  <Mail className="w-3.5 h-3.5 text-[#c7a15a] shrink-0" />
                   <span>administracion@munilex.es</span>
                 </a>
               </li>
               <li className="pt-2 border-t border-white/5">
-                <a href="https://munilexacademy.es" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-white/70 hover:text-[#d4af37] transition-colors">
+                <a href="https://munilexacademy.es" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-white/70 hover:text-[#c7a15a] transition-colors">
                   <span>Munilex Academy (Alumnos)</span>
                   <ArrowUpRight className="w-3 h-3 text-white/30" />
                 </a>
@@ -114,3 +114,4 @@ export const Footer = () => {
     </footer>
   );
 };
+

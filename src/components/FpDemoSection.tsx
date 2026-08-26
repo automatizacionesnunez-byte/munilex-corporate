@@ -56,11 +56,11 @@ export const FpDemoSection: React.FC<FpDemoSectionProps> = ({ onOpenContact }) =
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="p-8 sm:p-10 rounded-[2.5rem] bg-[#13141B] border border-white/10 hover:border-cyan-500/30 transition-all duration-300 relative group flex flex-col justify-between"
+              className="p-8 sm:p-10 rounded-[2.5rem] bg-[#111827] border border-white/10 hover:border-cyan-500/30 transition-all duration-300 relative group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-8">
-                  <div className="w-14 h-14 rounded-2xl bg-[#1E202C] flex items-center justify-center border border-white/5 group-hover:scale-105 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-[#1a2435] flex items-center justify-center border border-white/5 group-hover:scale-105 transition-transform">
                     {step.icon}
                   </div>
                   <span className="text-2xl font-manrope font-black text-cyan-400/40 font-mono">
@@ -84,7 +84,7 @@ export const FpDemoSection: React.FC<FpDemoSectionProps> = ({ onOpenContact }) =
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="rounded-[3rem] p-8 sm:p-14 bg-gradient-to-br from-[#181A24] via-[#13141B] to-[#0E0F15] border border-cyan-500/30 shadow-2xl shadow-cyan-500/10 text-center relative overflow-hidden"
+          className="rounded-[3rem] p-8 sm:p-14 bg-gradient-to-br from-[#162132] via-[#111827] to-[#0E0F15] border border-cyan-500/30 shadow-2xl shadow-cyan-500/10 text-center relative overflow-hidden"
         >
           <div className="absolute -top-20 -right-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 

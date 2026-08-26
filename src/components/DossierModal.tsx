@@ -27,7 +27,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
     }, 1000);
   };
 
-  const isAcademy = targetType === 'academias';
+  const isAcademy = targetType !== 'fp';
 
   return (
     <AnimatePresence>
@@ -47,11 +47,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-lg rounded-[2.5rem] bg-[#13141B] border border-white/15 p-6 sm:p-8 shadow-2xl shadow-black overflow-hidden z-10"
+            className="relative w-full max-w-lg rounded-[2.5rem] bg-[#111827] border border-white/15 p-6 sm:p-8 shadow-2xl shadow-black overflow-hidden z-10"
           >
             {/* Background Glow */}
             <div className={`absolute top-0 right-0 w-60 h-60 rounded-full blur-3xl pointer-events-none ${
-              isAcademy ? 'bg-[#d4af37]/10' : 'bg-cyan-500/10'
+              isAcademy ? 'bg-[#c7a15a]/10' : 'bg-cyan-500/10'
             }`} />
 
             {/* Close Button */}
@@ -86,12 +86,12 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <div className={`p-2 rounded-xl border ${
-                    isAcademy ? 'bg-[#d4af37]/10 border-[#d4af37]/30 text-[#d4af37]' : 'bg-cyan-500/10 border-cyan-500/30 text-cyan-400'
+                    isAcademy ? 'bg-[#c7a15a]/10 border-[#c7a15a]/30 text-[#c7a15a]' : 'bg-cyan-500/10 border-cyan-500/30 text-cyan-400'
                   }`}>
                     <FileText className="w-5 h-5" />
                   </div>
                   <span className={`text-[10px] font-black uppercase tracking-widest ${
-                    isAcademy ? 'text-[#d4af37]' : 'text-cyan-400'
+                    isAcademy ? 'text-[#c7a15a]' : 'text-cyan-400'
                   }`}>
                     {isAcademy ? 'Dossier Técnico & Tarifas B2B' : 'Guía Curricular & Roleplay FP'}
                   </span>
@@ -117,7 +117,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                       placeholder="Ej. Laura Gómez"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#0B0C10] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#d4af37] focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#c7a15a] focus:outline-none"
                     />
                   </div>
 
@@ -131,7 +131,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                       placeholder="laura@centroeducativo.es"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#0B0C10] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#d4af37] focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#c7a15a] focus:outline-none"
                     />
                   </div>
 
@@ -146,7 +146,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                         placeholder="+34 600 000 000"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#0B0C10] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#d4af37] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#c7a15a] focus:outline-none"
                       />
                     </div>
 
@@ -157,10 +157,10 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                       <input
                         type="text"
                         required
-                        placeholder={isAcademy ? 'Academia Oposiciones' : 'Instituto FP'}
+                        placeholder={isAcademy ? 'Centro de formación' : 'Instituto FP'}
                         value={formData.organization}
                         onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#0B0C10] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#d4af37] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#c7a15a] focus:outline-none"
                       />
                     </div>
                   </div>
@@ -169,7 +169,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                     type="submit"
                     className={`w-full py-4 rounded-xl font-manrope font-black text-xs uppercase tracking-widest transition-all cursor-pointer flex items-center justify-center gap-2 shadow-xl ${
                       isAcademy
-                        ? 'bg-gradient-to-r from-[#d4af37] to-[#e6c65b] text-black shadow-[#d4af37]/25 hover:scale-[1.01]'
+                        ? 'bg-gradient-to-r from-[#c7a15a] to-[#d9bc77] text-black shadow-[#c7a15a]/25 hover:scale-[1.01]'
                         : 'bg-gradient-to-r from-cyan-400 to-blue-400 text-black shadow-cyan-500/25 hover:scale-[1.01]'
                     }`}
                   >
@@ -190,3 +190,4 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
     </AnimatePresence>
   );
 };
+

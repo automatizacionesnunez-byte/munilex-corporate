@@ -18,7 +18,7 @@ interface FpBentoGridProps {
 
 export const FpBentoGrid: React.FC<FpBentoGridProps> = ({ onOpenContact }) => {
   return (
-    <section id="fp-features" className="py-28 md:py-36 relative bg-[#0B0C10]">
+    <section id="fp-features" className="py-28 md:py-36 relative bg-[#080d15]">
       {/* Background Decor */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-[130px] pointer-events-none" />
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-purple-500/5 rounded-full blur-[130px] pointer-events-none" />
@@ -48,13 +48,13 @@ export const FpBentoGrid: React.FC<FpBentoGridProps> = ({ onOpenContact }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="md:col-span-7 bg-[#13141B] rounded-[2.5rem] p-8 sm:p-10 border border-cyan-500/30 relative overflow-hidden group hover:border-cyan-400/60 transition-all duration-300 flex flex-col justify-between shadow-2xl shadow-cyan-500/5"
+            className="md:col-span-7 bg-[#111827] rounded-[2.5rem] p-8 sm:p-10 border border-cyan-500/30 relative overflow-hidden group hover:border-cyan-400/60 transition-all duration-300 flex flex-col justify-between shadow-2xl shadow-cyan-500/5"
           >
             <div className="absolute top-0 right-0 w-80 h-80 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-cyan-500/20 transition-all" />
 
             <div>
               <div className="flex items-center justify-between mb-8">
-                <div className="w-14 h-14 rounded-2xl bg-[#1E202C] flex items-center justify-center text-cyan-400 border border-cyan-500/20 shadow-lg shadow-cyan-500/10">
+                <div className="w-14 h-14 rounded-2xl bg-[#1a2435] flex items-center justify-center text-cyan-400 border border-cyan-500/20 shadow-lg shadow-cyan-500/10">
                   <Mic className="w-7 h-7" />
                 </div>
                 <span className="px-3.5 py-1.5 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-xs font-black text-cyan-300 uppercase tracking-wider">
@@ -70,7 +70,7 @@ export const FpBentoGrid: React.FC<FpBentoGridProps> = ({ onOpenContact }) => {
               </p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-[#0B0C10] border border-white/5 grid sm:grid-cols-3 gap-3 text-xs">
+            <div className="p-5 rounded-2xl bg-[#080d15] border border-white/5 grid sm:grid-cols-3 gap-3 text-xs">
               <div className="p-3 bg-white/5 rounded-xl">
                 <div className="text-[10px] text-white/40 uppercase font-mono">Modo Audio</div>
                 <div className="font-bold text-white mt-1">Interacción por Voz</div>
@@ -92,13 +92,13 @@ export const FpBentoGrid: React.FC<FpBentoGridProps> = ({ onOpenContact }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="md:col-span-5 bg-[#13141B] rounded-[2.5rem] p-8 sm:p-10 border border-white/10 relative overflow-hidden group hover:border-cyan-400/40 transition-all duration-300 flex flex-col justify-between"
+            className="md:col-span-5 bg-[#111827] rounded-[2.5rem] p-8 sm:p-10 border border-white/10 relative overflow-hidden group hover:border-cyan-400/40 transition-all duration-300 flex flex-col justify-between"
           >
             <div className="absolute top-0 right-0 w-60 h-60 bg-blue-500/10 rounded-full blur-[80px] pointer-events-none" />
 
             <div>
               <div className="flex items-center justify-between mb-8">
-                <div className="w-14 h-14 rounded-2xl bg-[#1E202C] flex items-center justify-center text-blue-400 border border-white/5">
+                <div className="w-14 h-14 rounded-2xl bg-[#1a2435] flex items-center justify-center text-blue-400 border border-white/5">
                   <Layers className="w-7 h-7" />
                 </div>
                 <span className="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-semibold text-blue-300">
@@ -131,10 +131,10 @@ export const FpBentoGrid: React.FC<FpBentoGridProps> = ({ onOpenContact }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="md:col-span-4 bg-[#13141B] rounded-[2.5rem] p-8 border border-white/10 relative overflow-hidden group hover:border-cyan-400/40 transition-all duration-300 flex flex-col justify-between"
+            className="md:col-span-4 bg-[#111827] rounded-[2.5rem] p-8 border border-white/10 relative overflow-hidden group hover:border-cyan-400/40 transition-all duration-300 flex flex-col justify-between"
           >
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#1E202C] flex items-center justify-center text-cyan-400 mb-6 border border-white/5">
+              <div className="w-12 h-12 rounded-2xl bg-[#1a2435] flex items-center justify-center text-cyan-400 mb-6 border border-white/5">
                 <LayoutDashboard className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-manrope font-extrabold text-white mb-3">
@@ -163,10 +163,10 @@ export const FpBentoGrid: React.FC<FpBentoGridProps> = ({ onOpenContact }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="md:col-span-4 bg-[#13141B] rounded-[2.5rem] p-8 border border-white/10 relative overflow-hidden group hover:border-cyan-400/40 transition-all duration-300 flex flex-col justify-between"
+            className="md:col-span-4 bg-[#111827] rounded-[2.5rem] p-8 border border-white/10 relative overflow-hidden group hover:border-cyan-400/40 transition-all duration-300 flex flex-col justify-between"
           >
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#1E202C] flex items-center justify-center text-emerald-400 mb-6 border border-white/5">
+              <div className="w-12 h-12 rounded-2xl bg-[#1a2435] flex items-center justify-center text-emerald-400 mb-6 border border-white/5">
                 <Calendar className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-manrope font-extrabold text-white mb-3">
@@ -177,7 +177,7 @@ export const FpBentoGrid: React.FC<FpBentoGridProps> = ({ onOpenContact }) => {
               </p>
             </div>
 
-            <div className="p-3.5 bg-[#0B0C10] rounded-xl border border-white/5 text-xs text-white/70 flex items-center justify-between">
+            <div className="p-3.5 bg-[#080d15] rounded-xl border border-white/5 text-xs text-white/70 flex items-center justify-between">
               <span>Sincronización Docente-Alumno</span>
               <span className="font-bold text-emerald-400">Automática</span>
             </div>
@@ -189,10 +189,10 @@ export const FpBentoGrid: React.FC<FpBentoGridProps> = ({ onOpenContact }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="md:col-span-4 bg-[#13141B] rounded-[2.5rem] p-8 border border-purple-500/20 relative overflow-hidden group hover:border-purple-500/40 transition-all duration-300 flex flex-col justify-between"
+            className="md:col-span-4 bg-[#111827] rounded-[2.5rem] p-8 border border-purple-500/20 relative overflow-hidden group hover:border-purple-500/40 transition-all duration-300 flex flex-col justify-between"
           >
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#1E202C] flex items-center justify-center text-purple-400 mb-6 border border-purple-500/20">
+              <div className="w-12 h-12 rounded-2xl bg-[#1a2435] flex items-center justify-center text-purple-400 mb-6 border border-purple-500/20">
                 <HeartHandshake className="w-6 h-6" />
               </div>
               <div className="flex items-center gap-2 mb-2">
@@ -214,7 +214,7 @@ export const FpBentoGrid: React.FC<FpBentoGridProps> = ({ onOpenContact }) => {
         </div>
 
         {/* Bottom CTA bar for FP */}
-        <div className="mt-14 p-8 rounded-3xl bg-gradient-to-r from-[#181A24] via-[#13141B] to-[#181A24] border border-cyan-500/30 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="mt-14 p-8 rounded-3xl bg-gradient-to-r from-[#162132] via-[#111827] to-[#162132] border border-cyan-500/30 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-2xl bg-cyan-500/20 flex items-center justify-center text-cyan-400">
               <Users className="w-6 h-6" />
