@@ -29,7 +29,7 @@
   body {
     background:
       radial-gradient(circle at top, rgba(16, 185, 129, 0.12), transparent 34%),
-      radial-gradient(circle at 20% 20%, rgba(245, 158, 11, 0.12), transparent 28%),
+      radial-gradient(circle at 20% 20%, rgba(148, 163, 184, 0.10), transparent 28%),
       #070b12;
     color: #e5eef8;
     font-family: var(--font-inter), sans-serif;
@@ -66,7 +66,7 @@
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #fff7ed 10%, #f59e0b 45%, #10b981 100%);
+  background: linear-gradient(135deg, #ffffff 10%, #d1fae5 55%, #10b981 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

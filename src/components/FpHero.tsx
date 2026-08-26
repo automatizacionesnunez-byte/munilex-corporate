@@ -275,7 +275,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                     </div>
                     <div className="flex gap-2">
                       <button className="flex-1 py-2 bg-red-500/20 text-red-300 rounded-lg text-xs font-bold">Difícil</button>
-                      <button className="flex-1 py-2 bg-amber-500/20 text-amber-300 rounded-lg text-xs font-bold">Regular</button>
+                      <button className="flex-1 py-2 bg-emerald-500/20 text-emerald-300 rounded-lg text-xs font-bold">Regular</button>
                       <button className="flex-1 py-2 bg-emerald-500/20 text-emerald-300 rounded-lg text-xs font-bold">Fácil (Dominado)</button>
                     </div>
                   </div>

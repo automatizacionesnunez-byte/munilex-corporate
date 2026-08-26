@@ -26,7 +26,7 @@ export const SecurityCompliance: React.FC = () => {
     {
       title: 'Cifrado de Extremo a Extremo',
       desc: 'Comunicaciones blindadas con TLS 1.3 y cifrado AES-256 en reposo para todos los datos sensibles y perfiles de alumnos.',
-      icon: <Server className="w-6 h-6 text-amber-400" />,
+      icon: <Server className="w-6 h-6 text-emerald-400" />,
     },
     {
       title: 'Copias de Seguridad Automatizadas',

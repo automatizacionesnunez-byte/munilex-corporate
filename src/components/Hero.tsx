@@ -168,7 +168,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-white/5">
             <div className="flex items-center gap-3">
               <div className="w-3 h-3 rounded-full bg-red-500/80" />
-              <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+              <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
               <div className="w-3 h-3 rounded-full bg-green-500/80" />
               <span className="text-xs text-white/40 font-mono ml-2">
                 {variant === 'ingles'

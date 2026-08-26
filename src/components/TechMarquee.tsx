@@ -7,7 +7,7 @@ export const TechMarquee: React.FC = () => {
     { label: 'Alineado con EU AI Act 2026', icon: <Lock className="w-4 h-4 text-[#10b981]" /> },
     { label: 'RGPD / Soberanía de Datos en UE', icon: <Globe className="w-4 h-4 text-emerald-400" /> },
     { label: 'Motor IA Multi-LLM (Gemini & DeepSeek)', icon: <Cpu className="w-4 h-4 text-purple-400" /> },
-    { label: 'Infraestructura Cloudflare Edge', icon: <Zap className="w-4 h-4 text-amber-400" /> },
+    { label: 'Infraestructura Cloudflare Edge', icon: <Zap className="w-4 h-4 text-emerald-400" /> },
     { label: 'Base de Datos Supabase Postgres Dedicada', icon: <Database className="w-4 h-4 text-emerald-300" /> },
     { label: '99.9% Uptime SLA Garantizado', icon: <Server className="w-4 h-4 text-emerald-500" /> },
     { label: 'Pasarelas de Pago Stripe & SEPA B2B', icon: <CheckCircle className="w-4 h-4 text-green-400" /> },
