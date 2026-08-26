@@ -124,7 +124,10 @@ export function App() {
               onOpenContact={() => scrollToContact()}
               variant={activeTab === 'ingles' ? 'ingles' : activeTab === 'otros' ? 'otros' : 'academias'}
             />
-            <RoiCalculator onOpenContact={(plan, students) => scrollToContact(plan, students)} />
+            <RoiCalculator
+              onOpenContact={(plan, students) => scrollToContact(plan, students)}
+              variant={activeTab === 'ingles' ? 'ingles' : activeTab === 'otros' ? 'otros' : 'academias'}
+            />
             <PlansSection
               onOpenContact={(plan) => scrollToContact(plan)}
               variant={activeTab === 'ingles' ? 'ingles' : activeTab === 'otros' ? 'otros' : 'academias'}

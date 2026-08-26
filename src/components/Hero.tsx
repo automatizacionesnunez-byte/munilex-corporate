@@ -28,6 +28,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
       title: 'Software de Marca Blanca e IA para Academias de Oposiciones',
       subtitle: 'Tests, temarios, tutorías y seguimiento con IA bajo tu propio logo y dominio',
       body: 'Digitaliza tu academia con plataforma propia en 14 días. Centraliza contenidos, tests, tutorías, seguimiento y corrección asistida por IA para escalar matrícula y retención sin perder tu marca.',
+      ctaPrimary: 'Solicitar Demo de Oposiciones',
+      ctaSecondary: 'Calcular Costes & Margen',
       simulator: 'Supuesto práctico y tutoría guiada',
       statLabel: '+42 temarios y programas',
     },
@@ -36,6 +38,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
       title: 'Software de Marca Blanca e IA para Academias de Inglés',
       subtitle: 'EPG, listening, grammar, progreso y niveles adaptados a cada alumno',
       body: 'Organiza clases, práctica y seguimiento con una experiencia clara para academias de idiomas. Automiza ejercicios, refuerzo y evolución por niveles para que el alumno vea avance real y el centro gane orden.',
+      ctaPrimary: 'Solicitar Demo de Inglés',
+      ctaSecondary: 'Ver Progreso & Rentabilidad',
       simulator: 'Listening, grammar y evaluación',
       statLabel: 'EPG, listening y progreso',
     },
@@ -44,6 +48,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
       title: 'Software de Marca Blanca e IA para Otros Centros',
       subtitle: 'Autoescuelas, física, química, refuerzo, técnicas y formación especializada',
       body: 'Si enseñas una materia, un proceso o una habilidad, la IA puede ayudarte a automatizar pruebas, seguimiento, tutorías y atención al alumno. Ideal para centros muy concretos y también para negocios más generales.',
+      ctaPrimary: 'Solicitar Demo para tu Centro',
+      ctaSecondary: 'Ver Automatización & Margen',
       simulator: 'Automatización de clases y seguimiento',
       statLabel: 'Autoescuelas, ciencias y refuerzo',
     },
@@ -114,7 +120,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
               onClick={onOpenContact}
               className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-[#c7a15a] via-[#d9bc77] to-[#b68f4e] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-[#c7a15a]/25 hover:shadow-[#c7a15a]/40 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center gap-3"
             >
-              <span>Solicitar Demo & Auditoría Gratis</span>
+              <span>{heroCopy.ctaPrimary}</span>
               <ArrowRight className="w-4 h-4" />
             </button>
 
@@ -122,7 +128,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
               href="#calculator"
               className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-manrope font-bold text-xs uppercase tracking-widest transition-all duration-200 flex items-center justify-center gap-2 hover:border-[#c7a15a]/40"
             >
-              <span>Calcular Costes & Margen</span>
+              <span>{heroCopy.ctaSecondary}</span>
               <ChevronRight className="w-4 h-4 text-[#c7a15a]" />
             </a>
           </motion.div>

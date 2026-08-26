@@ -11,16 +11,22 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
   const copy = {
     academias: {
       header: 'Planes para Academias de Oposiciones',
+      titleTop: 'Planes diseñados para',
+      titleBottom: 'escalar tu academia de oposiciones',
       intro: 'Sin costes ocultos. Licencias calculadas mensualmente en función del número real de alumnos activos en tu plataforma, con un modelo pensado para academias que necesitan previsibilidad.',
       feature: 'Catálogo COMPLETO de itinerarios y materias (oposiciones, refuerzo y preparación especializada)',
     },
     ingles: {
       header: 'Planes para Academias de Inglés',
+      titleTop: 'Planes diseñados para',
+      titleBottom: 'escalar tu academia de inglés',
       intro: 'Sin costes ocultos. Licencias calculadas mensualmente en función del número real de alumnos activos en tu plataforma, con un modelo pensado para academias de idiomas que necesitan previsibilidad.',
       feature: 'Catálogo COMPLETO de itinerarios y materias (EPG, listening, grammar, speaking y progreso por niveles)',
     },
     otros: {
       header: 'Planes para Otros Centros',
+      titleTop: 'Planes diseñados para',
+      titleBottom: 'escalar tu centro especializado',
       intro: 'Sin costes ocultos. Licencias calculadas mensualmente en función del número real de alumnos activos en tu plataforma, con un modelo pensado para centros que necesitan previsibilidad.',
       feature: 'Catálogo COMPLETO de itinerarios y materias (autoescuela, ciencias, refuerzo y formación especializada)',
     },
@@ -125,8 +131,8 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
             <span>{copy.header}</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-white uppercase leading-tight mb-6">
-            PLANES DISEÑADOS PARA <br />
-            <span className="gold-gradient-text">ESCALAR TU CENTRO</span>
+            {copy.titleTop} <br />
+            <span className="gold-gradient-text">{copy.titleBottom}</span>
           </h2>
           <p className="text-base sm:text-lg text-white/60 leading-relaxed">
             {copy.intro}

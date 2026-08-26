@@ -8,10 +8,34 @@ interface ComparisonSectionProps {
 }
 
 export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenContact, variant }) => {
-  const intro = {
-    academias: 'Descubre por qué las academias de oposiciones delegan su infraestructura tecnológica para centrarse en captar, enseñar y retener alumnos, sin perder control de su marca ni de su margen.',
-    ingles: 'Descubre por qué las academias de inglés delegan su infraestructura tecnológica para centrarse en enseñar, practicar y medir progreso por niveles, sin perder control de su marca ni de su margen.',
-    otros: 'Descubre por qué autoescuelas, centros de ciencias y otros centros delegan su infraestructura tecnológica para centrarse en enseñar y automatizar más tareas, sin perder control de su marca ni de su margen.',
+  const copy = {
+    academias: {
+      badge: 'Comparativa para Oposiciones',
+      titleTop: '¿Desarrollar por tu cuenta',
+      titleBottom: 'o escalar con Munilex?',
+      intro: 'Descubre por qué las academias de oposiciones delegan su infraestructura tecnológica para centrarse en captar, enseñar y retener alumnos, sin perder control de su marca ni de su margen.',
+      ctaTitle: '¿Listo para lanzar tu propia plataforma en 14 días?',
+      ctaBody: 'Agenda una sesión de consultoría técnica sin compromiso con nuestros fundadores.',
+      button: 'Solicitar Demostración',
+    },
+    ingles: {
+      badge: 'Comparativa para Inglés',
+      titleTop: '¿Crear tu propia academia de inglés',
+      titleBottom: 'o apoyarte en Munilex?',
+      intro: 'Descubre por qué las academias de inglés delegan su infraestructura tecnológica para centrarse en enseñar, practicar y medir progreso por niveles, sin perder control de su marca ni de su margen.',
+      ctaTitle: '¿Listo para lanzar tu plataforma de inglés en 14 días?',
+      ctaBody: 'Agenda una sesión de consultoría sin compromiso para ver EPG, listening, grammar y progreso en vivo.',
+      button: 'Solicitar Demo de Inglés',
+    },
+    otros: {
+      badge: 'Comparativa para Otros Centros',
+      titleTop: '¿Gestionar todo a mano',
+      titleBottom: 'o automatizar tu centro con IA?',
+      intro: 'Descubre por qué autoescuelas, centros de ciencias y otros centros delegan su infraestructura tecnológica para centrarse en enseñar y automatizar más tareas, sin perder control de su marca ni de su margen.',
+      ctaTitle: '¿Listo para lanzar tu plataforma para tu centro en 14 días?',
+      ctaBody: 'Agenda una sesión de consultoría técnica sin compromiso con nuestros fundadores.',
+      button: 'Solicitar Demostración',
+    },
   }[variant];
 
   const comparisons = [
@@ -55,14 +79,14 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c7a15a]/10 border border-[#c7a15a]/20 text-xs font-bold text-[#c7a15a] uppercase tracking-widest mb-4">
             <Zap className="w-3.5 h-3.5" />
-            <span>Comparativa de Costes & Eficiencia</span>
+            <span>{copy.badge}</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-white uppercase leading-tight mb-6">
-            ¿DESARROLLAR POR TU CUENTA O <br />
-            <span className="gold-gradient-text">ESCALAR CON MUNILEX?</span>
+            {copy.titleTop} <br />
+            <span className="gold-gradient-text">{copy.titleBottom}</span>
           </h2>
           <p className="text-base sm:text-lg text-white/60 leading-relaxed">
-            {intro}
+            {copy.intro}
           </p>
         </div>
 
@@ -112,26 +136,14 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onOpenCont
           {/* Table Footer CTA */}
           <div className="p-8 bg-[#080d15] border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
-              <div className="font-bold text-white text-base">
-                {variant === 'ingles'
-                  ? '¿Listo para lanzar tu plataforma de inglés en 14 días?'
-                  : variant === 'otros'
-                    ? '¿Listo para lanzar tu plataforma para tu centro en 14 días?'
-                    : '¿Listo para lanzar tu propia plataforma en 14 días?'}
-              </div>
-              <div className="text-xs text-white/50">
-                {variant === 'ingles'
-                  ? 'Agenda una sesión de consultoría sin compromiso para ver EPG, listening, grammar y progreso en vivo.'
-                  : variant === 'otros'
-                    ? 'Agenda una sesión de consultoría técnica sin compromiso con nuestros fundadores.'
-                    : 'Agenda una sesión de consultoría técnica sin compromiso con nuestros fundadores.'}
-              </div>
+              <div className="font-bold text-white text-base">{copy.ctaTitle}</div>
+              <div className="text-xs text-white/50">{copy.ctaBody}</div>
             </div>
             <button
               onClick={onOpenContact}
               className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#c7a15a] to-[#d9bc77] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-[#c7a15a]/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
             >
-              Solicitar Demostración
+              {copy.button}
             </button>
           </div>
         </div>
