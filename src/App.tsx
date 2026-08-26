@@ -36,7 +36,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#070b12] text-[#e5eef8] selection:bg-[#10b981]/25 selection:text-white font-inter">
+    <div className="min-h-screen bg-[#ffffff] text-[#0f172a] selection:bg-[#1d4ed8]/20 selection:text-white font-inter">
       {/* Top Navbar with 4-Tab Switcher & Dossier Trigger */}
       <Navbar
         activeMainTab={activeTab}
@@ -50,13 +50,13 @@ export function App() {
 
       {/* Floating Center Selector for Mobile / Quick Switch */}
       <div className="pt-24 md:hidden max-w-sm mx-auto px-6">
-        <div className="grid grid-cols-2 gap-2 p-1.5 rounded-2xl bg-[#111827] border border-white/10 shadow-lg text-center">
+        <div className="grid grid-cols-2 gap-2 p-1.5 rounded-2xl bg-white border border-slate-200 shadow-lg shadow-slate-900/5 text-center">
           <button
             onClick={() => setActiveTab('academias')}
             className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'academias'
-                ? 'bg-[#10b981] text-black shadow-md'
-                : 'text-white/60 hover:text-white'
+                ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20'
+                : 'text-slate-500 hover:text-slate-900'
             }`}
           >
             <Building2 className="w-3.5 h-3.5" />
@@ -66,8 +66,8 @@ export function App() {
             onClick={() => setActiveTab('fp')}
             className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'fp'
-                ? 'bg-emerald-500 text-black shadow-md'
-                : 'text-white/60 hover:text-white'
+                ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20'
+                : 'text-slate-500 hover:text-slate-900'
             }`}
           >
             <GraduationCap className="w-3.5 h-3.5" />
@@ -77,8 +77,8 @@ export function App() {
             onClick={() => setActiveTab('ingles')}
             className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'ingles'
-                ? 'bg-[#10b981] text-black shadow-md'
-                : 'text-white/60 hover:text-white'
+                ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20'
+                : 'text-slate-500 hover:text-slate-900'
             }`}
           >
             <Languages className="w-3.5 h-3.5" />
@@ -88,8 +88,8 @@ export function App() {
             onClick={() => setActiveTab('otros')}
             className={`py-2.5 px-3 rounded-xl text-xs font-extrabold uppercase transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'otros'
-                ? 'bg-[#10b981] text-black shadow-md'
-                : 'text-white/60 hover:text-white'
+                ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20'
+                : 'text-slate-500 hover:text-slate-900'
             }`}
           >
             <Layers3 className="w-3.5 h-3.5" />

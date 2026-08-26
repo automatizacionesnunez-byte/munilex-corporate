@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold: #10b981;
-  --color-gold-light: #ecfdf5;
-  --color-gold-dark: #14532d;
-  --color-dark-bg: #080d15;
-  --color-dark-card: #111827;
-  --color-dark-card-hover: #162132;
-  --color-dark-surface: #1a2435;
-  --color-cyber-blue: #00F0FF;
-  --color-cyber-purple: #8B5CF6;
-  --color-emerald-accent: #10B981;
+  --color-gold: #1d4ed8;
+  --color-gold-light: #dbeafe;
+  --color-gold-dark: #1e3a8a;
+  --color-dark-bg: #f8fafc;
+  --color-dark-card: #ffffff;
+  --color-dark-card-hover: #f1f5f9;
+  --color-dark-surface: #e2e8f0;
+  --color-cyber-blue: #1d4ed8;
+  --color-cyber-purple: #60a5fa;
+  --color-emerald-accent: #1d4ed8;
 
   --font-manrope: "Manrope", sans-serif;
   --font-inter: "Inter", sans-serif;
@@ -28,11 +28,11 @@
   
   body {
     background:
-      radial-gradient(circle at top, rgba(16, 185, 129, 0.08), transparent 34%),
-      radial-gradient(circle at 20% 20%, rgba(226, 232, 240, 0.08), transparent 28%),
-      radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.03), transparent 24%),
-      #070b12;
-    color: #edf2f7;
+      radial-gradient(circle at top, rgba(29, 78, 216, 0.07), transparent 34%),
+      radial-gradient(circle at 20% 20%, rgba(219, 234, 254, 0.55), transparent 26%),
+      radial-gradient(circle at 80% 10%, rgba(241, 245, 249, 0.9), transparent 24%),
+      #ffffff;
+    color: #0f172a;
     font-family: var(--font-inter), sans-serif;
   }
 
@@ -45,10 +45,11 @@
 
 /* Glassmorphism & Card Glows */
 .glass-panel {
-  background: rgba(17, 24, 39, 0.84);
+  background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 16px 40px -24px rgba(15, 23, 42, 0.18);
 }
 
 .glass-panel-hover {
@@ -56,24 +57,24 @@
 }
 
 .glass-panel-hover:hover {
-  background: rgba(22, 33, 50, 0.92);
-  border-color: rgba(16, 185, 129, 0.28);
+  background: rgba(248, 250, 252, 0.96);
+  border-color: rgba(29, 78, 216, 0.18);
   transform: translateY(-2px);
-  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.72), 0 0 28px -8px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.12), 0 0 28px -8px rgba(29, 78, 216, 0.14);
 }
 
 .gold-glow {
-  box-shadow: 0 0 35px -8px rgba(16, 185, 129, 0.18);
+  box-shadow: 0 0 35px -8px rgba(29, 78, 216, 0.18);
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 52%, #10b981 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #334155 52%, #1d4ed8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .cyan-gradient-text {
-  background: linear-gradient(135deg, #ffffff 0%, #d1fae5 54%, #10b981 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #94a3b8 54%, #1d4ed8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -109,16 +110,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #070b12;
+  background: #e2e8f0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #25313f;
+  background: #94a3b8;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #10b981;
+  background: #1d4ed8;
 }
 
 

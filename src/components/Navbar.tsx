@@ -64,7 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#080d15]/90 backdrop-blur-xl border-b border-white/10 shadow-2xl py-3'
+          ? 'bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-lg shadow-slate-900/5 py-3'
           : 'bg-transparent py-4'
       }`}
     >
@@ -74,48 +74,48 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div
               className={`w-10 h-10 rounded-xl p-[1.5px] shadow-lg group-hover:scale-105 transition-transform duration-300 ${
                 activeMainTab === 'fp'
-                  ? 'bg-gradient-to-tr from-emerald-400 via-emerald-200 to-emerald-600 shadow-emerald-500/20'
-                  : 'bg-gradient-to-tr from-[#10b981] via-[#ecfdf5] to-[#14532d] shadow-[#10b981]/20'
+                  ? 'bg-gradient-to-tr from-[#1d4ed8] via-[#93c5fd] to-[#1e40af] shadow-blue-500/20'
+                  : 'bg-gradient-to-tr from-[#1d4ed8] via-[#dbeafe] to-[#60a5fa] shadow-blue-500/20'
               }`}
             >
-              <div className="w-full h-full bg-[#080d15] rounded-[10px] flex items-center justify-center font-manrope font-black text-lg">
-                <span className={activeMainTab === 'fp' ? 'text-emerald-400' : 'text-[#10b981]'}>
+              <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center font-manrope font-black text-lg">
+                <span className={activeMainTab === 'fp' ? 'text-[#1d4ed8]' : 'text-[#1d4ed8]'}>
                   M
                 </span>
               </div>
             </div>
             <div
               className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 border-[#080d15] animate-pulse ${
-                activeMainTab === 'fp' ? 'bg-emerald-500' : 'bg-emerald-400'
+                activeMainTab === 'fp' ? 'bg-[#1d4ed8]' : 'bg-[#3b82f6]'
               }`}
             />
           </div>
           <div className="flex flex-col">
             <div className="flex items-center gap-2">
-              <span className="font-manrope font-black text-xl tracking-tight text-white">MUNILEX</span>
+              <span className="font-manrope font-black text-xl tracking-tight text-slate-900">MUNILEX</span>
               <span
                 className={`text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full border ${
                   activeMainTab === 'fp'
-                    ? 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30'
-                    : 'bg-[#10b981]/15 text-[#10b981] border-[#10b981]/30'
+                    ? 'bg-[#1d4ed8]/10 text-[#1d4ed8] border-[#1d4ed8]/20'
+                    : 'bg-[#1d4ed8]/10 text-[#1d4ed8] border-[#1d4ed8]/20'
                 }`}
               >
                 {activeLabel[activeMainTab]}
               </span>
             </div>
-            <span className="text-[10px] text-white/40 font-medium tracking-wide -mt-0.5">
+            <span className="text-[10px] text-slate-500 font-medium tracking-wide -mt-0.5">
               {familySubtitle()}
             </span>
           </div>
         </a>
 
-        <div className="hidden md:flex items-center p-1 rounded-2xl bg-[#111827] border border-white/10 shadow-inner">
+        <div className="hidden md:flex items-center p-1 rounded-2xl bg-white border border-slate-200 shadow-inner shadow-slate-900/5">
           <button
             onClick={() => onSelectTab('academias')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-manrope font-extrabold uppercase tracking-wider transition-all cursor-pointer ${
               activeMainTab === 'academias'
-                ? 'bg-gradient-to-r from-[#10b981] to-[#a7f3d0] text-black shadow-lg shadow-[#10b981]/20 scale-[1.02]'
-                : 'text-white/60 hover:text-white hover:bg-white/5'
+                ? 'bg-gradient-to-r from-[#1d4ed8] to-[#bfdbfe] text-white shadow-lg shadow-blue-500/20 scale-[1.02]'
+                : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'
             }`}
           >
             <Building2 className="w-3.5 h-3.5" />
@@ -126,8 +126,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectTab('fp')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-manrope font-extrabold uppercase tracking-wider transition-all cursor-pointer ${
               activeMainTab === 'fp'
-                ? 'bg-gradient-to-r from-emerald-400 to-emerald-500 text-black shadow-lg shadow-emerald-500/20 scale-[1.02]'
-                : 'text-white/60 hover:text-white hover:bg-white/5'
+                ? 'bg-gradient-to-r from-[#1d4ed8] to-[#60a5fa] text-white shadow-lg shadow-blue-500/20 scale-[1.02]'
+                : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'
             }`}
           >
             <GraduationCap className="w-3.5 h-3.5" />
@@ -138,8 +138,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectTab('ingles')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-manrope font-extrabold uppercase tracking-wider transition-all cursor-pointer ${
               activeMainTab === 'ingles'
-                ? 'bg-gradient-to-r from-[#10b981] to-[#a7f3d0] text-black shadow-lg shadow-[#10b981]/20 scale-[1.02]'
-                : 'text-white/60 hover:text-white hover:bg-white/5'
+                ? 'bg-gradient-to-r from-[#1d4ed8] to-[#bfdbfe] text-white shadow-lg shadow-blue-500/20 scale-[1.02]'
+                : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'
             }`}
           >
             <Languages className="w-3.5 h-3.5" />
@@ -150,8 +150,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectTab('otros')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-manrope font-extrabold uppercase tracking-wider transition-all cursor-pointer ${
               activeMainTab === 'otros'
-                ? 'bg-gradient-to-r from-[#10b981] to-[#a7f3d0] text-black shadow-lg shadow-[#10b981]/20 scale-[1.02]'
-                : 'text-white/60 hover:text-white hover:bg-white/5'
+                ? 'bg-gradient-to-r from-[#1d4ed8] to-[#bfdbfe] text-white shadow-lg shadow-blue-500/20 scale-[1.02]'
+                : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'
             }`}
           >
             <Layers3 className="w-3.5 h-3.5" />
@@ -165,7 +165,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xs font-semibold text-white/70 hover:text-[#10b981] transition-colors duration-200"
+                className="text-xs font-semibold text-slate-600 hover:text-[#1d4ed8] transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -174,9 +174,9 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           <button
             onClick={onOpenDossier}
-            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-white/90 hover:text-white transition-all cursor-pointer"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-xs font-bold text-slate-700 hover:text-slate-900 transition-all cursor-pointer"
           >
-            <FileText className="w-3.5 h-3.5 text-[#10b981]" />
+            <FileText className="w-3.5 h-3.5 text-[#1d4ed8]" />
             <span>Dossier PDF</span>
           </button>
 
@@ -184,8 +184,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={onOpenContact}
             className={`group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-manrope font-extrabold text-xs uppercase tracking-wider shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer ${
               isAcademyFamily
-                ? 'bg-gradient-to-r from-[#10b981] to-[#a7f3d0] text-[#080d15] shadow-[#10b981]/20 hover:shadow-[#10b981]/35'
-                : 'bg-gradient-to-r from-emerald-400 to-emerald-500 text-[#080d15] shadow-emerald-500/20 hover:shadow-emerald-500/35'
+                ? 'bg-gradient-to-r from-[#1d4ed8] to-[#bfdbfe] text-white shadow-blue-500/20 hover:shadow-blue-500/35'
+                : 'bg-gradient-to-r from-[#1d4ed8] to-[#60a5fa] text-white shadow-blue-500/20 hover:shadow-blue-500/35'
             }`}
           >
             <Sparkles className="w-3.5 h-3.5" />
@@ -196,7 +196,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="xl:hidden p-2.5 rounded-xl bg-white/5 border border-white/10 text-white/80 hover:text-white"
+          className="xl:hidden p-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 hover:text-slate-900 shadow-sm"
           aria-label="Menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -204,15 +204,15 @@ export const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {mobileMenuOpen && (
-        <div className="xl:hidden bg-[#080d15]/95 backdrop-blur-2xl border-b border-white/10 px-6 py-6 space-y-4">
-          <div className="grid grid-cols-2 gap-2 p-1 rounded-2xl bg-[#111827] border border-white/10 mb-4">
+        <div className="xl:hidden bg-white/95 backdrop-blur-2xl border-b border-slate-200 px-6 py-6 space-y-4">
+          <div className="grid grid-cols-2 gap-2 p-1 rounded-2xl bg-slate-50 border border-slate-200 mb-4">
             <button
               onClick={() => {
                 onSelectTab('academias');
                 setMobileMenuOpen(false);
               }}
               className={`p-2.5 rounded-xl text-center text-xs font-bold uppercase transition-all ${
-                activeMainTab === 'academias' ? 'bg-[#10b981] text-black shadow-md' : 'text-white/60'
+                activeMainTab === 'academias' ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20' : 'text-slate-500'
               }`}
             >
               Oposiciones
@@ -223,7 +223,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
               }}
               className={`p-2.5 rounded-xl text-center text-xs font-bold uppercase transition-all ${
-                activeMainTab === 'fp' ? 'bg-emerald-500 text-black shadow-md' : 'text-white/60'
+                activeMainTab === 'fp' ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20' : 'text-slate-500'
               }`}
             >
               FP
@@ -234,7 +234,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
               }}
               className={`p-2.5 rounded-xl text-center text-xs font-bold uppercase transition-all ${
-                activeMainTab === 'ingles' ? 'bg-[#10b981] text-black shadow-md' : 'text-white/60'
+                activeMainTab === 'ingles' ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20' : 'text-slate-500'
               }`}
             >
               <div className="flex items-center justify-center gap-1">
@@ -248,7 +248,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
               }}
               className={`p-2.5 rounded-xl text-center text-xs font-bold uppercase transition-all ${
-                activeMainTab === 'otros' ? 'bg-[#10b981] text-black shadow-md' : 'text-white/60'
+                activeMainTab === 'otros' ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20' : 'text-slate-500'
               }`}
             >
               <div className="flex items-center justify-center gap-1">
@@ -263,7 +263,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               key={link.name}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-base font-semibold text-white/80 hover:text-[#10b981] py-2 border-b border-white/5"
+              className="block text-base font-semibold text-slate-700 hover:text-[#1d4ed8] py-2 border-b border-slate-100"
             >
               {link.name}
             </a>
@@ -275,9 +275,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
                 onOpenDossier();
               }}
-              className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 text-white font-bold text-xs uppercase tracking-wider"
+              className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-slate-50 text-slate-700 font-bold text-xs uppercase tracking-wider border border-slate-200"
             >
-              <FileText className="w-4 h-4 text-[#10b981]" />
+              <FileText className="w-4 h-4 text-[#1d4ed8]" />
               <span>Descargar Dossier PDF</span>
             </button>
 
@@ -288,8 +288,8 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
               className={`w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-manrope font-black text-xs uppercase tracking-widest shadow-lg ${
                 activeMainTab === 'fp'
-                  ? 'bg-emerald-500 text-black shadow-emerald-500/20'
-                  : 'bg-[#10b981] text-black shadow-[#10b981]/20'
+                  ? 'bg-[#1d4ed8] text-white shadow-blue-500/20'
+                  : 'bg-[#1d4ed8] text-white shadow-blue-500/20'
               }`}
             >
               <Sparkles className="w-4 h-4" />
