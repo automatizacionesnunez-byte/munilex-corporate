@@ -105,7 +105,7 @@ export const FpComparisonSection: React.FC<FpComparisonSectionProps> = ({ onOpen
             </div>
             <button
               onClick={onOpenContact}
-              className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#1d4ed8] to-[#2563eb] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-blue-500/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
+              className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#1d4ed8] to-[#2563eb] text-white font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-blue-500/20 hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
             >
               Solicitar Demostración
             </button>

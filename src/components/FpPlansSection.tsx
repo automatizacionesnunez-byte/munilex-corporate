@@ -39,7 +39,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
       name: 'Plan Centro FP Integral',
       tagline: '"Para todo el centro educativo"',
       badge: 'Más Elegido por Centros',
-      icon: <GraduationCap className="w-6 h-6 text-black" />,
+      icon: <GraduationCap className="w-6 h-6 text-white" />,
       desc: 'Digitalización global para todos los ciclos de FP Básica, Grado Medio y Superior del centro. Incluye módulos transversales (FOL / IPE, EIE, Digitalización e Inglés).',
       scope: {
         cycles: 'Todos los Ciclos del Centro',
@@ -126,7 +126,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
               }`}
             >
               {plan.highlighted && (
-                <div className="absolute top-0 right-0 left-0 bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] py-1.5 text-center text-black font-manrope font-black text-[10px] uppercase tracking-widest">
+                <div className="absolute top-0 right-0 left-0 bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] py-1.5 text-center text-white font-manrope font-black text-[10px] uppercase tracking-widest">
                   {plan.badge}
                 </div>
               )}
@@ -136,7 +136,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
                 <div className={`flex items-center justify-between mb-6 ${plan.highlighted ? 'mt-4' : ''}`}>
                   <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border ${
                     plan.highlighted
-                      ? 'bg-[#1d4ed8] text-black border-[#1d4ed8]'
+                      ? 'bg-[#1d4ed8] text-white border-[#1d4ed8]'
                       : 'bg-slate-50 border-slate-200'
                   }`}>
                     {plan.icon}
@@ -215,7 +215,7 @@ export const FpPlansSection: React.FC<FpPlansSectionProps> = ({ onOpenContact })
                 onClick={() => onOpenContact(plan.name)}
                 className={`w-full py-4 rounded-2xl font-manrope font-black text-xs uppercase tracking-widest transition-all cursor-pointer flex items-center justify-center gap-2 ${
                   plan.highlighted
-                    ? 'bg-gradient-to-r from-[#1d4ed8] to-[#2563eb] text-black shadow-lg shadow-blue-500/25 hover:scale-[1.02]'
+                    ? 'bg-gradient-to-r from-[#1d4ed8] to-[#2563eb] text-white shadow-lg shadow-blue-500/25 hover:scale-[1.02]'
                     : 'bg-slate-50 hover:bg-slate-100 text-slate-900 border border-slate-200 hover:border-white/30'
                 }`}
               >

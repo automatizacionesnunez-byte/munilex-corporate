@@ -121,7 +121,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
           >
             <button
               onClick={onOpenContact}
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] text-white font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-blue-500/20 hover:shadow-blue-500/35 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center gap-3"
+              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] text-slate-900 font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-blue-500/20 hover:shadow-blue-500/35 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center gap-3"
             >
               <span>{heroCopy.ctaPrimary}</span>
               <ArrowRight className="w-4 h-4" />
@@ -162,15 +162,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-14 max-w-5xl mx-auto rounded-[2.5rem] bg-[#111827] border border-white/10 p-4 sm:p-7 shadow-2xl shadow-black/80 relative overflow-hidden"
+          className="mt-14 max-w-5xl mx-auto rounded-[2.5rem] bg-white border border-slate-200 p-4 sm:p-7 shadow-2xl shadow-slate-900/5 relative overflow-hidden"
         >
           {/* Header Bar of Simulator */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-white/5">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-slate-200">
             <div className="flex items-center gap-3">
               <div className="w-3 h-3 rounded-full bg-red-500/80" />
               <div className="w-3 h-3 rounded-full bg-blue-500/80" />
               <div className="w-3 h-3 rounded-full bg-green-500/80" />
-              <span className="text-xs text-white/40 font-mono ml-2">
+              <span className="text-xs text-slate-400 font-mono ml-2">
                 {variant === 'ingles'
                   ? 'campus-english.tucentro.es — Munilex English v1.0'
                   : variant === 'otros'
@@ -180,12 +180,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             </div>
 
             {/* Interactive Tabs */}
-            <div className="flex items-center bg-[#080d15] p-1.5 rounded-xl border border-white/5">
+            <div className="flex items-center bg-slate-50 p-1.5 rounded-xl border border-slate-200">
                   <button
                 onClick={() => setActiveTab('eval')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'eval'
-                    ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20'
+                    ? 'bg-[#1d4ed8] text-slate-900 shadow-md shadow-blue-500/20'
                     : 'text-slate-400 hover:text-slate-700'
                 }`}
               >
@@ -196,7 +196,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                 onClick={() => setActiveTab('test')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'test'
-                    ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20'
+                    ? 'bg-[#1d4ed8] text-slate-900 shadow-md shadow-blue-500/20'
                     : 'text-slate-400 hover:text-slate-700'
                 }`}
                 >
@@ -207,7 +207,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                 onClick={() => setActiveTab('tutor')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'tutor'
-                    ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20'
+                    ? 'bg-[#1d4ed8] text-slate-900 shadow-md shadow-blue-500/20'
                     : 'text-slate-400 hover:text-slate-700'
                 }`}
                 >
@@ -228,7 +228,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                   exit={{ opacity: 0, y: -10 }}
                   className="grid md:grid-cols-12 gap-6"
                 >
-                  <div className="md:col-span-6 bg-[#080d15] p-6 rounded-2xl border border-white/5">
+                  <div className="md:col-span-6 bg-slate-50 p-6 rounded-2xl border border-slate-200">
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-[10px] font-black uppercase text-[#1d4ed8] tracking-wider">
                         {variant === 'ingles' ? 'Respuesta del Alumno' : 'Entrega del Alumno'}
@@ -281,7 +281,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                             : 'Devuelve correcciones accionables para mejorar en la siguiente entrega.'}
                         </span>
                       </div>
-                      <div className="p-3 bg-[#080d15] rounded-xl border border-white/5 text-[11px] text-[#ecfdf5]">
+                      <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-[11px] text-[#ecfdf5]">
                         💡 <strong>Consejo del Tutor IA:</strong>{' '}
                         {variant === 'ingles'
                           ? 'Repite la práctica por niveles y refuerza listening y grammar con correcciones cortas.'
@@ -298,7 +298,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="bg-[#080d15] p-6 rounded-2xl border border-white/5"
+                  className="bg-slate-50 p-6 rounded-2xl border border-slate-200"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-bold text-[#1d4ed8] uppercase tracking-wider">
@@ -308,13 +308,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                       {variant === 'ingles' ? 'Dificultad: por nivel' : 'Dificultad: Nivel Medio-Alto'}
                     </span>
                   </div>
-                  <h4 className="text-base font-bold text-white mb-4">
+                  <h4 className="text-base font-bold text-slate-900 mb-4">
                     {variant === 'ingles'
                       ? '¿Qué mejora más el avance del alumno cuando todavía necesita reforzar listening y grammar?'
                       : '¿Qué opción mejora más una respuesta cuando un alumno todavía no domina el temario o el módulo?'}
                   </h4>
                   <div className="grid sm:grid-cols-2 gap-3 mb-4">
-                    <div className="p-3.5 rounded-xl bg-white/5 border border-white/5 text-xs text-white/70">
+                    <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
                       {variant === 'ingles' ? 'A) Traducir sin practicar' : 'A) Repetir el texto sin cambios'}
                     </div>
                     <div className="p-3.5 rounded-xl bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs text-[#1d4ed8] font-bold flex items-center justify-between">
@@ -323,16 +323,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                           ? 'B) Corregir, escuchar y repetir con feedback'
                           : 'B) Explicar, corregir y mostrar un ejemplo mejorado'}
                       </span>
-                      <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                      <CheckCircle2 className="w-4 h-4 text-[#1d4ed8]" />
                     </div>
-                    <div className="p-3.5 rounded-xl bg-white/5 border border-white/5 text-xs text-white/70">
+                    <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
                       {variant === 'ingles' ? 'C) Pasar al siguiente nivel sin medir progreso' : 'C) Esperar a la siguiente clase'}
                     </div>
-                    <div className="p-3.5 rounded-xl bg-white/5 border border-white/5 text-xs text-white/70">
+                    <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
                       {variant === 'ingles' ? 'D) Marcar listening y grammar como aprobados' : 'D) Marcar el ejercicio como correcto'}
                     </div>
                   </div>
-                  <div className="p-3 bg-[#111827] rounded-xl border border-white/5 text-xs text-white/60">
+                  <div className="p-3 bg-white rounded-xl border border-slate-200 text-xs text-slate-600">
                     <span className="font-bold text-[#1d4ed8]">Justificación Pedagógica:</span>{' '}
                     {variant === 'ingles'
                       ? 'El sistema explica por qué una respuesta funciona, qué falta y cómo subir de nivel al alumno con lenguaje claro.'
@@ -350,10 +350,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                   className="space-y-4"
                 >
                   <div className="flex gap-3 max-w-lg">
-                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-white shrink-0">
+                    <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-900 shrink-0">
                       A
                     </div>
-                    <div className="p-4 rounded-2xl bg-[#080d15] border border-white/5 text-xs text-white/80">
+                    <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-700">
                       {variant === 'otros'
                         ? '¿Qué diferencia hay entre un ejercicio correcto y uno que realmente ayuda a automatizar más tareas del centro?'
                         : '¿Qué diferencia hay entre un ejercicio correcto y uno que realmente ayuda a vender más matrículas?'}
@@ -361,10 +361,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                   </div>
 
                   <div className="flex gap-3 max-w-2xl ml-auto flex-row-reverse">
-                    <div className="w-8 h-8 rounded-full bg-[#1d4ed8] flex items-center justify-center text-xs font-black text-white shrink-0">
+                    <div className="w-8 h-8 rounded-full bg-[#1d4ed8] flex items-center justify-center text-xs font-black text-slate-900 shrink-0">
                       IA
                     </div>
-                    <div className="p-4 rounded-2xl bg-[#162132] border border-[#1d4ed8]/20 text-xs text-white/90 space-y-2">
+                    <div className="p-4 rounded-2xl bg-slate-50 border border-[#1d4ed8]/20 text-xs text-slate-700 space-y-2">
                       <p>
                         {variant === 'otros'
                           ? 'La corrección señala errores de fondo, de forma y de estructura para que el alumno mejore con rapidez y el centro gane orden operativo.'
@@ -391,7 +391,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             { value: "100%", label: "Identidad propia (Tu logo y dominio)", icon: <Building2 className="w-4 h-4 text-[#1d4ed8]" /> },
             { value: "ENS & AI Act", label: "Máxima Seguridad Normativa", icon: <ShieldCheck className="w-4 h-4 text-[#1d4ed8]" /> },
           ].map((stat, i) => (
-            <div key={i} className="p-6 rounded-2xl glass-panel border border-white/5 text-center">
+            <div key={i} className="p-6 rounded-2xl glass-panel border border-slate-200 text-center">
               <div className="flex justify-center mb-2">{stat.icon}</div>
               <div className="text-2xl sm:text-3xl font-black font-manrope text-slate-900 mb-1 tracking-tight">{stat.value}</div>
               <div className="text-xs text-slate-500 font-medium">{stat.label}</div>

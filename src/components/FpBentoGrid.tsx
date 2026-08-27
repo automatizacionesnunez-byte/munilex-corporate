@@ -226,7 +226,7 @@ export const FpBentoGrid: React.FC<FpBentoGridProps> = ({ onOpenContact }) => {
           </div>
           <button
             onClick={onOpenContact}
-            className="px-6 py-3 rounded-xl bg-[#1d4ed8] text-black font-manrope font-bold text-xs uppercase tracking-wider hover:bg-[#bfdbfe] transition-all cursor-pointer whitespace-nowrap"
+            className="px-6 py-3 rounded-xl bg-[#1d4ed8] text-white font-manrope font-bold text-xs uppercase tracking-wider hover:bg-[#bfdbfe] transition-all cursor-pointer whitespace-nowrap"
           >
             Solicitar Demostración en Vivo
           </button>

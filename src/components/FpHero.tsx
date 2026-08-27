@@ -78,7 +78,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
           >
             <button
               onClick={onOpenContact}
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center gap-3"
+              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] text-white font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center gap-3"
             >
               <span>Agendar Demo Piloto para mi Centro</span>
               <ArrowRight className="w-4 h-4" />
@@ -136,7 +136,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                 onClick={() => setActiveFpTab('roleplay')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeFpTab === 'roleplay'
-                    ? 'bg-[#1d4ed8] text-black shadow-md font-bold'
+                    ? 'bg-[#1d4ed8] text-white shadow-md font-bold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -147,7 +147,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                 onClick={() => setActiveFpTab('tutor')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeFpTab === 'tutor'
-                    ? 'bg-[#1d4ed8] text-black shadow-md font-bold'
+                    ? 'bg-[#1d4ed8] text-white shadow-md font-bold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -158,7 +158,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                 onClick={() => setActiveFpTab('exam')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeFpTab === 'exam'
-                    ? 'bg-[#1d4ed8] text-black shadow-md font-bold'
+                    ? 'bg-[#1d4ed8] text-white shadow-md font-bold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -169,7 +169,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                 onClick={() => setActiveFpTab('emotional')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeFpTab === 'emotional'
-                    ? 'bg-sky-400 text-black shadow-md font-bold'
+                    ? 'bg-sky-400 text-white shadow-md font-bold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -269,7 +269,7 @@ export const FpHero: React.FC<FpHeroProps> = ({ onOpenContact }) => {
                         <span className="text-[10px] bg-[#1d4ed8]/20 text-[#1d4ed8] px-2 py-0.5 rounded-full font-mono">Repaso #3</span>
                       </div>
                       <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 mb-4">
-                        <div className="text-[#10b981] font-bold mb-1">¿Qué principio SOLID establece que una clase debe tener una única razón para cambiar?</div>
+                        <div className="text-[#1d4ed8] font-bold mb-1">¿Qué principio SOLID establece que una clase debe tener una única razón para cambiar?</div>
                         <div className="text-[#1d4ed8] font-semibold mt-2">→ Principio de Responsabilidad Única (SRP).</div>
                       </div>
                     </div>

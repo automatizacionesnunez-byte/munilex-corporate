@@ -33,19 +33,19 @@ export const FaqSection: React.FC = () => {
   ];
 
   return (
-    <section id="faq" className="py-28 md:py-36 relative bg-[#080d15]">
+    <section id="faq" className="py-28 md:py-36 relative bg-slate-50">
       <div className="max-w-4xl mx-auto px-6 md:px-10 relative z-10">
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#10b981]/10 border border-[#10b981]/20 text-xs font-bold text-[#10b981] uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs font-bold text-[#1d4ed8] uppercase tracking-widest mb-4">
             <HelpCircle className="w-3.5 h-3.5" />
             <span>Resolución de Dudas</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-white uppercase leading-tight mb-4">
+          <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-4">
             PREGUNTAS <span className="gold-gradient-text">FRECUENTES</span>
           </h2>
-          <p className="text-sm sm:text-base text-white/60">
+          <p className="text-sm sm:text-base text-slate-600">
             Todo lo que necesitas saber antes de dar el salto tecnológico con Munilex Corporate.
           </p>
         </div>
@@ -55,17 +55,17 @@ export const FaqSection: React.FC = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="rounded-3xl bg-[#111827] border border-white/5 overflow-hidden transition-colors"
+              className="rounded-3xl bg-white border border-slate-200 overflow-hidden transition-colors"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-4 cursor-pointer"
               >
-                <span className="font-manrope font-bold text-white text-base sm:text-lg">
+                <span className="font-manrope font-bold text-slate-900 text-base sm:text-lg">
                   {faq.q}
                 </span>
-                <div className={`w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-[#10b981] shrink-0 transition-transform duration-300 ${
-                  openIndex === index ? 'rotate-180 bg-[#10b981]/20' : ''
+                <div className={`w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-[#1d4ed8] shrink-0 transition-transform duration-300 ${
+                  openIndex === index ? 'rotate-180 bg-[#1d4ed8]/20' : ''
                 }`}>
                   <ChevronDown className="w-4 h-4" />
                 </div>
@@ -79,7 +79,7 @@ export const FaqSection: React.FC = () => {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="px-6 pb-7 sm:px-7 text-sm text-white/65 leading-relaxed border-t border-white/5 pt-4">
+                    <div className="px-6 pb-7 sm:px-7 text-sm text-slate-600 leading-relaxed border-t border-slate-200 pt-4">
                       {faq.a}
                     </div>
                   </motion.div>

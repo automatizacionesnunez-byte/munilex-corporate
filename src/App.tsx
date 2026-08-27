@@ -13,14 +13,18 @@ import { FpDemoSection } from './components/FpDemoSection';
 import { TeamSection } from './components/TeamSection';
 import { SecurityCompliance } from './components/SecurityCompliance';
 import { FaqSection } from './components/FaqSection';
-import { LegalSection } from './components/LegalSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { DossierModal } from './components/DossierModal';
+import LegalPage from './components/LegalPage';
 import { Building2, GraduationCap, Languages, Layers3 } from 'lucide-react';
 
 export function App() {
+  if (typeof window !== 'undefined' && window.location.pathname.startsWith('/legal')) {
+    return <LegalPage />;
+  }
+
   const [activeTab, setActiveTab] = useState<MainTabType>('academias');
   const [isDossierOpen, setIsDossierOpen] = useState(false);
   const [selectedPlanForContact, setSelectedPlanForContact] = useState<string | undefined>();
@@ -140,7 +144,6 @@ export function App() {
         <TeamSection />
         <SecurityCompliance />
         <FaqSection />
-        <LegalSection />
         <ContactSection
           targetType={activeTab}
           initialPlan={selectedPlanForContact}
