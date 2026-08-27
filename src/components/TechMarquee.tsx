@@ -4,7 +4,7 @@ import { ShieldCheck, Cpu, Database, Lock, Globe, Server, CheckCircle, Zap } fro
 export const TechMarquee: React.FC = () => {
   const trustItems = [
     { label: 'Esquema Nacional de Seguridad (ENS)', icon: <ShieldCheck className="w-4 h-4 text-[#1d4ed8]" /> },
-    { label: 'Alineado con EU AI Act 2026', icon: <Lock className="w-4 h-4 text-[#10b981]" /> },
+    { label: 'Alineado con EU AI Act 2026', icon: <Lock className="w-4 h-4 text-[#1d4ed8]" /> },
     { label: 'RGPD / Soberanía de Datos en UE', icon: <Globe className="w-4 h-4 text-[#1d4ed8]" /> },
     { label: 'Motor IA Multi-LLM (Gemini & DeepSeek)', icon: <Cpu className="w-4 h-4 text-sky-600" /> },
     { label: 'Infraestructura Cloudflare Edge', icon: <Zap className="w-4 h-4 text-[#1d4ed8]" /> },
@@ -15,14 +15,14 @@ export const TechMarquee: React.FC = () => {
 
   return (
     <div className="py-8 bg-white border-y border-slate-200 overflow-hidden relative">
-      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#07080B] to-transparent z-10 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#07080B] to-transparent z-10 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
       <div className="flex animate-marquee items-center gap-8">
         {[...trustItems, ...trustItems].map((item, index) => (
           <div
             key={index}
-            className="flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/[0.03] border border-slate-200 hover:border-slate-200 transition-all text-xs font-semibold text-slate-600 shrink-0"
+            className="flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-slate-50 border border-slate-200 hover:border-[#1d4ed8]/25 transition-all text-xs font-semibold text-slate-600 shrink-0 shadow-sm"
           >
             {item.icon}
             <span>{item.label}</span>
