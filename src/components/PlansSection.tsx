@@ -39,7 +39,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
       tagline: '"Empieza con una base sólida"',
       badge: 'Acceso Rápido',
       icon: <Rocket className="w-6 h-6 text-[#1d4ed8]" />,
-      desc: 'Integración inicial de Munilex con acceso a 2 itinerarios, materias o programas, con posibilidad de ampliar más adelante. Ideal para centros que quieren validar la IA sin grandes inversiones.',
+      desc: 'Empieza con 2 itinerarios y valida la demanda sin una inversión grande.',
       scope: {
         opos: '2 itinerarios o materias',
         delivery: '1 - 2 semanas',
@@ -54,7 +54,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
         'Tests y simulacros ilimitados',
         'Casos prácticos corregidos por IA',
         'Flashcards de repaso espaciado',
-        'Asistente IA para dudas y refuerzo',
         'Panel de control de estudiantes',
       ],
       cta: 'Consultar Plan Iniciación',
@@ -66,7 +65,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
       tagline: '"Tu plataforma con identidad propia"',
       badge: 'Más Popular • Identidad Propia',
       icon: <Heart className="w-6 h-6 text-white" />,
-      desc: 'Incluye todo lo del plan inicial y añade identidad propia para que el alumno y el claustro vean una plataforma de marca.',
+      desc: 'Añade dominio propio, marca y una experiencia más sólida para el alumno.',
       scope: {
         opos: 'Catálogo Completo (+42 programas)',
         delivery: '3 - 4 semanas',
@@ -93,7 +92,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
       tagline: '"Tu solución educativa a medida"',
       badge: 'Enterprise',
       icon: <Globe className="w-6 h-6 text-[#1d4ed8]" />,
-      desc: 'Para grupos, redes o centros con procesos muy propios que necesitan una solución adaptada desde la base.',
+      desc: 'Para redes o centros con procesos propios y necesidades de integración reales.',
       scope: {
         opos: 'A medida + Ingesta de contenidos propios',
         delivery: '6 - 8 semanas',

@@ -27,11 +27,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
       badge: 'Academia de Oposiciones',
       titleTop: 'OPOSICIONES',
       titleBottom: 'IA PARA ESCALAR TU ACADEMIA',
-      subtitle: 'Tests, temarios y tutorías bajo tu propia marca',
-      body: 'Lanza una plataforma propia en 14 días y centraliza preparación, corrección y seguimiento para ganar capacidad sin subir la carga del equipo.',
+      subtitle: 'Tests, temarios y tutorías bajo tu marca',
+      body: 'Lanza una plataforma propia en 14 días y centraliza preparación, corrección y seguimiento sin sumar carga al equipo.',
       ctaPrimary: 'Solicitar Demo de Oposiciones',
       ctaSecondary: 'Calcular Costes & Margen',
-      simulator: 'Supuesto práctico y tutoría guiada',
+      simulator: 'Vista previa de uso real',
       statLabel: '+42 temarios y programas',
     },
     ingles: {
@@ -39,10 +39,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
       titleTop: 'INGLÉS',
       titleBottom: 'IA PARA AVANZAR POR NIVELES',
       subtitle: 'EPG, listening, grammar y progreso por niveles',
-      body: 'Ordena la experiencia de tu academia de idiomas con una plataforma que mide avance real y ayuda a cada alumno a subir de nivel con criterio.',
+      body: 'Convierte el seguimiento en un sistema claro para medir avance, reforzar aprendizaje y vender continuidad con más facilidad.',
       ctaPrimary: 'Solicitar Demo de Inglés',
       ctaSecondary: 'Ver Progreso & Rentabilidad',
-      simulator: 'Listening, grammar y evaluación',
+      simulator: 'Seguimiento y progreso por niveles',
       statLabel: 'EPG, listening y progreso',
     },
     otros: {
@@ -53,7 +53,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
       body: 'Si tu centro enseña procesos, materias o habilidades, la IA puede ayudarte a automatizar pruebas, tutorías y atención al alumno sin perder control.',
       ctaPrimary: 'Solicitar Demo para tu Centro',
       ctaSecondary: 'Ver Automatización & Margen',
-      simulator: 'Automatización de clases y progreso',
+      simulator: 'Automatización de clases y soporte',
       statLabel: 'Autoescuelas, ciencias y refuerzo',
     },
   }[variant];
@@ -77,7 +77,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             <span className="w-2 h-2 rounded-full bg-[#1d4ed8] animate-ping" />
             <span className="text-[#1d4ed8] font-black uppercase tracking-wider text-[10px]">{heroCopy.badge}</span>
             <span className="text-slate-400">•</span>
-            <span>Plataforma corporativa de IA educativa</span>
+            <span>Plataforma corporativa para centros educativos</span>
           </motion.div>
         </div>
 
@@ -87,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-6xl lg:text-7xl font-manrope font-black tracking-tight leading-[1.02] text-slate-900 uppercase mb-8"
+            className="text-4xl sm:text-6xl lg:text-7xl font-manrope font-black tracking-tight leading-[1.02] text-slate-900 uppercase mb-7"
           >
             {heroCopy.titleTop}{' '}
             <span className="gold-gradient-text block sm:inline">
@@ -102,12 +102,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal mb-10"
+            className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal mb-8"
           >
             {heroCopy.body}
           </motion.p>
 
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-600 mb-10 shadow-sm shadow-slate-900/5">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-600 mb-8 shadow-sm shadow-slate-900/5">
             <span className="w-2 h-2 rounded-full bg-[#1d4ed8]" />
             <span>{heroCopy.simulator}</span>
           </div>
@@ -117,7 +117,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
             <button
               onClick={onOpenContact}
@@ -144,7 +144,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#1d4ed8]" />
-              <span>Sin costes de servidores propios</span>
+              <span>Sin servidores propios</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#1d4ed8]" />
@@ -162,7 +162,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-14 max-w-5xl mx-auto rounded-[2.5rem] bg-white border border-slate-200 p-4 sm:p-7 shadow-2xl shadow-slate-900/5 relative overflow-hidden"
+          className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] bg-white border border-slate-200 p-4 sm:p-7 shadow-2xl shadow-slate-900/5 relative overflow-hidden"
         >
           {/* Header Bar of Simulator */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-slate-200">
@@ -231,22 +231,22 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                   <div className="md:col-span-6 bg-slate-50 p-6 rounded-2xl border border-slate-200">
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-[10px] font-black uppercase text-[#1d4ed8] tracking-wider">
-                        {variant === 'ingles' ? 'Respuesta del Alumno' : 'Entrega del Alumno'}
+                        {variant === 'ingles' ? 'Respuesta del alumno' : 'Entrega del alumno'}
                       </span>
                       <span className="text-[11px] text-slate-400">
                         {variant === 'ingles'
                           ? 'Actividad de listening y grammar'
                           : variant === 'otros'
                             ? 'Actividad adaptada al centro'
-                            : 'Actividad guiada de nivel intermedio'}
+                            : 'Actividad guiada por nivel y criterio'}
                       </span>
                     </div>
                     <p className="text-sm text-slate-600 italic leading-relaxed">
                       {variant === 'ingles'
-                        ? '"I can understand the text, but I still need more listening practice, grammar correction and a clearer level-based progression..."'
+                        ? '"I can understand the text, but I still need more listening practice, grammar correction and a clearer level-based progression."'
                         : variant === 'otros'
-                          ? '"He resumido el proceso, pero todavía me falta estructura, ejemplos y una conclusión clara para mi tipo de centro..."'
-                          : '"He resumido el proceso, pero todavía me falta estructura, ejemplos y una conclusión clara. También quiero comprobar si la respuesta está bien enfocada al tipo de examen o certificación..."'}
+                          ? '"He resumido el proceso, pero todavía me falta estructura, ejemplos y una conclusión clara para mi tipo de centro."'
+                          : '"He resumido el proceso, pero todavía me falta estructura, ejemplos y una conclusión clara para mi tipo de examen."'}
                     </p>
                   </div>
 
@@ -266,20 +266,20 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                       <div className="flex items-start gap-2">
                         <CheckCircle2 className="w-4 h-4 text-[#1d4ed8] shrink-0 mt-0.5" />
                         <span>
-                          {variant === 'ingles'
+                        {variant === 'ingles'
                             ? 'Detecta grammar, listening, nivel, fluidez y progreso por bloques.'
                             : variant === 'otros'
                               ? 'Detecta estructura, claridad, exactitud y adecuación al tipo de centro.'
                               : 'Detecta estructura, claridad, exactitud y adecuación al nivel del alumno.'}
-                        </span>
+                      </span>
                       </div>
                       <div className="flex items-start gap-2">
                         <CheckCircle2 className="w-4 h-4 text-[#1d4ed8] shrink-0 mt-0.5" />
                         <span>
                           {variant === 'ingles'
                             ? 'Devuelve correcciones accionables para subir de nivel y medir progreso.'
-                            : 'Devuelve correcciones accionables para mejorar en la siguiente entrega.'}
-                        </span>
+                          : 'Devuelve correcciones accionables para mejorar en la siguiente entrega.'}
+                      </span>
                       </div>
                       <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-[11px] text-slate-600">
                         💡 <strong>Consejo del Tutor IA:</strong>{' '}
@@ -310,8 +310,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                   </div>
                   <h4 className="text-base font-bold text-slate-900 mb-4">
                     {variant === 'ingles'
-                      ? '¿Qué mejora más el avance del alumno cuando todavía necesita reforzar listening y grammar?'
-                      : '¿Qué opción mejora más una respuesta cuando un alumno todavía no domina el temario o el módulo?'}
+                      ? '¿Qué mejora más el avance cuando el alumno aún necesita reforzar listening y grammar?'
+                      : '¿Qué opción mejora más una respuesta cuando el alumno todavía no domina el temario o el módulo?'}
                   </h4>
                   <div className="grid sm:grid-cols-2 gap-3 mb-4">
                     <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
@@ -384,12 +384,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
         </motion.div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14 max-w-5xl mx-auto">
           {[
-            { value: "10-14 Días", label: "Tiempo de Entrega & Despliegue", icon: <Clock className="w-4 h-4 text-[#1d4ed8]" /> },
-            { value: "+42", label: variant === 'ingles' ? 'Itinerarios, niveles y programas' : 'Itinerarios, materias y programas', icon: <Layers className="w-4 h-4 text-[#1d4ed8]" /> },
-            { value: "100%", label: "Identidad propia (Tu logo y dominio)", icon: <Building2 className="w-4 h-4 text-[#1d4ed8]" /> },
-            { value: "ENS & AI Act", label: "Máxima Seguridad Normativa", icon: <ShieldCheck className="w-4 h-4 text-[#1d4ed8]" /> },
+            { value: "10-14 Días", label: "Puesta en marcha", icon: <Clock className="w-4 h-4 text-[#1d4ed8]" /> },
+            { value: "+42", label: variant === 'ingles' ? 'Niveles y programas' : 'Itinerarios y programas', icon: <Layers className="w-4 h-4 text-[#1d4ed8]" /> },
+            { value: "100%", label: "Marca propia y dominio", icon: <Building2 className="w-4 h-4 text-[#1d4ed8]" /> },
+            { value: "ENS & AI Act", label: "Seguridad normativa", icon: <ShieldCheck className="w-4 h-4 text-[#1d4ed8]" /> },
           ].map((stat, i) => (
             <div key={i} className="p-6 rounded-2xl glass-panel border border-slate-200 text-center">
               <div className="flex justify-center mb-2">{stat.icon}</div>

@@ -49,11 +49,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
               <span>
                 {isAcademy
                   ? isEnglish
-                    ? 'Contacto Directo para Academia de Inglés'
+                    ? 'Contacto directo para academia de inglés'
                     : isOther
-                      ? 'Contacto Directo para Otros Centros'
-                      : 'Contacto Directo B2B para Centros'
-                  : 'Contacto Institucional FP'}
+                      ? 'Contacto directo para otros centros'
+                      : 'Contacto directo para centros'
+                  : 'Contacto institucional FP'}
               </span>
             </div>
 
@@ -62,25 +62,25 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                 <>
                   {isEnglish ? (
                     <>
-                      IMPULSA TU ACADEMIA <br />
+                      HABLEMOS DE TU <br />
                       <span className="cyan-gradient-text">DE INGLÉS CON IA</span>
                     </>
                   ) : isOther ? (
                     <>
-                      AUTOMATIZA TU CENTRO <br />
-                      <span className="cyan-gradient-text">CON TECNOLOGÍA IA</span>
+                      HABLEMOS DE TU <br />
+                      <span className="cyan-gradient-text">CENTRO ESPECIALIZADO</span>
                     </>
                   ) : (
                     <>
-                      IMPULSA TU CENTRO <br />
-                      <span className="cyan-gradient-text">CON TECNOLOGÍA IA</span>
+                      HABLEMOS DE TU <br />
+                      <span className="cyan-gradient-text">ACADEMIA CON IA</span>
                     </>
                   )}
                 </>
               ) : (
                 <>
-                  DIGITALIZA TU CENTRO <br />
-                  <span className="cyan-gradient-text">DE FORMACIÓN PROFESIONAL</span>
+                  HABLEMOS DE TU <br />
+                  <span className="cyan-gradient-text">CENTRO DE FORMACIÓN PROFESIONAL</span>
                 </>
               )}
             </h2>
@@ -88,18 +88,18 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
             <p className="text-base text-slate-600 leading-relaxed">
               {isAcademy
                 ? isEnglish
-                  ? 'Agenda una sesión personalizada de 20 minutos donde te mostraremos la plataforma en vivo con EPG, listening, gramática, progreso y niveles adaptados a tu academia de inglés.'
+                  ? 'Agenda una sesión breve y te enseñamos la plataforma en vivo con EPG, listening, grammar, progreso y niveles adaptados a tu academia de inglés.'
                   : isOther
-                    ? 'Agenda una sesión personalizada de 20 minutos donde te mostraremos cómo automatizar matrículas, actividad, pruebas y comunicación para autoescuelas, centros de ciencias, refuerzo y otros centros.'
-                    : 'Agenda una sesión personalizada de 20 minutos donde te mostraremos la plataforma en vivo con tus colores corporativos y calcularemos una propuesta económica exacta para academias de oposiciones y otros centros.'
-                : 'Solicita una demostración en directo adaptada a las familias profesionales de tu centro para que tu claustro docente pruebe el roleplay y la evaluación curricular.'}
+                    ? 'Te enseñamos cómo automatizar matrículas, actividad, pruebas y comunicación para autoescuelas, centros de ciencias, refuerzo y otros centros.'
+                    : 'Te mostramos la plataforma en vivo con tus colores corporativos y te damos una propuesta económica clara para tu academia.'
+                : 'Solicita una demostración adaptada a tu centro para validar el roleplay, la evaluación curricular y la adopción por parte del claustro.'}
             </p>
 
             <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-3 text-xs text-slate-600 shadow-sm shadow-slate-900/5">
               <Clock className="w-5 h-5 shrink-0 text-[#1d4ed8]" />
               <div>
-                <strong className="text-slate-900 block">Capacidad de Onboarding Mensual:</strong>
-                <span>Máx. 3 centros por mes para garantizar una puesta en marcha cuidada y soporte continuo.</span>
+                <strong className="text-slate-900 block">Capacidad mensual limitada:</strong>
+                <span>Máx. 3 centros por mes para cuidar la puesta en marcha y el soporte.</span>
               </div>
             </div>
 
@@ -114,8 +114,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                   <MessageCircle className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-slate-500 font-medium">
-                    {isEnglish ? 'Dirección Comercial & Idiomas' : isOther ? 'Dirección Comercial & Otros Centros' : 'Dirección Comercial & Centros'}
+                    <div className="text-xs text-slate-500 font-medium">
+                    {isEnglish ? 'Dirección comercial & idiomas' : isOther ? 'Dirección comercial & otros centros' : 'Dirección comercial & centros'}
                   </div>
                   <div className="text-sm font-bold text-slate-900 group-hover:text-[#1d4ed8] transition-colors">
                     Francisco de Paula Marín · +34 649 49 05 80
@@ -134,7 +134,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-slate-500 font-medium">Dirección Técnica & IA</div>
+                  <div className="text-xs text-slate-500 font-medium">Dirección técnica & IA</div>
                   <div className="text-sm font-bold text-slate-900 group-hover:text-[#1d4ed8] transition-colors">
                     José María Núñez Mejías · +34 605 39 29 12
                   </div>
@@ -159,7 +159,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                 <span>Compromiso Munilex Academy, S.L.</span>
               </div>
               <p>
-                Sin permanencias forzosas. Soporte técnico continuo y actualizaciones legislativas o curriculares automáticas incluidas.
+                Sin permanencias forzosas. Soporte técnico continuo y actualizaciones legislativas o curriculares incluidas.
               </p>
             </div>
           </div>
@@ -176,10 +176,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
                   <h3 className="text-2xl font-manrope font-black text-slate-900 uppercase">
-                    ¡Solicitud Recibida con Éxito!
+                    Solicitud recibida
                   </h3>
                   <p className="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-                    Francisco de Paula o José María se pondrán en contacto contigo en menos de 24h laborales para preparar tu entorno de prueba.
+                    Francisco de Paula o José María te contactarán en menos de 24h laborales para preparar tu demo.
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
@@ -193,11 +193,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                   <div className="text-xl font-manrope font-black text-slate-900 uppercase tracking-tight mb-2">
                     {isAcademy
                       ? isEnglish
-                        ? 'Solicitar Demostración para Academia de Inglés'
+                        ? 'Solicitar demo para academia de inglés'
                         : isOther
-                          ? 'Solicitar Demostración para Otros Centros'
-                          : 'Solicitar Auditoría & Demostración B2B'
-                      : 'Solicitar Demostración Piloto para Centro FP'}
+                          ? 'Solicitar demo para otros centros'
+                          : 'Solicitar auditoría y demo'
+                      : 'Solicitar demo piloto para FP'}
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4">
@@ -247,12 +247,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
 
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">
-                        {isAcademy ? (isEnglish ? 'Nombre de tu Academia de Inglés *' : isOther ? 'Nombre de tu Centro *' : 'Nombre de tu Centro *') : 'Nombre del Instituto / Centro FP *'}
+                        {isAcademy ? (isEnglish ? 'Nombre de tu academia de inglés *' : 'Nombre de tu centro *') : 'Nombre del instituto o centro FP *'}
                       </label>
                       <input
                         type="text"
                         required
-                        placeholder={isAcademy ? (isEnglish ? 'Oxford English Center / Wall Street School' : isOther ? 'Autoescuela / Academia de Física / Centro de Refuerzo' : 'Academia Oposiciones Élite') : 'IES / Centro de FP San Viator'}
+                      placeholder={isAcademy ? (isEnglish ? 'Oxford English Center / Wall Street School' : isOther ? 'Autoescuela / academia / centro de refuerzo' : 'Academia Oposiciones Élite') : 'IES / Centro de FP San Viator'}
                         value={formData.organization}
                         onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                         className="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:border-[#1d4ed8] focus:outline-none transition-colors"
@@ -263,7 +263,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">
-                        Alumnos Activos Estimados
+                        Alumnos estimados
                       </label>
                       <select
                         value={formData.studentsCount}
@@ -280,7 +280,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                     {isAcademy ? (
                       <div>
                         <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">
-                          Plan de Interés
+                          Plan de interés
                         </label>
                         <select
                           value={formData.planInterest}
@@ -296,7 +296,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                     ) : (
                       <div>
                         <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">
-                          Familia Profesional Principal
+                          Familia profesional principal
                         </label>
                         <select
                           value={formData.fpFamily}
@@ -318,21 +318,21 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                     <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">
                       {isAcademy
                         ? isEnglish
-                          ? '¿Qué niveles, clases o necesidades específicas tienes? (Opcional)'
+                          ? '¿Qué niveles o necesidades específicas tienes? (Opcional)'
                           : isOther
-                            ? '¿Qué materias, procesos o necesidades específicas tienes? (Opcional)'
-                            : '¿Qué clases, materias o necesidades específicas tienes? (Opcional)'
-                        : '¿Qué módulos o necesidades de simulación queréis reforzar? (Opcional)'}
+                            ? '¿Qué materias o procesos quieres automatizar? (Opcional)'
+                            : '¿Qué clases o materias necesitas reforzar? (Opcional)'
+                        : '¿Qué módulos o necesidades queréis reforzar? (Opcional)'}
                     </label>
                     <textarea
                       rows={3}
                       placeholder={isAcademy
                         ? isEnglish
-                          ? 'Ej. Somos una academia de inglés. Queremos IA para EPG, listening, gramática, speaking y progreso por niveles...'
+                          ? 'Ej. Queremos IA para EPG, listening, grammar, speaking y progreso por niveles.'
                           : isOther
-                            ? 'Ej. Somos una autoescuela, una academia de física o un centro de refuerzo. Queremos IA para matrículas, pruebas, tutorías y atención al alumno...'
-                            : 'Ej. Somos una academia de oposiciones. Queremos IA para tests, tutorías y corrección asistida...'
-                        : 'Ej. Nos interesa especialmente el roleplay por voz para el módulo de FOL / IPE y atención al cliente en Sanidad...'}
+                            ? 'Ej. Queremos IA para matrículas, pruebas, tutorías y atención al alumno.'
+                            : 'Ej. Queremos IA para tests, tutorías y corrección asistida.'
+                        : 'Ej. Nos interesa el roleplay por voz para FOL / IPE y atención al cliente.'}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:border-[#1d4ed8] focus:outline-none transition-colors resize-none"
@@ -343,7 +343,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                     type="submit"
                     className="w-full py-4 rounded-xl font-manrope font-black text-xs uppercase tracking-widest shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] text-white shadow-[#1d4ed8]/25"
                   >
-                    <span>{isAcademy ? 'Solicitar Demostración y Presupuesto' : 'Solicitar Demostración Piloto en Directo'}</span>
+                    <span>{isAcademy ? 'Solicitar demo y presupuesto' : 'Solicitar demo piloto en directo'}</span>
                     <Send className="w-4 h-4" />
                   </button>
 
