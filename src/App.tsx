@@ -18,11 +18,21 @@ import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { DossierModal } from './components/DossierModal';
 import LegalPage from './components/LegalPage';
+import PrivacyPage from './components/PrivacyPage';
+import CookiesPage from './components/CookiesPage';
 import { Building2, GraduationCap, Languages, Layers3 } from 'lucide-react';
 
 export function App() {
   if (typeof window !== 'undefined' && window.location.pathname.startsWith('/legal')) {
     return <LegalPage />;
+  }
+
+  if (typeof window !== 'undefined' && window.location.pathname.startsWith('/privacy')) {
+    return <PrivacyPage />;
+  }
+
+  if (typeof window !== 'undefined' && window.location.pathname.startsWith('/cookies')) {
+    return <CookiesPage />;
   }
 
   const [activeTab, setActiveTab] = useState<MainTabType>('academias');

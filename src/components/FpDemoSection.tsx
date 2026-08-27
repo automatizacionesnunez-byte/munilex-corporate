@@ -99,7 +99,7 @@ export const FpDemoSection: React.FC<FpDemoSectionProps> = ({ onOpenContact }) =
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={onOpenContact}
-                className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] text-black font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-blue-500/25 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center justify-center gap-3"
+                className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] text-white font-manrope font-black text-xs uppercase tracking-widest shadow-xl shadow-blue-500/25 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center justify-center gap-3"
               >
                 <span>Solicitar Demostración en Directo</span>
                 <ArrowRight className="w-4 h-4" />

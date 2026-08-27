@@ -104,9 +104,9 @@ export const Footer = () => {
             © {new Date().getFullYear()} Munilex Academy, S.L. Todos los derechos reservados.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/legal#aviso-legal" className="hover:text-slate-900 transition-colors">Aviso Legal</a>
-            <a href="/legal#privacidad" className="hover:text-slate-900 transition-colors">Privacidad</a>
-            <a href="/legal#cookies" className="hover:text-slate-900 transition-colors">Cookies</a>
+            <a href="/legal" className="hover:text-slate-900 transition-colors">Aviso Legal</a>
+            <a href="/privacy" className="hover:text-slate-900 transition-colors">Privacidad</a>
+            <a href="/cookies" className="hover:text-slate-900 transition-colors">Cookies</a>
             <a href="#security" className="hover:text-slate-900 transition-colors">ENS</a>
           </div>
         </div>

@@ -21,10 +21,6 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
-    // Simulate instant download after 1.5s
-    setTimeout(() => {
-      // In real prod, this triggers window.open('/dossier-munilex.pdf')
-    }, 1000);
   };
 
   const isAcademy = targetType !== 'fp';
@@ -35,50 +31,44 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
     <AnimatePresence>
       {isOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
-          {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="absolute inset-0 bg-black/80 backdrop-blur-md"
+            className="absolute inset-0 bg-slate-950/50 backdrop-blur-md"
           />
 
-          {/* Modal Card */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-lg rounded-[2.5rem] bg-[#111827] border border-white/15 p-6 sm:p-8 shadow-2xl shadow-black overflow-hidden z-10"
+            className="relative w-full max-w-lg rounded-[2.5rem] bg-white border border-slate-200 p-6 sm:p-8 shadow-2xl shadow-slate-900/15 overflow-hidden z-10"
           >
-            {/* Background Glow */}
-            <div className={`absolute top-0 right-0 w-60 h-60 rounded-full blur-3xl pointer-events-none ${
-              isAcademy ? 'bg-[#10b981]/10' : 'bg-emerald-500/10'
-            }`} />
+            <div className="absolute top-0 right-0 w-60 h-60 rounded-full blur-3xl pointer-events-none bg-[#1d4ed8]/8" />
 
-            {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-6 right-6 p-2 rounded-full bg-white/5 hover:bg-white/10 text-white/60 hover:text-white transition-colors"
+              className="absolute top-6 right-6 p-2 rounded-full bg-slate-50 hover:bg-slate-100 text-slate-500 hover:text-slate-900 transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
 
             {submitted ? (
               <div className="text-center py-8 space-y-4">
-                <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 rounded-full bg-[#1d4ed8]/10 text-[#1d4ed8] flex items-center justify-center mx-auto mb-4">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-manrope font-black text-white uppercase">
+                <h3 className="text-2xl font-manrope font-black text-slate-900 uppercase">
                   ¡Dossier Listo para Descargar!
                 </h3>
-                <p className="text-xs sm:text-sm text-white/65 max-w-sm mx-auto leading-relaxed">
-                  Hemos generado tu propuesta y enviado una copia a <strong className="text-white">{formData.email}</strong>. Además, un asesor se pondrá a tu disposición para resolver dudas.
+                <p className="text-xs sm:text-sm text-slate-600 max-w-sm mx-auto leading-relaxed">
+                  Hemos generado tu propuesta y enviado una copia a <strong className="text-slate-900">{formData.email}</strong>. Además, un asesor se pondrá a tu disposición para resolver dudas.
                 </p>
                 <div className="pt-4">
                   <button
                     onClick={onClose}
-                    className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider transition-all"
+                    className="px-6 py-3 rounded-xl bg-[#1d4ed8] hover:bg-[#2563eb] text-white font-bold text-xs uppercase tracking-wider transition-all"
                   >
                     Cerrar ventana
                   </button>
@@ -88,13 +78,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <div className={`p-2 rounded-xl border ${
-                    isAcademy ? 'bg-[#10b981]/10 border-[#10b981]/30 text-[#10b981]' : 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400'
+                    isAcademy ? 'bg-[#1d4ed8]/10 border-[#1d4ed8]/20 text-[#1d4ed8]' : 'bg-[#1d4ed8]/10 border-[#1d4ed8]/20 text-[#1d4ed8]'
                   }`}>
                     <FileText className="w-5 h-5" />
                   </div>
-                  <span className={`text-[10px] font-black uppercase tracking-widest ${
-                    isAcademy ? 'text-[#10b981]' : 'text-emerald-400'
-                  }`}>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-[#1d4ed8]">
                     {isAcademy
                       ? isEnglish
                         ? 'Dossier de Inglés & Tarifas B2B'
@@ -105,7 +93,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                   </span>
                 </div>
 
-                <h3 className="text-xl sm:text-2xl font-manrope font-black text-white uppercase tracking-tight mb-2">
+                <h3 className="text-xl sm:text-2xl font-manrope font-black text-slate-900 uppercase tracking-tight mb-2">
                   {isAcademy
                     ? isEnglish
                       ? 'Descargar Dossier Completo para Academia de Inglés'
@@ -114,7 +102,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                         : 'Descargar Dossier Completo para Academias'
                     : 'Descargar Guía de Innovación para Centros FP'}
                 </h3>
-                <p className="text-xs text-white/60 leading-relaxed mb-6">
+                <p className="text-xs text-slate-600 leading-relaxed mb-6">
                   {isAcademy
                     ? isEnglish
                       ? 'Incluye catálogo de itinerarios, personalización completa con tu marca, comparativa de costes y guía específica para EPG, listening, grammar y progreso por niveles.'
@@ -126,7 +114,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-wider text-white/70 mb-1.5">
+                    <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1.5">
                       Nombre y Apellidos *
                     </label>
                     <input
@@ -135,12 +123,12 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                       placeholder="Ej. Laura Gómez"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#10b981] focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 text-xs placeholder-slate-400 focus:border-[#1d4ed8] focus:outline-none"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-wider text-white/70 mb-1.5">
+                    <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1.5">
                       Email Corporativo o Institucional *
                     </label>
                     <input
@@ -149,13 +137,13 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                       placeholder="laura@centroeducativo.es"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#10b981] focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 text-xs placeholder-slate-400 focus:border-[#1d4ed8] focus:outline-none"
                     />
                   </div>
 
                   <div className="grid grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-[11px] font-bold uppercase tracking-wider text-white/70 mb-1.5">
+                      <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1.5">
                         Teléfono / WhatsApp *
                       </label>
                       <input
@@ -164,12 +152,12 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                         placeholder="+34 600 000 000"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#10b981] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 text-xs placeholder-slate-400 focus:border-[#1d4ed8] focus:outline-none"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-[11px] font-bold uppercase tracking-wider text-white/70 mb-1.5">
+                      <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1.5">
                         {isAcademy
                           ? isEnglish
                             ? 'Nombre Academia de Inglés *'
@@ -184,25 +172,21 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
                         placeholder={isAcademy ? (isEnglish ? 'English School' : isOther ? 'Autoescuela / Centro de Refuerzo' : 'Centro de formación') : 'Instituto FP'}
                         value={formData.organization}
                         onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#080d15] border border-white/10 text-white text-xs placeholder-white/20 focus:border-[#10b981] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 text-xs placeholder-slate-400 focus:border-[#1d4ed8] focus:outline-none"
                       />
                     </div>
                   </div>
 
                   <button
                     type="submit"
-                    className={`w-full py-4 rounded-xl font-manrope font-black text-xs uppercase tracking-widest transition-all cursor-pointer flex items-center justify-center gap-2 shadow-xl ${
-                      isAcademy
-                        ? 'bg-gradient-to-r from-[#10b981] to-[#a7f3d0] text-black shadow-[#10b981]/25 hover:scale-[1.01]'
-                        : 'bg-gradient-to-r from-emerald-400 to-emerald-500 text-black shadow-emerald-500/25 hover:scale-[1.01]'
-                    }`}
+                    className="w-full py-4 rounded-xl font-manrope font-black text-xs uppercase tracking-widest transition-all cursor-pointer flex items-center justify-center gap-2 shadow-xl bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] text-white shadow-[#1d4ed8]/20 hover:scale-[1.01]"
                   >
                     <Download className="w-4 h-4" />
                     <span>Descargar Dossier en PDF (Inmediato)</span>
                   </button>
 
-                  <div className="flex items-center justify-center gap-2 text-[10px] text-white/40 pt-1">
-                    <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                  <div className="flex items-center justify-center gap-2 text-[10px] text-slate-400 pt-1">
+                    <ShieldCheck className="w-3.5 h-3.5 text-[#1d4ed8]" />
                     <span>Descarga segura · Respetamos tu privacidad y no enviamos spam</span>
                   </div>
                 </form>
@@ -214,6 +198,4 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, tar
     </AnimatePresence>
   );
 };
-
-
 

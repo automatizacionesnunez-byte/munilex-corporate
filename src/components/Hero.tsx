@@ -62,7 +62,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
     <section className="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
       {/* Background Gradients & Glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#1d4ed8]/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-[#1d4ed8]/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[radial-gradient(#1d4ed8_1px,transparent_1px)] [background-size:24px_24px]" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
@@ -168,8 +168,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-slate-200">
             <div className="flex items-center gap-3">
               <div className="w-3 h-3 rounded-full bg-red-500/80" />
-              <div className="w-3 h-3 rounded-full bg-blue-500/80" />
-              <div className="w-3 h-3 rounded-full bg-green-500/80" />
+              <div className="w-3 h-3 rounded-full bg-[#1d4ed8]/80" />
+              <div className="w-3 h-3 rounded-full bg-sky-400/80" />
               <span className="text-xs text-slate-400 font-mono ml-2">
                 {variant === 'ingles'
                   ? 'campus-english.tucentro.es — Munilex English v1.0'
@@ -185,7 +185,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                 onClick={() => setActiveTab('eval')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'eval'
-                    ? 'bg-[#1d4ed8] text-slate-900 shadow-md shadow-blue-500/20'
+                    ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20'
                     : 'text-slate-400 hover:text-slate-700'
                 }`}
               >
@@ -196,7 +196,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                 onClick={() => setActiveTab('test')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'test'
-                    ? 'bg-[#1d4ed8] text-slate-900 shadow-md shadow-blue-500/20'
+                    ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20'
                     : 'text-slate-400 hover:text-slate-700'
                 }`}
                 >
@@ -207,7 +207,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                 onClick={() => setActiveTab('tutor')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'tutor'
-                    ? 'bg-[#1d4ed8] text-slate-900 shadow-md shadow-blue-500/20'
+                    ? 'bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20'
                     : 'text-slate-400 hover:text-slate-700'
                 }`}
                 >
@@ -281,7 +281,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
                             : 'Devuelve correcciones accionables para mejorar en la siguiente entrega.'}
                         </span>
                       </div>
-                      <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-[11px] text-[#ecfdf5]">
+                      <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-[11px] text-slate-600">
                         💡 <strong>Consejo del Tutor IA:</strong>{' '}
                         {variant === 'ingles'
                           ? 'Repite la práctica por niveles y refuerza listening y grammar con correcciones cortas.'

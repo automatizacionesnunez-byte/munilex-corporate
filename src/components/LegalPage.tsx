@@ -1,31 +1,51 @@
 import React from 'react';
-import { ArrowLeft, ShieldCheck } from 'lucide-react';
-import { LegalSection } from './LegalSection';
-import { Footer } from './Footer';
+import { LegalDocumentPage } from './LegalDocumentPage';
 
 export const LegalPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white text-slate-900">
-      <header className="sticky top-0 z-40 backdrop-blur-xl bg-white/90 border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2 text-sm font-bold text-slate-700 hover:text-[#1d4ed8] transition-colors">
-            <ArrowLeft className="w-4 h-4" />
-            <span>Volver a la web</span>
-          </a>
-          <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-widest text-[#1d4ed8]">
-            <ShieldCheck className="w-4 h-4" />
-            <span>Información legal</span>
-          </div>
-        </div>
-      </header>
-
-      <main>
-        <LegalSection />
-      </main>
-
-      <Footer />
-    </div>
+    <LegalDocumentPage
+      badge="Aviso legal"
+      title="Aviso legal"
+      intro="Este documento regula la información básica del titular del sitio, el uso de la web y las condiciones generales de acceso a los contenidos de Munilex Corporate."
+      sections={[
+        {
+          title: 'Titularidad del sitio',
+          paragraphs: [
+            'El sitio web Munilex Corporate es titularidad de Munilex Academy, S.L., con CIF B88655980 y domicilio social en Madrid, España. El canal de contacto corporativo es administracion@munilex.es.',
+            'La web se dirige a academias, centros de formación profesional, academias de inglés y otros centros especializados que buscan soluciones de inteligencia artificial aplicadas a la enseñanza y a la gestión educativa.',
+          ],
+        },
+        {
+          title: 'Uso de la web',
+          paragraphs: [
+            'El acceso a la web tiene finalidad informativa y comercial. El usuario se compromete a hacer un uso diligente y lícito de los contenidos, evitando actuaciones que puedan dañar la imagen, los sistemas o los derechos de Munilex o de terceros.',
+            'Munilex podrá actualizar, modificar o eliminar contenidos de la web en cualquier momento sin necesidad de aviso previo.',
+          ],
+        },
+        {
+          title: 'Propiedad intelectual e industrial',
+          paragraphs: [
+            'Los textos, diseños, logotipos, interfaces, imágenes y materiales gráficos de la web están protegidos por la normativa de propiedad intelectual e industrial. Su reproducción, distribución o transformación no autorizada queda prohibida.',
+            'Las marcas y signos distintivos de terceros que pudieran mostrarse pertenecen a sus respectivos titulares y se usan únicamente a efectos identificativos o descriptivos.',
+          ],
+        },
+        {
+          title: 'Responsabilidad y enlaces',
+          paragraphs: [
+            'Munilex no responde de los daños derivados de un uso indebido del sitio ni de incidencias provocadas por factores técnicos ajenos al control razonable de la empresa.',
+            'Si la web incluye enlaces a páginas externas, dichos contenidos serán responsabilidad de sus respectivos titulares. Munilex no asume control editorial sobre esos sitios ni sobre sus políticas.',
+          ],
+        },
+        {
+          title: 'Ley aplicable',
+          paragraphs: [
+            'Este aviso legal se interpreta conforme a la legislación española. Para cualquier controversia, las partes se someterán a los juzgados y tribunales competentes de acuerdo con la normativa aplicable.',
+          ],
+        },
+      ]}
+    />
   );
 };
 
 export default LegalPage;
+

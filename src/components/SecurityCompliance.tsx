@@ -6,7 +6,7 @@ export const SecurityCompliance: React.FC = () => {
     {
       title: 'Alineación con EU AI Act',
       desc: 'Nuestros sistemas de IA educativa cumplen con las directrices europeas de transparencia, explicabilidad y supervisión humana requeridas para plataformas formativas.',
-      icon: <Scale className="w-6 h-6 text-[#10b981]" />,
+      icon: <Scale className="w-6 h-6 text-[#1d4ed8]" />,
     },
     {
       title: 'Esquema Nacional de Seguridad (ENS)',
@@ -59,7 +59,7 @@ export const SecurityCompliance: React.FC = () => {
           {securityCards.map((card, index) => (
             <div
               key={index}
-              className="p-8 rounded-[2.5rem] bg-white border border-slate-200 hover:border-[#10b981]/30 transition-all duration-300 group flex flex-col justify-between"
+              className="p-8 rounded-[2.5rem] bg-white border border-slate-200 hover:border-[#1d4ed8]/30 transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
