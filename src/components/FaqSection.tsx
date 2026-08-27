@@ -7,28 +7,28 @@ export const FaqSection: React.FC = () => {
 
   const faqs = [
     {
-      q: '¿Cuánto tiempo se tarda en tener operativa la plataforma para mi academia?',
-      a: 'Para el Plan Iniciación la puesta en marcha se completa en 1 a 2 semanas. Para el Plan Profesional (con personalización completa de identidad y dominio propio), el plazo habitual es de 3 a 4 semanas tras recibir tus recursos de marca.',
+      q: '¿Cuánto tarda la puesta en marcha?',
+      a: 'Normalmente entre 1 y 2 semanas para un piloto y entre 3 y 4 semanas cuando hay personalización completa de marca y dominio propio.',
     },
     {
-      q: '¿Podemos incorporar nuestros propios temarios, supuestos y preguntas exclusivas?',
-      a: 'Absolutamente. Puedes combinar el catálogo oficial de Munilex (+42 programas, itinerarios y materias) con tus propios materiales exclusivos. Los materiales del centro quedan completamente securizados y protegidos bajo acuerdo de confidencialidad.',
+      q: '¿Podemos usar nuestros propios temarios y materiales?',
+      a: 'Sí. Puedes trabajar con el catálogo de Munilex y con tus materiales propios, que quedan protegidos bajo acuerdo de confidencialidad.',
     },
     {
-      q: '¿Cómo se contabilizan y facturan las licencias de alumnos?',
-      a: 'La facturación es mensual y flexible. Se contabilizan únicamente los alumnos que han tenido acceso activo durante el mes natural, aplicando el escalado por volumen (3€ -> 2.5€ -> 1.5€ en Iniciación; 4€ -> 3€ -> 2€ en Marca). No pagas por alumnos inactivos o bajas.',
+      q: '¿Cómo se calcula el precio?',
+      a: 'La facturación es mensual y se ajusta al volumen real de alumnos activos. El precio baja por tramos cuando crece el centro.',
     },
     {
-      q: '¿La IA puede inventar contenidos o dar respuestas incorrectas (alucinaciones)?',
-      a: 'No. El motor de Munilex opera mediante arquitectura RAG (Retrieval-Augmented Generation) sobre fuentes oficiales y contenidos validados por el centro. Todas las justificaciones incluyen la referencia exacta que necesites para auditar la respuesta.',
+      q: '¿La IA responde con control o puede inventar cosas?',
+      a: 'Trabajamos con contenidos validados y arquitectura RAG para reducir al máximo las respuestas erróneas y dejar trazabilidad.',
     },
     {
-      q: '¿Necesitamos contratar servidores o personal de soporte técnico propio?',
-      a: 'Ninguno. Munilex entrega una solución 100% administrada en la nube (Cloudflare + Supabase en UE). Nosotros nos encargamos de las actualizaciones, copias de seguridad y velocidad de respuesta.',
+      q: '¿Necesitamos servidores o un equipo técnico propio?',
+      a: 'No. La solución se entrega administrada en la nube y nosotros gestionamos actualizaciones, copias de seguridad y soporte.',
     },
     {
-      q: '¿Es posible integrar la plataforma con nuestro Moodle o sistema de cobro?',
-      a: 'Sí. A través del Plan A Medida o complementos del Plan Profesional, ofrecemos integración vía API / Webhooks para dar de alta alumnos automáticamente tras el pago en vuestra web o sincronizar calificaciones.',
+      q: '¿Se integra con Moodle o con nuestras herramientas?',
+      a: 'Sí. Podemos integrar la plataforma mediante API o webhooks para sincronizar alumnos, cobros o calificaciones cuando el proyecto lo requiera.',
     },
   ];
 

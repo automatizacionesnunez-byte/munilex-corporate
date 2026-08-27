@@ -21,12 +21,20 @@ export const CookiesPage: React.FC = () => {
             'En esta versión del sitio se utilizan cookies técnicas estrictamente necesarias para la navegación, la seguridad y el correcto funcionamiento de formularios, rutas y preferencias básicas.',
             'No utilizamos cookies de publicidad ni de perfilado salvo que se informen y se activen de forma expresa en el futuro.',
           ],
+          bullets: [
+            'Cookies técnicas: necesarias para la navegación y la seguridad.',
+            'Cookies analíticas o de terceros: solo si se activan y se informan correctamente.',
+          ],
         },
         {
           title: 'Consentimiento y configuración',
           paragraphs: [
             'Si incorporamos cookies no esenciales, el usuario verá opciones de aceptar, rechazar y configurar con la misma visibilidad. El consentimiento deberá prestarse mediante una acción clara y afirmativa, no por inacción.',
             'El usuario podrá retirar o modificar su consentimiento en cualquier momento desde el panel de configuración de cookies.',
+          ],
+          bullets: [
+            'Aceptar y rechazar tendrán el mismo nivel de visibilidad.',
+            'La configuración deberá poder revisarse y cambiarse en cualquier momento.',
           ],
         },
         {
@@ -48,4 +56,3 @@ export const CookiesPage: React.FC = () => {
 };
 
 export default CookiesPage;
-

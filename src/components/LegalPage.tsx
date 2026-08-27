@@ -6,7 +6,7 @@ export const LegalPage: React.FC = () => {
     <LegalDocumentPage
       badge="Aviso legal"
       title="Aviso legal"
-      intro="Este documento regula la información básica del titular del sitio, el uso de la web y las condiciones generales de acceso a los contenidos de Munilex Corporate."
+      intro="Este documento regula la titularidad del sitio, las condiciones de uso, la propiedad intelectual y el alcance de responsabilidad de Munilex Corporate."
       sections={[
         {
           title: 'Titularidad del sitio',
@@ -19,7 +19,7 @@ export const LegalPage: React.FC = () => {
           title: 'Uso de la web',
           paragraphs: [
             'El acceso a la web tiene finalidad informativa y comercial. El usuario se compromete a hacer un uso diligente y lícito de los contenidos, evitando actuaciones que puedan dañar la imagen, los sistemas o los derechos de Munilex o de terceros.',
-            'Munilex podrá actualizar, modificar o eliminar contenidos de la web en cualquier momento sin necesidad de aviso previo.',
+            'Munilex podrá actualizar, modificar o eliminar contenidos de la web en cualquier momento sin necesidad de aviso previo cuando existan motivos operativos, comerciales o legales.',
           ],
         },
         {
@@ -48,4 +48,3 @@ export const LegalPage: React.FC = () => {
 };
 
 export default LegalPage;
-

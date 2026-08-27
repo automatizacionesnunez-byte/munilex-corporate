@@ -6,7 +6,7 @@ export const PrivacyPage: React.FC = () => {
     <LegalDocumentPage
       badge="Política de privacidad"
       title="Política de privacidad"
-      intro="Aquí explicamos qué datos tratamos, con qué finalidad, durante cuánto tiempo y qué derechos puedes ejercer como interesado."
+      intro="Aquí explicamos, de forma clara, qué datos tratamos, para qué los usamos, durante cuánto tiempo los conservamos y qué derechos puedes ejercer."
       backLabel="Volver a la web"
       sections={[
         {
@@ -27,7 +27,7 @@ export const PrivacyPage: React.FC = () => {
           title: 'Finalidades y bases de legitimación',
           paragraphs: [
             'Tratamos los datos para atender consultas, preparar demostraciones, gestionar presupuestos, mantener comunicaciones relacionadas con el interés expresado y, si lo autorizas, enviarte información comercial posterior.',
-            'La base de legitimación puede ser la ejecución de medidas precontractuales cuando nos solicitas información, el consentimiento cuando te suscribes a comunicaciones y el interés legítimo o la obligación legal cuando resulte aplicable en materias de seguridad o prevención de abusos.',
+            'La base de legitimación puede ser la ejecución de medidas precontractuales cuando nos solicitas información, el consentimiento cuando te suscribes a comunicaciones y el interés legítimo o la obligación legal cuando resulte aplicable en materias de seguridad, trazabilidad o prevención de abusos.',
           ],
         },
         {
@@ -43,6 +43,10 @@ export const PrivacyPage: React.FC = () => {
             'Puedes ejercer en cualquier momento tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad, escribiendo a administracion@munilex.es.',
             'Si consideras que el tratamiento no se ajusta a la normativa, puedes presentar una reclamación ante la Agencia Española de Protección de Datos.',
           ],
+          bullets: [
+            'Podemos solicitar información adicional para verificar tu identidad antes de atender la solicitud.',
+            'Responderemos por los canales habituales en plazos razonables y conforme a la normativa aplicable.',
+          ],
         },
       ]}
     />
@@ -50,4 +54,3 @@ export const PrivacyPage: React.FC = () => {
 };
 
 export default PrivacyPage;
-
