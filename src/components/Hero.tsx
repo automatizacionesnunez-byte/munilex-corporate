@@ -24,35 +24,35 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
 
   const heroCopy = {
     academias: {
-      badge: 'Academia de Oposiciones',
-      titleTop: 'OPOSICIONES',
-      titleBottom: 'IA PARA ESCALAR TU ACADEMIA',
-      subtitle: 'Tests, temarios y tutorías bajo tu marca',
-      body: 'Lanza una plataforma propia en 14 días y centraliza preparación, corrección y seguimiento sin sumar carga al equipo.',
-      ctaPrimary: 'Solicitar Demo de Oposiciones',
-      ctaSecondary: 'Calcular Costes & Margen',
+      badge: 'Para propietarios y dirección de academias',
+      titleTop: 'MENOS CARGA',
+      titleBottom: 'MÁS CONTROL Y MATRÍCULAS',
+      subtitle: 'Una plataforma propia para captar, enseñar y retener bajo tu marca',
+      body: 'Centraliza leads, contenidos, correcciones, dudas y progreso en una sola base. Empieza con lo que más te duele y amplía cuando veas resultado.',
+      ctaPrimary: 'Pedir diagnóstico de mi academia',
+      ctaSecondary: 'Calcular inversión y margen',
       simulator: 'Vista previa de uso real',
-      statLabel: '+42 temarios y programas',
+      statLabel: 'Oposiciones, idiomas y formación especializada',
     },
     ingles: {
-      badge: 'Academia de Inglés',
-      titleTop: 'INGLÉS',
-      titleBottom: 'IA PARA AVANZAR POR NIVELES',
-      subtitle: 'EPG, listening, grammar y progreso por niveles',
-      body: 'Convierte el seguimiento en un sistema claro para medir avance, reforzar aprendizaje y vender continuidad con más facilidad.',
-      ctaPrimary: 'Solicitar Demo de Inglés',
-      ctaSecondary: 'Ver Progreso & Rentabilidad',
+      badge: 'Para propietarios y dirección de academias',
+      titleTop: 'MÁS RETENCIÓN',
+      titleBottom: 'EN CADA NIVEL DE INGLÉS',
+      subtitle: 'Progreso visible, soporte ágil y continuidad bajo tu marca',
+      body: 'Da a cada alumno un itinerario claro de A1 a C2 y al equipo una visión práctica del progreso, los bloqueos y las oportunidades de renovación.',
+      ctaPrimary: 'Pedir diagnóstico de mi academia',
+      ctaSecondary: 'Calcular inversión y margen',
       simulator: 'Seguimiento y progreso por niveles',
       statLabel: 'EPG, listening y progreso',
     },
     otros: {
-      badge: 'Otros Centros',
-      titleTop: 'OTROS CENTROS',
-      titleBottom: 'IA PARA AUTOMATIZAR TU DÍA A DÍA',
-      subtitle: 'Autoescuelas, ciencias, refuerzo y formación especializada',
-      body: 'Si tu centro enseña procesos, materias o habilidades, la IA puede ayudarte a automatizar pruebas, tutorías y atención al alumno sin perder control.',
-      ctaPrimary: 'Solicitar Demo para tu Centro',
-      ctaSecondary: 'Ver Automatización & Margen',
+      badge: 'Para propietarios y dirección de centros educativos',
+      titleTop: 'ORDENA TU CENTRO',
+      titleBottom: 'Y ESCALA SIN MÁS CAOS',
+      subtitle: 'Automatización, contenidos y seguimiento adaptados a tu método',
+      body: 'Desde una autoescuela hasta un centro de refuerzo: convierte tus materiales y procesos en una experiencia digital que el equipo pueda gestionar.',
+      ctaPrimary: 'Pedir diagnóstico de mi centro',
+      ctaSecondary: 'Calcular inversión y margen',
       simulator: 'Automatización de clases y soporte',
       statLabel: 'Autoescuelas, ciencias y refuerzo',
     },
@@ -77,7 +77,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             <span className="w-2 h-2 rounded-full bg-[#1d4ed8] animate-ping" />
             <span className="text-[#1d4ed8] font-black uppercase tracking-wider text-[10px]">{heroCopy.badge}</span>
             <span className="text-slate-400">•</span>
-            <span>Plataforma corporativa para centros educativos</span>
+            <span>Software educativo adaptado a tu modelo de negocio</span>
           </motion.div>
         </div>
 
@@ -148,11 +148,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, variant }) => {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#1d4ed8]" />
-              <span>Tarifas decrecientes por volumen</span>
+              <span>Escala por alumnos activos</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#1d4ed8]" />
-              <span>Cumplimiento RGPD & EU AI Act</span>
+              <span>Privacidad y control desde el diseño</span>
             </div>
           </div>
         </div>

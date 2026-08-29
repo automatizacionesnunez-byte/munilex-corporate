@@ -146,7 +146,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
             <div className="p-4 rounded-2xl bg-sky-50/20 border border-sky-200">
               <div className="flex items-center gap-2 text-xs font-bold text-sky-600 mb-2">
                 <BrainCircuit className="w-4 h-4" />
-                <span>Ahorro del 85% de tiempo docente</span>
+                <span>El equipo revisa, no empieza de cero</span>
               </div>
               <p className="text-[11px] text-slate-500">
                 Los preparadores revisan diagnósticos automáticos en lugar de corregir desde cero.
@@ -208,7 +208,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
 
             <div className="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-600 flex items-center justify-between">
               <span>Resolución de dudas</span>
-              <span className="font-bold text-[#1d4ed8]">&lt; 2 segundos</span>
+              <span className="font-bold text-[#1d4ed8]">Siempre disponible</span>
             </div>
           </motion.div>
 
@@ -234,7 +234,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
 
             <div className="p-3.5 bg-[#1d4ed8]/10 rounded-xl border border-[#1d4ed8]/20 text-xs text-[#1d4ed8] flex items-center gap-2">
               <TrendingUp className="w-4 h-4 shrink-0" />
-              <span>+35% Retención media de matrículas</span>
+              <span>Alertas para actuar antes del abandono</span>
             </div>
           </motion.div>
         </div>

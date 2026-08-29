@@ -23,6 +23,11 @@ import CookiesPage from './components/CookiesPage';
 import { Building2, GraduationCap, Languages, Layers3 } from 'lucide-react';
 
 export function App() {
+  const [activeTab, setActiveTab] = useState<MainTabType>('academias');
+  const [isDossierOpen, setIsDossierOpen] = useState(false);
+  const [selectedPlanForContact, setSelectedPlanForContact] = useState<string | undefined>();
+  const [studentsForContact, setStudentsForContact] = useState<number | undefined>();
+
   if (typeof window !== 'undefined' && window.location.pathname.startsWith('/legal')) {
     return <LegalPage />;
   }
@@ -34,11 +39,6 @@ export function App() {
   if (typeof window !== 'undefined' && window.location.pathname.startsWith('/cookies')) {
     return <CookiesPage />;
   }
-
-  const [activeTab, setActiveTab] = useState<MainTabType>('academias');
-  const [isDossierOpen, setIsDossierOpen] = useState(false);
-  const [selectedPlanForContact, setSelectedPlanForContact] = useState<string | undefined>();
-  const [studentsForContact, setStudentsForContact] = useState<number | undefined>();
 
   const scrollToContact = (plan?: string, students?: number) => {
     if (plan) setSelectedPlanForContact(plan);

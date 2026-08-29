@@ -12,7 +12,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: '¿Podemos usar nuestros propios temarios y materiales?',
-      a: 'Sí. Puedes trabajar con el catálogo de Munilex y con tus materiales propios, que quedan protegidos bajo acuerdo de confidencialidad.',
+      a: 'Sí. Podemos trabajar con el catálogo de Munilex o adaptar tus materiales, procesos y estructura. El alcance de la carga y las condiciones de uso se concretan en la propuesta.',
     },
     {
       q: '¿Cómo se calcula el precio?',
@@ -20,11 +20,11 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: '¿La IA responde con control o puede inventar cosas?',
-      a: 'Trabajamos con contenidos validados y arquitectura RAG para reducir al máximo las respuestas erróneas y dejar trazabilidad.',
+      a: 'La IA se configura sobre contenidos y respuestas base definidos para el centro. Puede ayudar con dudas frecuentes y feedback, pero el equipo mantiene la revisión y el control editorial.',
     },
     {
       q: '¿Necesitamos servidores o un equipo técnico propio?',
-      a: 'No. La solución se entrega administrada en la nube y nosotros gestionamos actualizaciones, copias de seguridad y soporte.',
+      a: 'No. La solución se entrega administrada en la nube. En la puesta en marcha definimos accesos, contenidos, soporte y las responsabilidades de cada parte.',
     },
     {
       q: '¿Se integra con Moodle o con nuestras herramientas?',

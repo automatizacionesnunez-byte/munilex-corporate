@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calculator, ArrowRight, TrendingUp, DollarSign, Users } from 'lucide-react';
+import { Calculator, ArrowRight, TrendingUp, Euro, Users } from 'lucide-react';
 
 interface RoiCalculatorProps {
   onOpenContact: (plan?: string, students?: number) => void;
@@ -32,8 +32,8 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
     academias: {
       badge: 'Simulador para Oposiciones',
       titleTop: 'Calcula tu inversión y',
-      titleBottom: 'beneficio neto',
-      intro: 'Tarifas por alumno/mes decrecientes según volumen. Sin costes ocultos ni comisiones sobre tus matriculaciones.',
+      titleBottom: 'coste y margen',
+      intro: 'Estima el coste de la tecnología frente a tus ingresos por alumno. Es una referencia para preparar una propuesta, no una promesa de rentabilidad.',
       planOne: '2 materias o itinerarios',
       planTwo: 'Identidad propia + Catálogo 100%',
       resultLabel: 'Margen Bruto del Centro',
@@ -42,8 +42,8 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
     ingles: {
       badge: 'Simulador para Inglés',
       titleTop: 'Calcula tu inversión y',
-      titleBottom: 'beneficio neto de la academia',
-      intro: 'Tarifas por alumno/mes decrecientes según volumen. Sin costes ocultos ni comisiones sobre tus matrículas de idiomas.',
+      titleBottom: 'coste y margen de la academia',
+      intro: 'Estima la inversión tecnológica frente a tus ingresos por alumno y decide qué alcance tiene sentido para tu academia de inglés.',
       planOne: '2 niveles o itinerarios',
       planTwo: 'Identidad propia + Progreso por niveles',
       resultLabel: 'Margen Bruto de la Academia',
@@ -52,8 +52,8 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
     otros: {
       badge: 'Simulador para Otros Centros',
       titleTop: 'Calcula tu inversión y',
-      titleBottom: 'beneficio neto del centro',
-      intro: 'Tarifas por alumno/mes decrecientes según volumen. Sin costes ocultos ni comisiones sobre tus matrículas o procesos internos.',
+      titleBottom: 'coste y margen del centro',
+      intro: 'Estima la inversión tecnológica frente a tus ingresos por alumno y empieza por el proceso que más impacto tenga en tu operación.',
       planOne: '2 materias o procesos',
       planTwo: 'Identidad propia + Automatización',
       resultLabel: 'Margen Bruto del Centro',
@@ -150,7 +150,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                     3. Tu Cuota Mensual Media por Alumno
                   </label>
                   <div className="flex items-center gap-1.5 px-3.5 py-1 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono font-bold text-sm">
-                    <DollarSign className="w-3.5 h-3.5 text-[#1d4ed8]" />
+                    <Euro className="w-3.5 h-3.5 text-[#1d4ed8]" />
                     <span>{monthlyFee} € / mes</span>
                   </div>
                 </div>
@@ -205,7 +205,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                 </div>
 
                 <div className="pt-6">
-                  <div className="text-xs text-slate-500 mb-1">{copy.resultLabel}</div>
+                  <div className="text-xs text-slate-500 mb-1">{copy.resultLabel} antes de otros costes</div>
                   <div className="text-3xl sm:text-4xl font-manrope font-black text-slate-900 tracking-tight">
                     +{netProfit.toLocaleString('es-ES')} € <span className="text-xs text-slate-400 font-normal">/ mes</span>
                   </div>
