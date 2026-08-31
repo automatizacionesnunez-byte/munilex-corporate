@@ -10,10 +10,9 @@ import {
 } from 'lucide-react';
 
 interface BentoGridProps {
-  onOpenContact: () => void;
 }
 
-export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact }) => {
+export const BentoGrid: React.FC<BentoGridProps> = () => {
   return (
     <section id="bento" className="py-28 md:py-36 relative bg-slate-50">
       {/* Background Decor */}

@@ -47,8 +47,8 @@ export function App() {
 
       <main>
         <Hero onOpenContact={() => scrollToContact()} />
-        <BentoGrid onOpenContact={() => scrollToContact()} />
-        <RoiCalculator onOpenContact={(plan, students) => scrollToContact(plan, students)} variant="academias" />
+        <BentoGrid />
+        <RoiCalculator onOpenContact={(plan, students) => scrollToContact(plan, students)} />
         <PlansSection onOpenContact={(plan) => scrollToContact(plan)} />
         <ContactSection
           targetType="academias"
