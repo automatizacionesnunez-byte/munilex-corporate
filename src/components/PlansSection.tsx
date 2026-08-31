@@ -11,24 +11,18 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
     {
       id: 'iniciacion',
       name: 'Plan Iniciación',
-      tagline: '"Empieza con una base sólida"',
+      tagline: 'Empieza ligero',
       icon: <Rocket className="w-6 h-6 text-[#1d4ed8]" />,
-      desc: 'Empieza con 2 itinerarios y valida la demanda sin una inversión grande.',
+      desc: 'Una entrada simple para arrancar sin complicarte.',
       scope: {
-        opos: '2 itinerarios o materias',
+        opos: '2 itinerarios',
         delivery: '1 - 2 semanas',
-        support: 'Soporte estándar por email',
+        support: 'Soporte por email',
       },
-      pricing: [
-        { range: '0 a 150 alumnos', price: '3.00 € / u' },
-        { range: '150 a 500 alumnos', price: '2.50 € / u' },
-        { range: '+500 alumnos', price: '1.50 € / u' },
-      ],
       features: [
         'Tests y simulacros ilimitados',
         'Casos prácticos corregidos por IA',
-        'Flashcards de repaso espaciado',
-        'Panel de control de estudiantes',
+        'Panel de control básico',
       ],
       cta: 'Consultar Plan Iniciación',
       highlighted: false,
@@ -36,25 +30,19 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
     {
       id: 'marca',
       name: 'Plan Profesional',
-      tagline: '"Tu plataforma con identidad propia"',
+      tagline: 'La opción principal',
       icon: <Heart className="w-6 h-6 text-white" />,
-      desc: 'Añade dominio propio, marca y una experiencia más sólida para el alumno.',
+      desc: 'Más marca, más control y una propuesta más completa.',
       scope: {
-        opos: 'Catálogo Completo (+42 programas)',
+        opos: 'Catálogo completo',
         delivery: '3 - 4 semanas',
-        support: 'Soporte prioritario 24/7 con gestor',
+        support: 'Soporte prioritario',
       },
-      pricing: [
-        { range: '0 a 150 alumnos', price: '4.00 € / u' },
-        { range: '150 a 500 alumnos', price: '3.00 € / u' },
-        { range: '+500 alumnos', price: '2.00 € / u' },
-      ],
       features: [
         'Todo lo incluido en el Plan Iniciación',
-        'Preparación completa para oposiciones, refuerzo y materias especializadas',
         'Personalización completa de marca y dominio propio',
-        '1 funcionalidad extra a medida incluida',
-        'Plantillas de correo con tu identidad corporativa',
+        '1 funcionalidad extra incluida',
+        'Plantillas de correo corporativas',
       ],
       cta: 'Configurar Plan Profesional',
       highlighted: true,
@@ -62,25 +50,19 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
     {
       id: 'ecosistema',
       name: 'Plan A Medida',
-      tagline: '"Tu solución educativa a medida"',
+      tagline: 'Para proyectos serios',
       icon: <Globe className="w-6 h-6 text-[#1d4ed8]" />,
-      desc: 'Para redes o centros con procesos propios y necesidades de integración reales.',
+      desc: 'Para centros que necesitan integraciones y desarrollo propio.',
       scope: {
-        opos: 'A medida + Ingesta de contenidos propios',
+        opos: 'A medida',
         delivery: '6 - 8 semanas',
-        support: 'Ingeniero de soporte dedicado',
+        support: 'Soporte dedicado',
       },
-      pricing: [
-        { range: 'Setup inicial', price: 'Bajo presupuesto' },
-        { range: 'Licencia alumno', price: 'Tarifa reducida Enterprise' },
-        { range: 'Infraestructura', price: 'Dedicada' },
-      ],
       features: [
-        'Arquitectura dedicada y escalable',
-        'Ingesta de materiales privados del centro',
-        'Integración API con Moodle, Canvas, Holded o ERP',
+        'Arquitectura dedicada',
+        'Integración API con tus sistemas',
         'Roleplay IA y automatizaciones a medida',
-        'SLA de disponibilidad y soporte prioritario',
+        'SLA y soporte prioritario',
       ],
       cta: 'Consultar Proyecto Enterprise',
       highlighted: false,
@@ -96,7 +78,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
             <span className="gold-gradient-text">escalar tu academia de oposiciones</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Elige el nivel de entrada que mejor encaja con tu academia y escala solo cuando tenga sentido para tu margen.
+            Tres niveles claros, sin ruido y con una decisión fácil para dirección.
           </p>
         </div>
 
@@ -128,11 +110,11 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
                 <h3 className="text-2xl sm:text-3xl font-manrope font-black text-slate-900 uppercase tracking-tight mb-1">
                   {plan.name}
                 </h3>
-                <div className="text-xs font-bold text-[#1d4ed8] italic uppercase tracking-wider mb-4">
+                <div className="text-xs font-bold text-[#1d4ed8] uppercase tracking-wider mb-4">
                   {plan.tagline}
                 </div>
 
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-8">
+                <p className="text-sm text-slate-600 leading-relaxed mb-6">
                   {plan.desc}
                 </p>
 
@@ -151,30 +133,9 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
                   </div>
                 </div>
 
-                <div className={`p-4 rounded-2xl mb-8 border ${
-                  plan.highlighted
-                    ? 'bg-[#1d4ed8]/10 border-[#1d4ed8]/30'
-                    : 'bg-slate-50 border-slate-200'
-                }`}>
-                  <div className="text-[10px] font-black uppercase text-[#1d4ed8] tracking-wider mb-2.5">
-                    Licencia Alumno / Mes
-                  </div>
-                  <div className="space-y-1.5 text-xs font-bold">
-                    {plan.pricing.map((p, i) => (
-                      <div key={i} className="flex justify-between items-center py-0.5">
-                        <span className="text-slate-500">{p.range}</span>
-                        <span className="text-slate-900 font-mono">{p.price}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="space-y-3 mb-8">
-                  <div className="text-[10px] font-black uppercase text-slate-400 tracking-wider mb-2">
-                    Qué Incluye:
-                  </div>
+                <div className="space-y-2.5 mb-8">
                   {plan.features.map((feat, i) => (
-                    <div key={i} className="flex items-start gap-2.5 text-xs text-slate-700">
+                    <div key={i} className="flex items-start gap-2.5 text-sm text-slate-700">
                       <Check className={`w-4 h-4 shrink-0 mt-0.5 ${
                         plan.highlighted ? 'text-[#1d4ed8]' : 'text-slate-400'
                       }`} />

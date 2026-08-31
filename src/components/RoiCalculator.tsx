@@ -34,11 +34,11 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) =
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-6">
-            Calcula tu inversión y <br />
-            <span className="cyan-gradient-text">coste y margen</span>
+            Calcula tu <br />
+            <span className="cyan-gradient-text">ROI</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Estima el coste de la tecnología frente a tus ingresos por alumno. Es una referencia para preparar una propuesta, no una promesa de rentabilidad.
+            Ajusta alumnos y cuota media para ver el impacto estimado en tu margen.
           </p>
         </div>
 
@@ -46,9 +46,6 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) =
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-7 space-y-8">
               <div>
-                <label className="block text-xs font-black uppercase text-[#1d4ed8] tracking-wider mb-3">
-                  1. Selecciona el Tipo de Plan
-                </label>
                 <div className="grid grid-cols-2 gap-3">
                   <button
                     onClick={() => setSelectedPlan('iniciacion')}
@@ -79,11 +76,11 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) =
               <div>
                 <div className="flex justify-between items-center mb-3">
                   <label className="text-xs font-black uppercase text-slate-700 tracking-wider">
-                    2. Número de Alumnos Activos
+                    Alumnos activos
                   </label>
                   <div className="flex items-center gap-1.5 px-3.5 py-1 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono font-bold text-sm">
                     <Users className="w-3.5 h-3.5 text-[#1d4ed8]" />
-                    <span>{students} alumnos</span>
+                    <span>{students}</span>
                   </div>
                 </div>
                 <input
@@ -95,22 +92,16 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) =
                   onChange={(e) => setStudents(parseInt(e.target.value))}
                   className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#1d4ed8]"
                 />
-                <div className="flex justify-between text-[11px] text-slate-400 mt-2 font-mono">
-                  <span>10 alumnos</span>
-                  <span>250</span>
-                  <span>500</span>
-                  <span>1.000+ alumnos</span>
-                </div>
               </div>
 
               <div>
                 <div className="flex justify-between items-center mb-3">
                   <label className="text-xs font-black uppercase text-slate-700 tracking-wider">
-                    3. Tu Cuota Mensual Media por Alumno
+                    Cuota media por alumno
                   </label>
                   <div className="flex items-center gap-1.5 px-3.5 py-1 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono font-bold text-sm">
                     <Euro className="w-3.5 h-3.5 text-[#1d4ed8]" />
-                    <span>{monthlyFee} € / mes</span>
+                    <span>{monthlyFee} €</span>
                   </div>
                 </div>
                 <input
@@ -122,12 +113,6 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) =
                   onChange={(e) => setMonthlyFee(parseInt(e.target.value))}
                   className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#1d4ed8]"
                 />
-                <div className="flex justify-between text-[11px] text-slate-400 mt-2 font-mono">
-                  <span>30 €/mes</span>
-                  <span>75 €/mes</span>
-                  <span>150 €/mes</span>
-                  <span>200 €/mes</span>
-                </div>
               </div>
             </div>
 
@@ -135,9 +120,6 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) =
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#1d4ed8]/8 rounded-full blur-2xl pointer-events-none" />
 
               <div>
-                <div className="text-[10px] font-black uppercase text-[#1d4ed8] tracking-widest mb-1">
-                  Desglose de Rentabilidad Mensual
-                </div>
                 <div className="text-xl font-manrope font-black text-slate-900 mb-6">
                   {selectedPlan === 'iniciacion' ? 'Plan Iniciación' : 'Plan Profesional'}
                 </div>
@@ -164,7 +146,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) =
                 </div>
 
                 <div className="pt-6">
-                  <div className="text-xs text-slate-500 mb-1">Margen bruto antes de otros costes</div>
+                  <div className="text-xs text-slate-500 mb-1">Margen bruto estimado</div>
                   <div className="text-3xl sm:text-4xl font-manrope font-black text-slate-900 tracking-tight">
                     +{netProfit.toLocaleString('es-ES')} € <span className="text-xs text-slate-400 font-normal">/ mes</span>
                   </div>

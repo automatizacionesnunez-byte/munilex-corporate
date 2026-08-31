@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, CheckCircle2, Phone, Mail, ShieldCheck, MessageCircle, Clock } from 'lucide-react';
+import { Send, CheckCircle2, Phone, Mail, MessageCircle } from 'lucide-react';
 import { type MainTabType } from './Navbar';
 
 interface ContactSectionProps {
@@ -76,14 +76,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
                 : 'Solicita una demostración adaptada a tu centro para validar el roleplay, la evaluación curricular y la adopción por parte del claustro.'}
             </p>
 
-            <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-3 text-xs text-slate-600 shadow-sm shadow-slate-900/5">
-              <Clock className="w-5 h-5 shrink-0 text-[#1d4ed8]" />
-              <div>
-                <strong className="text-slate-900 block">Capacidad mensual limitada:</strong>
-                <span>Máx. 3 centros por mes para cuidar la puesta en marcha y el soporte.</span>
-              </div>
-            </div>
-
             <div className="space-y-4 pt-2">
               <a
                 href="https://wa.me/34649490580?text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20Munilex%20Corporate"
@@ -134,15 +126,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
               </div>
             </div>
 
-            <div className="p-6 rounded-3xl bg-white border border-slate-200 space-y-3 text-xs text-slate-600 shadow-sm shadow-slate-900/5">
-              <div className="flex items-center gap-2 font-bold text-slate-900">
-                <ShieldCheck className="w-4 h-4 text-[#1d4ed8]" />
-                <span>Compromiso Munilex Academy, S.L.</span>
-              </div>
-              <p>
-                Sin permanencias forzosas. Soporte técnico continuo y actualizaciones legislativas o curriculares incluidas.
-              </p>
-            </div>
           </div>
 
           <div className="lg:col-span-7">
