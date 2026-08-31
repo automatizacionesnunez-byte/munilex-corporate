@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calculator, ArrowRight, TrendingUp, Euro, Users } from 'lucide-react';
+import { ArrowRight, TrendingUp, Euro, Users } from 'lucide-react';
 
 interface RoiCalculatorProps {
   onOpenContact: (plan?: string, students?: number) => void;
@@ -33,10 +33,6 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) =
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs font-bold text-[#1d4ed8] uppercase tracking-widest mb-4">
-            <Calculator className="w-3.5 h-3.5" />
-            <span>ROI para academias de oposiciones</span>
-          </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-6">
             Calcula tu inversión y <br />
             <span className="cyan-gradient-text">coste y margen</span>
@@ -74,9 +70,6 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) =
                         : 'bg-white border-slate-200 text-slate-600 hover:text-slate-900 hover:border-[#1d4ed8]/30'
                     }`}
                   >
-                    <span className="absolute -top-2.5 right-3 px-2 py-0.5 rounded-full bg-[#1d4ed8] text-white text-[9px] font-black uppercase">
-                      Recomendado
-                    </span>
                     <div className="text-sm font-bold text-slate-900 mb-1">Plan Profesional</div>
                     <div className="text-xs text-slate-500">Identidad propia + catálogo completo</div>
                   </button>

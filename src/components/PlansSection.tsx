@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Rocket, Heart, Globe, Check, Sparkles, ArrowRight } from 'lucide-react';
+import { Rocket, Heart, Globe, Check, ArrowRight } from 'lucide-react';
 
 interface PlansSectionProps {
   onOpenContact: (plan?: string) => void;
@@ -12,7 +12,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
       id: 'iniciacion',
       name: 'Plan Iniciación',
       tagline: '"Empieza con una base sólida"',
-      badge: 'Acceso Rápido',
       icon: <Rocket className="w-6 h-6 text-[#1d4ed8]" />,
       desc: 'Empieza con 2 itinerarios y valida la demanda sin una inversión grande.',
       scope: {
@@ -38,7 +37,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
       id: 'marca',
       name: 'Plan Profesional',
       tagline: '"Tu plataforma con identidad propia"',
-      badge: 'Más Popular • Identidad Propia',
       icon: <Heart className="w-6 h-6 text-white" />,
       desc: 'Añade dominio propio, marca y una experiencia más sólida para el alumno.',
       scope: {
@@ -65,7 +63,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
       id: 'ecosistema',
       name: 'Plan A Medida',
       tagline: '"Tu solución educativa a medida"',
-      badge: 'Enterprise',
       icon: <Globe className="w-6 h-6 text-[#1d4ed8]" />,
       desc: 'Para redes o centros con procesos propios y necesidades de integración reales.',
       scope: {
@@ -94,10 +91,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
     <section id="plans" className="py-28 md:py-36 relative bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs font-bold text-[#1d4ed8] uppercase tracking-widest mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Planes para Academias de Oposiciones</span>
-          </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-6">
             Planes diseñados para <br />
             <span className="gold-gradient-text">escalar tu academia de oposiciones</span>
@@ -121,14 +114,8 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
                   : 'bg-white border border-slate-200 hover:border-slate-200'
               }`}
             >
-              {plan.highlighted && (
-                <div className="absolute top-0 right-0 left-0 bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] py-1.5 text-center text-white font-manrope font-black text-[10px] uppercase tracking-widest">
-                  {plan.badge}
-                </div>
-              )}
-
               <div>
-                <div className={`flex items-center justify-between mb-6 ${plan.highlighted ? 'mt-4' : ''}`}>
+                <div className="flex items-center justify-between mb-6">
                   <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border ${
                     plan.highlighted
                       ? 'bg-[#1d4ed8] text-white border-[#1d4ed8]'
@@ -136,11 +123,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => 
                   }`}>
                     {plan.icon}
                   </div>
-                  {!plan.highlighted && (
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-slate-400 px-3 py-1 bg-slate-50 rounded-full">
-                      {plan.badge}
-                    </span>
-                  )}
                 </div>
 
                 <h3 className="text-2xl sm:text-3xl font-manrope font-black text-slate-900 uppercase tracking-tight mb-1">

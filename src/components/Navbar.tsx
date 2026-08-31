@@ -44,12 +44,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenDossier }) 
             <div className="absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 border-white bg-[#3b82f6] animate-pulse" />
           </div>
           <div className="flex flex-col">
-            <div className="flex items-center gap-2">
-              <span className="font-manrope font-black text-xl tracking-tight text-slate-900">MUNILEX</span>
-              <span className="text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full border bg-[#1d4ed8]/10 text-[#1d4ed8] border-[#1d4ed8]/20">
-                Oposiciones
-              </span>
-            </div>
+            <span className="font-manrope font-black text-xl tracking-tight text-slate-900">MUNILEX</span>
             <span className="text-[10px] text-slate-500 font-medium tracking-wide -mt-0.5">
               IA para academias de oposiciones
             </span>

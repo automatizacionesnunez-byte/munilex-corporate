@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   Building2, 
-  Sparkles, 
   FileCheck, 
   Bot, 
   BarChart3, 
@@ -27,10 +26,6 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact }) => {
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs font-bold text-[#1d4ed8] uppercase tracking-widest mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Módulos para Oposiciones</span>
-          </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-6">
             TODO LO QUE TU ACADEMIA NECESITA EN <br />
             <span className="gold-gradient-text">UNA SOLA PLATAFORMA</span>
@@ -57,9 +52,6 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact }) => {
                 <div className="w-14 h-14 rounded-2xl bg-slate-50 flex items-center justify-center text-[#1d4ed8] border border-slate-200">
                   <Building2 className="w-7 h-7" />
                 </div>
-                <span className="px-3.5 py-1.5 rounded-full bg-slate-50 border border-slate-200 text-xs font-semibold text-slate-600">
-                  Identidad propia
-                </span>
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-manrope font-extrabold text-slate-900 mb-4 leading-snug">
@@ -102,9 +94,6 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact }) => {
                 <div className="w-14 h-14 rounded-2xl bg-slate-50 flex items-center justify-center text-sky-600 border border-slate-200">
                   <FileCheck className="w-7 h-7" />
                 </div>
-                <span className="px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-200 text-xs font-semibold text-sky-600">
-                  Evaluación y apoyo IA
-                </span>
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-manrope font-extrabold text-slate-900 mb-4 leading-snug">

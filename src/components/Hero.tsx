@@ -28,22 +28,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
       <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[radial-gradient(#1d4ed8_1px,transparent_1px)] [background-size:24px_24px]" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
-        <div className="flex justify-center mb-8">
-          <motion.div
-            initial={{ opacity: 0, y: -15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-panel border border-[#1d4ed8]/20 text-xs font-semibold text-slate-700 shadow-lg shadow-blue-500/10"
-          >
-            <span className="w-2 h-2 rounded-full bg-[#1d4ed8] animate-ping" />
-            <span className="text-[#1d4ed8] font-black uppercase tracking-wider text-[10px]">
-              Academia de oposiciones
-            </span>
-            <span className="text-slate-400">•</span>
-            <span>Plataforma corporativa para tu academia</span>
-          </motion.div>
-        </div>
-
         <div className="text-center max-w-4xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -66,11 +50,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           >
             Una plataforma propia para preparar, corregir y acompañar a tus alumnos con más orden y menos carga para el equipo.
           </motion.p>
-
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-600 mb-8 shadow-sm shadow-slate-900/5">
-            <span className="w-2 h-2 rounded-full bg-[#1d4ed8]" />
-            <span>Vista previa de uso real</span>
-          </div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

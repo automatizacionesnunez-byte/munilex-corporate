@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, CheckCircle2, Phone, Mail, Sparkles, ShieldCheck, MessageCircle, Clock } from 'lucide-react';
+import { Send, CheckCircle2, Phone, Mail, ShieldCheck, MessageCircle, Clock } from 'lucide-react';
 import { type MainTabType } from './Navbar';
 
 interface ContactSectionProps {
@@ -38,25 +38,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ targetType, init
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-5 space-y-8">
-            <div
-              className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border text-xs font-bold uppercase tracking-widest ${
-                isAcademy
-                  ? 'bg-[#1d4ed8]/10 border-[#1d4ed8]/20 text-[#1d4ed8]'
-                  : 'bg-[#1d4ed8]/10 border-[#1d4ed8]/20 text-[#1d4ed8]'
-              }`}
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>
-                {isAcademy
-                  ? isEnglish
-                    ? 'Contacto directo para academia de inglés'
-                    : isOther
-                      ? 'Contacto directo para otros centros'
-                      : 'Contacto directo para centros'
-                  : 'Contacto institucional FP'}
-              </span>
-            </div>
-
             <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight">
               {isAcademy ? (
                 <>
