@@ -37,10 +37,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           >
             <span className="w-2 h-2 rounded-full bg-[#1d4ed8] animate-ping" />
             <span className="text-[#1d4ed8] font-black uppercase tracking-wider text-[10px]">
-              Academia de Oposiciones
+              Academia de oposiciones
             </span>
             <span className="text-slate-400">•</span>
-            <span>Plataforma corporativa para centros de preparación</span>
+            <span>Plataforma corporativa para tu academia</span>
           </motion.div>
         </div>
 
@@ -52,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             className="text-4xl sm:text-6xl lg:text-7xl font-manrope font-black tracking-tight leading-[1.02] text-slate-900 uppercase mb-7"
           >
             OPOSICIONES{' '}
-            <span className="gold-gradient-text block sm:inline">IA PARA ESCALAR TU ACADEMIA</span>
+            <span className="gold-gradient-text block sm:inline">IA PARA TU ACADEMIA</span>
             <span className="block text-lg sm:text-2xl font-bold tracking-normal text-slate-600 mt-3 normal-case">
               Tests, temarios y tutorías bajo tu marca
             </span>
@@ -64,7 +64,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal mb-8"
           >
-            Lanza una plataforma propia en 14 días y centraliza preparación, corrección y seguimiento sin sumar carga al equipo.
+            Una plataforma propia para preparar, corregir y acompañar a tus alumnos con más orden y menos carga para el equipo.
           </motion.p>
 
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-600 mb-8 shadow-sm shadow-slate-900/5">
@@ -87,10 +87,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             </button>
 
             <a
-              href="#calculator"
+              href="#plans"
               className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-manrope font-bold text-xs uppercase tracking-widest transition-all duration-200 flex items-center justify-center gap-2 hover:border-[#1d4ed8]/30 shadow-sm shadow-slate-900/5"
             >
-              <span>Calcular Costes & Margen</span>
+              <span>Ver planes</span>
               <ChevronRight className="w-4 h-4 text-[#1d4ed8]" />
             </a>
           </motion.div>
@@ -127,7 +127,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
               <div className="w-3 h-3 rounded-full bg-[#1d4ed8]/80" />
               <div className="w-3 h-3 rounded-full bg-sky-400/80" />
               <span className="text-xs text-slate-400 font-mono ml-2">
-                campus.tucentro.es — Munilex Core v4.2
+                campus.tucentro.es — Munilex Oposiciones
               </span>
             </div>
 
