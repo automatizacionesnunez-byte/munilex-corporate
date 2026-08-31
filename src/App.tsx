@@ -1,13 +1,9 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { TechMarquee } from './components/TechMarquee';
 import { BentoGrid } from './components/BentoGrid';
 import { RoiCalculator } from './components/RoiCalculator';
 import { PlansSection } from './components/PlansSection';
-import { TeamSection } from './components/TeamSection';
-import { SecurityCompliance } from './components/SecurityCompliance';
-import { FaqSection } from './components/FaqSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
@@ -51,13 +47,9 @@ export function App() {
 
       <main>
         <Hero onOpenContact={() => scrollToContact()} />
-        <TechMarquee />
         <BentoGrid onOpenContact={() => scrollToContact()} />
         <RoiCalculator onOpenContact={(plan, students) => scrollToContact(plan, students)} variant="academias" />
         <PlansSection onOpenContact={(plan) => scrollToContact(plan)} />
-        <TeamSection />
-        <SecurityCompliance />
-        <FaqSection />
         <ContactSection
           targetType="academias"
           initialPlan={selectedPlanForContact}

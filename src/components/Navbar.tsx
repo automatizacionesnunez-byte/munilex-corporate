@@ -22,9 +22,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenDossier }) 
     { name: 'Soluciones', href: '#bento' },
     { name: 'ROI', href: '#calculator' },
     { name: 'Planes', href: '#plans' },
-    { name: 'Equipo', href: '#team' },
-    { name: 'Seguridad', href: '#security' },
-    { name: 'FAQ', href: '#faq' },
     { name: 'Contacto', href: '#contact' },
   ];
 
@@ -61,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenDossier }) 
 
         <div className="hidden xl:flex items-center gap-5">
           <nav className="flex items-center gap-5">
-            {navLinks.slice(0, 4).map((link) => (
+            {navLinks.slice(0, 3).map((link) => (
               <a
                 key={link.name}
                 href={link.href}
