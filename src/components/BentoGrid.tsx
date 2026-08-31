@@ -15,37 +15,9 @@ import {
 
 interface BentoGridProps {
   onOpenContact: () => void;
-  variant: 'academias' | 'ingles' | 'otros';
 }
 
-export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) => {
-  const copy = {
-    academias: {
-      intro: 'Elimina el coste de contratar desarrolladores o comprar plataformas obsoletas. Munilex te entrega un software listo para operar y comercializar hoy mismo, pensado para academias de oposiciones.',
-      card2: 'Corrige ejercicios, tareas y respuestas en segundos, ideal para test, supuestos y tutorías de oposición.',
-      card3: 'Todas las preguntas se generan con explicación, nivel y rúbrica para oposiciones y pruebas internas.',
-      card4: 'Responde dudas del alumno de forma inmediata a cualquier hora del día o de la noche.',
-      card5: 'Visualiza el rendimiento de tus grupos, detecta alumnos inactivos y exporta informes ejecutivos en un clic.',
-      cta: '¿Tienes temarios propios o exclusivos?',
-    },
-    ingles: {
-      intro: 'Elimina el coste de contratar desarrolladores o comprar plataformas obsoletas. Munilex te entrega un software listo para operar y comercializar hoy mismo, pensado para academias de inglés.',
-      card2: 'Corrige ejercicios, tareas y respuestas en segundos, ideal para listening, writing, grammar y speaking.',
-      card3: 'Todas las preguntas se generan con explicación, nivel y rúbrica para EPG, listening, grammar y progreso por niveles.',
-      card4: 'Responde dudas del alumno de forma inmediata a cualquier hora del día o de la noche, reforzando vocabulario y gramática.',
-      card5: 'Visualiza el progreso por niveles, detecta alumnos atascados y exporta informes ejecutivos en un clic.',
-      cta: '¿Tienes materiales propios de inglés?',
-    },
-    otros: {
-      intro: 'Elimina el coste de contratar desarrolladores o comprar plataformas obsoletas. Munilex te entrega un software listo para operar y comercializar hoy mismo, pensado para autoescuelas, centros de ciencias, refuerzo y formación especializada.',
-      card2: 'Corrige ejercicios, tareas y respuestas en segundos, ideal para teoría, práctica, simulaciones y progreso del alumno.',
-      card3: 'Todas las preguntas se generan con explicación, nivel y rúbrica para clases, pruebas internas y evaluaciones propias.',
-      card4: 'Responde dudas del alumno de forma inmediata a cualquier hora del día o de la noche, evitando saturación del profesorado.',
-      card5: 'Visualiza el rendimiento de tus grupos, detecta inactivos y exporta informes ejecutivos en un clic.',
-      cta: '¿Tienes materiales o procesos propios?',
-    },
-  }[variant];
-
+export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact }) => {
   return (
     <section id="bento" className="py-28 md:py-36 relative bg-slate-50">
       {/* Background Decor */}
@@ -57,14 +29,14 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs font-bold text-[#1d4ed8] uppercase tracking-widest mb-4">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Módulos de la Plataforma</span>
+            <span>Módulos para Oposiciones</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-6">
-            TODO LO QUE TU CENTRO NECESITA EN <br />
+            TODO LO QUE TU ACADEMIA NECESITA EN <br />
             <span className="gold-gradient-text">UNA SOLA PLATAFORMA</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            {copy.intro}
+            Elimina el coste de contratar desarrolladores o comprar plataformas obsoletas. Munilex te entrega un software listo para operar y comercializar hoy mismo, pensado para academias de oposiciones.
           </p>
         </div>
 
@@ -139,7 +111,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
                 Corrección Instantánea de Casos Prácticos
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                {copy.card2}
+                Corrige ejercicios, tareas y respuestas en segundos, ideal para test, supuestos y tutorías de oposición.
               </p>
             </div>
 
@@ -170,18 +142,18 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
                 Simulacros Infinitos con Corrección Asistida
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-                {copy.card3}
+                Todas las preguntas se generan con explicación, nivel y rúbrica para oposiciones y pruebas internas.
               </p>
             </div>
 
             <div className="space-y-2 pt-4 border-t border-slate-200 text-xs text-slate-600">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#1d4ed8]" />
-                <span>{variant === 'ingles' ? '+42 niveles, itinerarios y programas actualizados' : '+42 itinerarios, materias y programas actualizados'}</span>
+                <span>+42 itinerarios, materias y programas actualizados</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#1d4ed8]" />
-                <span>{variant === 'ingles' ? 'Preguntas tipo examen, listening y ejercicios reales' : 'Preguntas tipo examen, ejercicios reales y casos prácticos'}</span>
+                <span>Preguntas tipo examen, ejercicios reales y casos prácticos</span>
               </div>
             </div>
           </motion.div>
@@ -202,7 +174,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
                 Tutor IA 24/7 Entrenado en tu Temario
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-                {copy.card4}
+                Responde dudas del alumno de forma inmediata a cualquier hora del día o de la noche.
               </p>
             </div>
 
@@ -228,7 +200,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
                 Panel Docente & Detección de Deserción
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-                {copy.card5}
+                Visualiza el rendimiento de tus grupos, detecta alumnos inactivos y exporta informes ejecutivos en un clic.
               </p>
             </div>
 
@@ -247,7 +219,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ onOpenContact, variant }) 
             </div>
             <div>
               <h4 className="text-lg font-bold text-slate-900">¿Tienes temarios propios o exclusivos?</h4>
-              <p className="text-xs text-slate-500">{copy.cta} Podemos ingerir y securizar tus propios contenidos bajo contrato de confidencialidad.</p>
+              <p className="text-xs text-slate-500">Podemos ingerir y securizar tus propios contenidos bajo contrato de confidencialidad.</p>
             </div>
           </div>
           <button

@@ -17,7 +17,7 @@ export const TeamSection: React.FC = () => {
       role: 'Fundador & Director Técnico (CTO)',
       specialty: 'Consultoría LegalTech, IA Aplicada & RAG Jurídico',
       image: joseMariaImg,
-      bio: 'Jurista certificado por Racks Academy. Especializado en la convergencia del Derecho Administrativo y la Inteligencia Artificial. Con trayectoria docente en TECH University, diseña la arquitectura algorítmica y la precisión de los modelos de Munilex.',
+      bio: 'Jurista certificado por Racks Academy. Especializado en la convergencia del Derecho Administrativo y la Inteligencia Artificial. Diseña la arquitectura técnica y la fiabilidad de los sistemas de Munilex.',
       credentials: ['Jurista Especialista', 'Docente TECH University', 'Certificado Racks Academy', 'LegalTech & RAG'],
       phone: '+34 605 39 29 12',
       phoneLink: 'https://wa.me/34605392912',
@@ -29,7 +29,7 @@ export const TeamSection: React.FC = () => {
       role: 'Fundador & Director Académico / Comercial (CMO)',
       specialty: 'Estrategia de Centros Educativos, Docencia Jurídica & B2B',
       image: franciscoMarinImg,
-      bio: 'Abogado y Docente con más de 10 años de experiencia acompañando a academias, centros de formación y alumnos de Derecho en toda España. Director de TFM en el Máster de Abogacía de la UNIR y formador colaborador en proyectos educativos de referencia nacional.',
+      bio: 'Abogado y docente con más de 10 años de experiencia ayudando a academias a convertir su conocimiento en producto comercializable y claro para el alumno.',
       credentials: ['Abogado Colegiado', 'Director TFM Máster UNIR', '+10 Años en Formación', 'Dirección Académica'],
       phone: '+34 649 49 05 80',
       phoneLink: 'https://wa.me/34649490580',
@@ -49,14 +49,14 @@ export const TeamSection: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs font-bold text-[#1d4ed8] uppercase tracking-widest mb-4">
             <Scale className="w-3.5 h-3.5" />
-            <span>Liderazgo Jurídico y Tecnológico</span>
+            <span>Liderazgo jurídico y tecnológico</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-6">
             DISEÑADO POR JURISTAS Y <br />
-            <span className="gold-gradient-text">PREPARADORES DE ÉLITE</span>
+            <span className="gold-gradient-text">EQUIPOS ACADÉMICOS</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Nuestra tecnología no es un software genérico. Detrás de cada algoritmo hay abogados, profesores universitarios y directores de centros con años de experiencia real en formación y operación comercial.
+            Nuestra tecnología no es un software genérico. Detrás de cada decisión hay experiencia real en derecho, docencia y operación de academias.
           </p>
         </div>
 

@@ -4,34 +4,9 @@ import { Rocket, Heart, Globe, Check, Sparkles, ArrowRight } from 'lucide-react'
 
 interface PlansSectionProps {
   onOpenContact: (plan?: string) => void;
-  variant: 'academias' | 'ingles' | 'otros';
 }
 
-export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, variant }) => {
-  const copy = {
-    academias: {
-      header: 'Planes para Academias de Oposiciones',
-      titleTop: 'Planes diseñados para',
-      titleBottom: 'escalar tu academia de oposiciones',
-      intro: 'Elige el nivel de entrada que mejor encaja con tu academia y escala solo cuando tenga sentido para tu margen.',
-      feature: 'Preparación completa para oposiciones, refuerzo y materias especializadas',
-    },
-    ingles: {
-      header: 'Planes para Academias de Inglés',
-      titleTop: 'Planes diseñados para',
-      titleBottom: 'escalar tu academia de inglés',
-      intro: 'Empieza con una base simple y sube de nivel cuando quieras ampliar marca, seguimiento y progreso por alumnos.',
-      feature: 'EPG, listening, grammar, speaking y progreso por niveles',
-    },
-    otros: {
-      header: 'Planes para Otros Centros',
-      titleTop: 'Planes diseñados para',
-      titleBottom: 'escalar tu centro especializado',
-      intro: 'Empieza por lo que más impacto tenga en tu operación y automatiza el resto cuando veas retorno.',
-      feature: 'Autoescuela, ciencias, refuerzo y formación especializada',
-    },
-  }[variant];
-
+export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact }) => {
   const plans = [
     {
       id: 'iniciacion',
@@ -78,7 +53,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
       ],
       features: [
         'Todo lo incluido en el Plan Iniciación',
-        copy.feature,
+        'Preparación completa para oposiciones, refuerzo y materias especializadas',
         'Personalización completa de marca y dominio propio',
         '1 funcionalidad extra a medida incluida',
         'Plantillas de correo con tu identidad corporativa',
@@ -118,23 +93,20 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
   return (
     <section id="plans" className="py-28 md:py-36 relative bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
-        
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs font-bold text-[#1d4ed8] uppercase tracking-widest mb-4">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>{copy.header}</span>
+            <span>Planes para Academias de Oposiciones</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-6">
-            {copy.titleTop} <br />
-            <span className="gold-gradient-text">{copy.titleBottom}</span>
+            Planes diseñados para <br />
+            <span className="gold-gradient-text">escalar tu academia de oposiciones</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            {copy.intro}
+            Elige el nivel de entrada que mejor encaja con tu academia y escala solo cuando tenga sentido para tu margen.
           </p>
         </div>
 
-        {/* 3 Plans Cards Grid */}
         <div className="grid lg:grid-cols-3 gap-8 items-stretch">
           {plans.map((plan, index) => (
             <motion.div
@@ -156,7 +128,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
               )}
 
               <div>
-                {/* Header Icon & Title */}
                 <div className={`flex items-center justify-between mb-6 ${plan.highlighted ? 'mt-4' : ''}`}>
                   <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border ${
                     plan.highlighted
@@ -183,7 +154,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
                   {plan.desc}
                 </p>
 
-                {/* Scope & Timing Box */}
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 mb-6 space-y-2 text-xs">
                   <div className="flex justify-between">
                     <span className="text-slate-400 font-medium">Alcance:</span>
@@ -199,13 +169,12 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
                   </div>
                 </div>
 
-                {/* Pricing Table Box */}
                 <div className={`p-4 rounded-2xl mb-8 border ${
                   plan.highlighted
                     ? 'bg-[#1d4ed8]/10 border-[#1d4ed8]/30'
                     : 'bg-slate-50 border-slate-200'
                 }`}>
-                <div className="text-[10px] font-black uppercase text-[#1d4ed8] tracking-wider mb-2.5">
+                  <div className="text-[10px] font-black uppercase text-[#1d4ed8] tracking-wider mb-2.5">
                     Licencia Alumno / Mes
                   </div>
                   <div className="space-y-1.5 text-xs font-bold">
@@ -218,7 +187,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
                   </div>
                 </div>
 
-                {/* Feature Checklist */}
                 <div className="space-y-3 mb-8">
                   <div className="text-[10px] font-black uppercase text-slate-400 tracking-wider mb-2">
                     Qué Incluye:
@@ -234,7 +202,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
                 </div>
               </div>
 
-              {/* Action Button */}
               <button
                 onClick={() => onOpenContact(plan.name)}
                 className={`w-full py-4 rounded-2xl font-manrope font-black text-xs uppercase tracking-widest transition-all cursor-pointer flex items-center justify-center gap-2 ${
@@ -249,11 +216,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onOpenContact, varia
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );
 };
-
-
-

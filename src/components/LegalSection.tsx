@@ -24,7 +24,7 @@ export const LegalSection = () => {
             </div>
             <h3 className="text-xl font-manrope font-black text-slate-900 uppercase mb-3">Aviso legal</h3>
             <p className="text-sm text-slate-600 leading-relaxed mb-4">
-              Titular: Munilex Academy, S.L., CIF B88655980, con domicilio social en Madrid, España. El sitio se ofrece con carácter informativo y comercial para academias y centros educativos.
+              Titular: Munilex Academy, S.L., CIF B88655980, con domicilio social en Madrid, España. El sitio se ofrece con carácter informativo y comercial para academias de oposiciones.
             </p>
             <p className="text-sm text-slate-600 leading-relaxed">
               El contenido, diseño, marcas y materiales gráficos están protegidos por derechos de propiedad intelectual e industrial. No se permite su reutilización sin autorización expresa.

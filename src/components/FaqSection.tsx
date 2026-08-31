@@ -12,11 +12,11 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: '¿Podemos usar nuestros propios temarios y materiales?',
-      a: 'Sí. Podemos trabajar con el catálogo de Munilex o adaptar tus materiales, procesos y estructura. El alcance de la carga y las condiciones de uso se concretan en la propuesta.',
+      a: 'Sí. La plataforma puede trabajar con tus temarios, test, supuestos y materiales propios, que se protegen bajo acuerdo de confidencialidad.',
     },
     {
       q: '¿Cómo se calcula el precio?',
-      a: 'La facturación es mensual y se ajusta al volumen real de alumnos activos. El precio baja por tramos cuando crece el centro.',
+      a: 'La facturación es mensual y se ajusta al volumen real de alumnos activos. El precio baja por tramos cuando crece la academia.',
     },
     {
       q: '¿La IA responde con control o puede inventar cosas?',
@@ -35,22 +35,19 @@ export const FaqSection: React.FC = () => {
   return (
     <section id="faq" className="py-28 md:py-36 relative bg-slate-50">
       <div className="max-w-4xl mx-auto px-6 md:px-10 relative z-10">
-        
-        {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs font-bold text-[#1d4ed8] uppercase tracking-widest mb-4">
             <HelpCircle className="w-3.5 h-3.5" />
-            <span>Resolución de Dudas</span>
+            <span>Resolución de dudas</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-4">
             PREGUNTAS <span className="gold-gradient-text">FRECUENTES</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600">
-            Todo lo que necesitas saber antes de dar el salto tecnológico con Munilex Corporate.
+            Respuestas rápidas sobre implantación, materiales, seguridad y soporte.
           </p>
         </div>
 
-        {/* Accordion List */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div
@@ -88,10 +85,7 @@ export const FaqSection: React.FC = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
 };
-
-

@@ -4,33 +4,33 @@ import { ShieldCheck, Lock, Database, FileCheck2, Scale, Server } from 'lucide-r
 export const SecurityCompliance: React.FC = () => {
   const securityCards = [
     {
-      title: 'Alineación con EU AI Act',
-      desc: 'Nuestros sistemas de IA educativa cumplen con las directrices europeas de transparencia, explicabilidad y supervisión humana requeridas para plataformas formativas.',
+      title: 'IA con supervisión humana',
+      desc: 'La plataforma está pensada para apoyar la preparación y la gestión sin sustituir el criterio de tu equipo docente.',
       icon: <Scale className="w-6 h-6 text-[#1d4ed8]" />,
     },
     {
-      title: 'Esquema Nacional de Seguridad (ENS)',
-      desc: 'Diseñado bajo los estándares de seguridad de la administración pública española para la preparación de cuerpos generales, fuerzas de seguridad y habilitados nacionales.',
+      title: 'Datos alojados en la UE',
+      desc: 'Contenido, datos de alumnos y configuraciones se mantienen en infraestructura europea para reforzar privacidad y control.',
       icon: <ShieldCheck className="w-6 h-6 text-[#1d4ed8]" />,
     },
     {
-      title: 'Soberanía de Datos 100% en UE',
-      desc: 'Tus bases de datos, exámenes y registros de alumnos residen en servidores de la Unión Europea bajo estricto cumplimiento del RGPD.',
+      title: 'Acceso por roles',
+      desc: 'Configuramos permisos para dirección, profesorado y administración con trazabilidad de accesos y actividad.',
       icon: <Database className="w-6 h-6 text-[#1d4ed8]" />,
     },
     {
-      title: 'Protección de Temarios Propios',
-      desc: 'Garantía contractual de no cesión ni entrenamiento de modelos públicos con los materiales exclusivos o exámenes que suba tu academia.',
+      title: 'Temarios protegidos',
+      desc: 'Tus materiales, simulacros y recursos propios no se reutilizan fuera de tu entorno sin autorización explícita.',
       icon: <Lock className="w-6 h-6 text-sky-600" />,
     },
     {
-      title: 'Cifrado de Extremo a Extremo',
-      desc: 'Comunicaciones blindadas con TLS 1.3 y cifrado AES-256 en reposo para todos los datos sensibles y perfiles de alumnos.',
+      title: 'Cifrado y respaldo',
+      desc: 'Usamos cifrado en tránsito y copias de seguridad periódicas para minimizar riesgos operativos.',
       icon: <Server className="w-6 h-6 text-[#1d4ed8]" />,
     },
     {
-      title: 'Copias de Seguridad Automatizadas',
-      desc: 'Backups diarios redundantes con recuperación ante desastres en minutos y monitorización de disponibilidad 24/7.',
+      title: 'Continuidad del servicio',
+      desc: 'El servicio se diseña para funcionar sin dependencia de tu equipo técnico y con soporte continuo.',
       icon: <FileCheck2 className="w-6 h-6 text-[#1d4ed8]" />,
     },
   ];
@@ -43,14 +43,14 @@ export const SecurityCompliance: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs font-bold text-[#1d4ed8] uppercase tracking-widest mb-4">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>Máxima Seguridad Jurídica & Tecnológica</span>
+            <span>Seguridad jurídica y técnica</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-6">
             CONFIANZA, PRIVACIDAD Y <br />
-            <span className="gold-gradient-text">CUMPLIMIENTO LEGAL</span>
+            <span className="gold-gradient-text">CONTROL DEL DATO</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Tu reputación es lo primero. Activa tecnología de última generación con la total tranquilidad de cumplir la normativa española y europea más exigente.
+            La plataforma está pensada para que una academia de oposiciones pueda trabajar con tranquilidad, claridad contractual y una base técnica sólida.
           </p>
         </div>
 

@@ -17,7 +17,7 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-slate-500 max-w-sm leading-relaxed text-xs">
-              La plataforma corporativa de IA para academias, centros de FP, academias de inglés y otros centros especializados en España.
+              IA corporativa para academias de oposiciones que quieren lanzar una experiencia propia, clara y escalable.
             </p>
             
             <div className="space-y-1.5 pt-2 text-[11px] text-slate-600">
@@ -49,16 +49,13 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Col 3: Tarifas & Simulación (2 cols) */}
+          {/* Col 3: Planes & Seguridad (2 cols) */}
           <div className="md:col-span-2 space-y-3">
-            <div className="text-xs font-black uppercase text-slate-900 tracking-wider">
-              Tarifas & ROI
-            </div>
+            <div className="text-xs font-black uppercase text-slate-900 tracking-wider">Planes</div>
             <ul className="space-y-2">
               <li><a href="#plans" className="hover:text-[#1d4ed8] transition-colors">Plan Iniciación</a></li>
               <li><a href="#plans" className="hover:text-[#1d4ed8] transition-colors">Plan Profesional</a></li>
               <li><a href="#plans" className="hover:text-[#1d4ed8] transition-colors">Plan A Medida</a></li>
-              <li><a href="#calculator" className="hover:text-[#1d4ed8] transition-colors">Calculadora ROI</a></li>
               <li><a href="#security" className="hover:text-[#1d4ed8] transition-colors">Seguridad & ENS</a></li>
             </ul>
           </div>
@@ -89,7 +86,7 @@ export const Footer = () => {
               </li>
               <li className="pt-2 border-t border-slate-200">
                 <a href="https://munilexacademy.es" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-slate-600 hover:text-[#1d4ed8] transition-colors">
-                  <span>Munilex Academy (Alumnos)</span>
+                  <span>Munilex Academy</span>
                   <ArrowUpRight className="w-3 h-3 text-slate-400" />
                 </a>
               </li>

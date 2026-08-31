@@ -12,7 +12,7 @@ export const LegalPage: React.FC = () => {
           title: 'Titularidad del sitio',
           paragraphs: [
             'El sitio web Munilex Corporate es titularidad de Munilex Academy, S.L., con CIF B88655980 y domicilio social en Madrid, España. El canal de contacto corporativo es administracion@munilex.es.',
-            'La web se dirige a academias, centros de formación profesional, academias de inglés y otros centros especializados que buscan soluciones de inteligencia artificial aplicadas a la enseñanza y a la gestión educativa.',
+            'La web se dirige a academias de oposiciones que buscan soluciones de inteligencia artificial aplicadas a la enseñanza y a la gestión educativa.',
           ],
         },
         {
