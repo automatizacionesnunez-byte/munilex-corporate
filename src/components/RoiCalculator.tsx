@@ -35,10 +35,10 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) =
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-6">
             Calcula tu <br />
-            <span className="cyan-gradient-text">ROI</span>
+            <span className="cyan-gradient-text">Retorno</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Ajusta alumnos y cuota media para ver el impacto estimado en tu margen.
+            El retorno de inversión más sencillo de calcular.
           </p>
         </div>
 
