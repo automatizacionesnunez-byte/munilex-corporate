@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { LeanSections } from './components/LeanSections';
 import { BentoGrid } from './components/BentoGrid';
 import { RoiCalculator } from './components/RoiCalculator';
 import { PlansSection } from './components/PlansSection';
@@ -47,6 +48,7 @@ export function App() {
 
       <main>
         <Hero onOpenContact={() => scrollToContact()} />
+        <LeanSections />
         <BentoGrid />
         <RoiCalculator onOpenContact={(plan, students) => scrollToContact(plan, students)} />
         <PlansSection onOpenContact={(plan) => scrollToContact(plan)} />
