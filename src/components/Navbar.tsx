@@ -20,6 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenDossier }) 
 
   const navLinks = [
     { name: 'Soluciones', href: '#bento' },
+    { name: 'ROI', href: '#calculator' },
     { name: 'Planes', href: '#plans' },
     { name: 'Equipo', href: '#team' },
     { name: 'Seguridad', href: '#security' },

@@ -3,10 +3,9 @@ import { Calculator, ArrowRight, TrendingUp, Euro, Users } from 'lucide-react';
 
 interface RoiCalculatorProps {
   onOpenContact: (plan?: string, students?: number) => void;
-  variant: 'academias' | 'ingles' | 'otros';
 }
 
-export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, variant }) => {
+export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact }) => {
   const [students, setStudents] = useState<number>(120);
   const [selectedPlan, setSelectedPlan] = useState<'iniciacion' | 'profesional'>('profesional');
   const [monthlyFee, setMonthlyFee] = useState<number>(70);
@@ -28,39 +27,6 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
   const netProfit = totalRevenue - totalCost;
   const profitMargin = totalRevenue > 0 ? ((netProfit / totalRevenue) * 100).toFixed(1) : '0.0';
 
-  const copy = {
-    academias: {
-      badge: 'Simulador para Oposiciones',
-      titleTop: 'Calcula tu inversión y',
-      titleBottom: 'coste y margen',
-      intro: 'Estima el coste de la tecnología frente a tus ingresos por alumno. Es una referencia para preparar una propuesta, no una promesa de rentabilidad.',
-      planOne: '2 materias o itinerarios',
-      planTwo: 'Identidad propia + Catálogo 100%',
-      resultLabel: 'Margen Bruto del Centro',
-      button: 'Solicitar Presupuesto para',
-    },
-    ingles: {
-      badge: 'Simulador para Inglés',
-      titleTop: 'Calcula tu inversión y',
-      titleBottom: 'coste y margen de la academia',
-      intro: 'Estima la inversión tecnológica frente a tus ingresos por alumno y decide qué alcance tiene sentido para tu academia de inglés.',
-      planOne: '2 niveles o itinerarios',
-      planTwo: 'Identidad propia + Progreso por niveles',
-      resultLabel: 'Margen Bruto de la Academia',
-      button: 'Solicitar Presupuesto para',
-    },
-    otros: {
-      badge: 'Simulador para Otros Centros',
-      titleTop: 'Calcula tu inversión y',
-      titleBottom: 'coste y margen del centro',
-      intro: 'Estima la inversión tecnológica frente a tus ingresos por alumno y empieza por el proceso que más impacto tenga en tu operación.',
-      planOne: '2 materias o procesos',
-      planTwo: 'Identidad propia + Automatización',
-      resultLabel: 'Margen Bruto del Centro',
-      button: 'Solicitar Presupuesto para',
-    },
-  }[variant];
-
   return (
     <section id="calculator" className="py-28 md:py-36 relative bg-slate-50 overflow-hidden border-t border-slate-200">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#1d4ed8]/5 rounded-full blur-[150px] pointer-events-none" />
@@ -69,14 +35,14 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1d4ed8]/10 border border-[#1d4ed8]/20 text-xs font-bold text-[#1d4ed8] uppercase tracking-widest mb-4">
             <Calculator className="w-3.5 h-3.5" />
-            <span>{copy.badge}</span>
+            <span>ROI para academias de oposiciones</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-manrope font-black tracking-tight text-slate-900 uppercase leading-tight mb-6">
-            {copy.titleTop} <br />
-            <span className="cyan-gradient-text">{copy.titleBottom}</span>
+            Calcula tu inversión y <br />
+            <span className="cyan-gradient-text">coste y margen</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            {copy.intro}
+            Estima el coste de la tecnología frente a tus ingresos por alumno. Es una referencia para preparar una propuesta, no una promesa de rentabilidad.
           </p>
         </div>
 
@@ -97,7 +63,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                     }`}
                   >
                     <div className="text-sm font-bold text-slate-900 mb-1">Plan Iniciación</div>
-                    <div className="text-xs text-slate-500">{copy.planOne}</div>
+                    <div className="text-xs text-slate-500">2 materias o itinerarios</div>
                   </button>
 
                   <button
@@ -112,7 +78,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                       Recomendado
                     </span>
                     <div className="text-sm font-bold text-slate-900 mb-1">Plan Profesional</div>
-                    <div className="text-xs text-slate-500">{copy.planTwo}</div>
+                    <div className="text-xs text-slate-500">Identidad propia + catálogo completo</div>
                   </button>
                 </div>
               </div>
@@ -205,7 +171,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                 </div>
 
                 <div className="pt-6">
-                  <div className="text-xs text-slate-500 mb-1">{copy.resultLabel} antes de otros costes</div>
+                  <div className="text-xs text-slate-500 mb-1">Margen bruto antes de otros costes</div>
                   <div className="text-3xl sm:text-4xl font-manrope font-black text-slate-900 tracking-tight">
                     +{netProfit.toLocaleString('es-ES')} € <span className="text-xs text-slate-400 font-normal">/ mes</span>
                   </div>
@@ -220,7 +186,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenContact, var
                 onClick={() => onOpenContact(selectedPlan, students)}
                 className="w-full mt-8 py-4 rounded-xl bg-gradient-to-r from-[#1d4ed8] via-[#60a5fa] to-[#bfdbfe] text-white font-manrope font-black text-xs uppercase tracking-widest shadow-lg shadow-[#1d4ed8]/20 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer flex items-center justify-center gap-2"
               >
-                <span>{copy.button} {students} Alumnos</span>
+                <span>Solicitar presupuesto para {students} alumnos</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
